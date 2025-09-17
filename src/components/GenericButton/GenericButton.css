@@ -1,0 +1,28 @@
+.generic-button {
+    background-color: var(--theme-button-background-color);
+    border: 1px solid var(--theme-button-background-color);
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.generic-button:hover {
+    background-color: var(--theme-button-hover-color);
+}
+
+.generic-button.small {
+    font-size: var(--text-smallest-size);
+    padding: 5px;
+}
+
+.generic-button.secondary {
+    background-color: var(--theme-button-secondary-background-color);
+    border: 1px solid var(--theme-secondary-border);
+    color: #000000;
+}
+
+.generic-button.secondary:hover {
+    background-color:  var(--theme-button-secondary-hover-background-color);
+}

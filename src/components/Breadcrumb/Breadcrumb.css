@@ -1,0 +1,30 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin-block: 10px;
+}
+
+.breadcrumb-button {
+    cursor: pointer;
+    color: var(--theme-text-tertiary-color);
+    transition: color 0.5s ease;
+}
+
+.breadcrumb-button:hover {
+    color: var(--theme-primary-color);
+}
+
+.breadcrumb-divider {
+    height: 15px;
+    margin: 0 10px;
+    border-left: 1px solid var(--theme-text-quaternary-color);
+}
+
+.breadcrumb-title {
+    font-size: var(--text-small-size);
+    font-weight: bold;
+    margin: 0;
+    color: var(--theme-text-tertiary-color);
+}

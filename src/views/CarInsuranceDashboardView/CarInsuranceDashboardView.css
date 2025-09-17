@@ -1,0 +1,125 @@
+.car-details-card {
+    width: 33%;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.car-details-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, #4F7FDF 0%, #4F7FDF 100%);
+    border-radius: 0 0 15px 15px;
+    z-index: 0;
+}
+
+.car-details-card img {
+    position: relative;
+    z-index: 1;
+    margin-left: -10px;
+}
+
+.car-details-content {
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.car-details-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.car-details-column.right-align {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.car-details-primary-value {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+.car-details-secondary-value {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0;
+    color: #DEDEDE;
+}
+
+.policy-status-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 7px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.policity-status-item-label-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.policy-status-item-icon-container {
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--theme-primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+.policy-status-item-icon-container.green {
+    background-color: #10B981;
+}
+
+.policy-status-item-icon {
+    color: #ffffff;
+    font-size: 0.7rem;
+}
+
+.policy-status-item-label {
+    font-size: var(--text-smallest-size);
+    color: var(--theme-text-tertiary-color);
+    font-weight: bold;
+}
+
+.policy-status-item-value {
+    font-size: var(--text-smallest-size);
+    font-weight: bolder;
+}
+
+.policy-status-item-value.green {
+    color: #10B981;
+}
+
+.car-coverings-card {
+    height: 200px;
+    width: 50%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.car-coverings-card-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.car-upselling-card {
+    height: 200px;
+    width: 50%;
+}

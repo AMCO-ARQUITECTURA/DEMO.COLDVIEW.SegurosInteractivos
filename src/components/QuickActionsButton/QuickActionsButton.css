@@ -1,0 +1,47 @@
+.quick-actions-button {
+    padding-inline: 7px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: var(--theme-text-secondary-color);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quick-actions-button.accent {
+    background-color: var(--theme-quaternary-color);
+    border: none;
+    color: #ffffff;
+}
+
+.quick-actions-button:hover {
+    color: var(--theme-primary-color);
+    border: 1px solid #e1806a;
+    background-color: #e1806a;
+}
+
+.quick-actions-button-icon-container {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-actions-button-icon {
+    font-size: var(--text-small-size);
+    color: #000000;
+    width: 15px;
+}
+
+.quick-actions-button-icon.accent {
+    color: #ffffff;
+} 
+
+.quick-actions-button-label {
+    font-size: var(--text-small-size);
+    font-weight: bold;
+}

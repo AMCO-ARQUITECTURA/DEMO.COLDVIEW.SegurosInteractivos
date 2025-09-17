@@ -1,0 +1,259 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 48px;
+    background-color: #2c529b;
+    /* border-right: 1px solid #6088d2; */
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.sidebar.open {
+    width: 200px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 48px;
+    padding-left: 8px;
+    gap: 0;
+    background-color: #fff;
+    /* border-right: 1px solid #6088d2; */
+    transition: all 0.3s ease-in-out;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar-header.open {
+    height: 64px;
+    padding: 8px 12px;
+    gap: 8px;
+}
+
+.sidebar-header-text {
+    font-size: 1.125rem; /*18px*/
+
+    font-weight: 700;
+    color: #2c529b;
+    opacity: 0;
+    transform: translateY(-4px);
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: opacity 0.25s ease, transform 0.25s ease, max-width 0.25s ease;
+}
+
+.sidebar-header-text.open {
+    opacity: 1;
+    transform: translateY(0);
+    max-width: 200px;
+}
+
+.sidebar-logo {
+    width: 28px;
+    border-radius: 12px;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar-logo.open {
+    width: 40px;
+}
+
+/* .sidebar-company-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c529b;
+    opacity: 0;
+    transform: translateY(-4px);
+    max-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: opacity 0.25s ease, transform 0.25s ease, max-width 0.25s ease;
+}
+
+.sidebar-company-text.open {
+    opacity: 1;
+    transform: translateY(0);
+    max-width: 200px;
+} */
+
+.sidebar-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 4px;
+    padding-block: 10px;
+    overflow: hidden;
+}
+
+/* Seccion de links de navegacion, cuando esta cerrado la idea es que todos las secciones esten juntas, pero abierta se separan*/
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titulo de la seccion, oculto en sidebar cerrada */
+.sidebar-section-title {
+    font-size: 0.75rem;
+    color: #e9e9e9;
+    /* margin: 4px 0; */
+    padding-left: 8px;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease, margin-top 0.25s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.sidebar-section-title.open {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 20px;
+    margin-top: 10px
+}
+
+/* Lista de iconos dentro del sidebar, hijo del section por debajo del title */
+.sidebar-icon-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    gap: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Cada icono dentro del sidebar de link de navegafion (icono + nombre) */
+.sidebar-icon-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sidebar-icon-link.open {
+    gap: 8px;
+}
+
+.sidebar-icon-link i {
+    min-width: 20px;
+    text-align: left;
+}
+
+.sidebar-icon-link:hover {
+    color: var(--theme-quaternary-color);
+}
+
+.sidebar-icon-name {
+    opacity: 0;
+    max-width: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.25s ease, transform 0.25s ease, max-width 0.25s ease;
+    overflow: hidden;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.sidebar-icon-name.open {
+    opacity: 1;
+    transform: translateY(0);
+    max-width: 200px;
+}
+
+/* FOOTER */
+.sidebar-footer {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid #6088d2;
+    color: #fff;
+    padding: 0 12px;
+    transition: height 0.3s ease;
+    flex-direction: column;
+}
+
+.sidebar-footer.open {
+    height: auto;
+    padding: 0 12px;
+}
+
+
+.sidebar-footer-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 10px;
+    /* padding-bottom: 5px; */
+    margin-bottom: 10px;
+}
+
+.sidebar-footer-text {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease, max-width 0.25s ease;
+    overflow: hidden;
+    text-wrap: nowrap;
+    color: #E5E7EB;
+    font-weight: bold;
+}
+
+.sidebar-footer-text.open {
+    opacity: 1;
+    transform: translateY(0);
+    max-width: 200px;
+}
+
+.sidebar-footer-content {
+    width: 100%; 
+    align-items: baseline;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.sidebar-footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sidebar-footer-contact-name{
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.sidebar-footer-contact-option-list{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.sidebar-footer-contact-option {
+    display: flex; 
+    flex-direction: row;
+    gap: 5px;
+    font-size: 0.65rem;
+    color: #515151;
+    font-weight: bold;
+    background-color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+    padding-inline: 4px;
+    padding-block: 2px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}

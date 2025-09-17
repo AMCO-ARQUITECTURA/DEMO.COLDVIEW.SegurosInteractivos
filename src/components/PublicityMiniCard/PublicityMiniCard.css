@@ -1,0 +1,68 @@
+.publicity-mini-card {
+    width: 33%;
+    height: 120px;
+    background-color: var(--theme-secondary-background);
+    border: 1px solid var(--theme-secondary-border);
+    border-radius: 5px;
+    padding-inline: 15px;
+    padding-block: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.publicity-mini-card:hover {
+    background-color: var(--theme-button-secondary-hover-background-color);
+}
+
+.publicity-mini-title-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.publicity-mini-card-icon {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--theme-quaternary-color);
+    color: #ffffff;
+    font-size: 0.70rem; /*12px*/
+}
+
+.publicity-mini-card-title {
+    font-size: 0.70rem; /*12px*/
+    font-weight: 600;
+}
+
+.publicity-mini-card-description {
+    font-size: var(--text-tiny-size);
+    width: 100%;
+    color: var(--theme-text-secondary-color);
+    font-weight: 600;
+    text-align: left;
+}
+
+.publicity-mini-card-price-discount-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+
+.publicity-mini-card-price {
+    font-size: var(--text-smallest-size);
+    font-weight: 600;
+}
+
+.publicity-mini-card-discount-badge {
+    font-size: var(--text-smallest-size);
+    font-weight: 600;
+    padding-block: 2.5px;
+    padding-inline: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: var(--theme-quaternary-color);
+}

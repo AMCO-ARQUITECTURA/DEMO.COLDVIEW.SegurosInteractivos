@@ -1,0 +1,39 @@
+.file-download-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 7px;
+    padding-inline: 7px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.file-download-button:hover {
+    background-color: var(--theme-primary-color);
+    color: #ffffff;
+}
+
+
+.file-download-button-label-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.file-download-button-label {
+    font-size: var(--text-smallest-size);
+    font-weight: bold;
+}
+
+.file-download-button-size {
+    font-size: var(--text-smallest-size);
+    font-weight: bold;
+    color: var(--theme-text-tertiary-color);
+}
+
+.file-download-button:hover .file-download-button-size {
+    color: #ffffff;
+}
