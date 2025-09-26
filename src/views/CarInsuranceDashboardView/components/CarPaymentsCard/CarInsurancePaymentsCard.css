@@ -1,0 +1,82 @@
+.payment-summary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 5px;
+    border-bottom: 1px solid var(--theme-primary-border);
+    color: var(--theme-text-secondary-color);
+    font-size: var(--text-small-size);
+    font-weight: 600;
+    align-items: center;
+}
+
+.payment-summary-date {
+    width: 35%;
+}
+
+.payment-summary-ammount {
+    width: 25%;
+}
+
+.payment-summary-ammount.pending {
+    color: #FF5050;
+}
+
+.payment-summary-badge-container {
+    width: 20%;
+    
+}
+
+.payment-summary-badge {
+    width: 4.46rem;
+    border-radius: 10px;
+    background-color: #D1FAE5;
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.payment-summary-badge.pending {
+    background-color: #FEF3C7;
+}
+
+.payment-summary-badge-icon {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: #10B981;
+}
+
+.payment-summary-badge-icon.pending {
+    background-color: #F59E0B;
+}
+
+.payment-summary-badge-text {
+    font-size: var(--text-tiny-size);
+    color: #065F46;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-summary-badge-text.pending {
+    color: #92400E;
+}
+
+.payment-summary-button-container {
+    width: 20%;
+    font-weight: 600;
+}
+
+.payment-summary-button {
+    width: 4.4rem;
+    padding-inline: 0.315rem !important;
+    padding-block: 0.2rem !important;
+    font-size: var(--text-tiny-size) !important;
+    margin-left: auto;
+}
+

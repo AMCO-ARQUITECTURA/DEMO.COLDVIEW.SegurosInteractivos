@@ -1,6 +1,4 @@
 .car-details-card {
-    width: 33%;
-    min-height: 200px;
     position: relative;
     overflow: hidden;
 }
@@ -103,23 +101,4 @@
 
 .policy-status-item-value.green {
     color: #10B981;
-}
-
-.car-coverings-card {
-    height: 200px;
-    width: 50%;
-    justify-content: space-between;
-    padding-bottom: 10px;
-}
-
-.car-coverings-card-footer {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-}
-
-.car-upselling-card {
-    height: 200px;
-    width: 50%;
 }

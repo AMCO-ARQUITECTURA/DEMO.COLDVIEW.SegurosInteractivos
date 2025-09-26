@@ -1,23 +1,22 @@
+import { createIcon } from '@/utilities/ComponentUtilities';
+import type { IconProps } from '../Icon/IconTypes';
 import './QuickActionsButton.css';
 
 type QuickActionsButton = {
     label: string;
-    icon?: string;
-    iconPath?: string;
+    icon: IconProps;
     accent?: boolean;
-    iconHeight?: number;
 }
 
-const QuickActionsButton: React.FC<QuickActionsButton> = ({label, icon, iconPath, accent, iconHeight}) => {
-    const iconElement = iconPath ? <img src={'/icons/' + iconPath} height={iconHeight}/>
-    : <i className={`pi ${icon} quick-actions-button-icon ${accent ? "accent" : ""}`}/>
+const QuickActionsButton: React.FC<QuickActionsButton> = ({label, icon, accent}) => {
+    const iconWithClass: IconProps = {
+        ...icon,
+        iconClassname: `${icon.iconClassname || ''} quick-actions-button-icon ${accent ? 'accent' : ''}`.trim()
+    };
     return (
         <div className={`quick-actions-button ${accent ? "accent" : ""}`}>
-            <div className='quick-actions-button-icon-container'>
-                {iconElement}
-            </div>
-            
-            <span className={`quick-actions-button-label ${accent ? "accent" : ""}`}>{label}</span>
+            {createIcon(iconWithClass)}
+            <span>{label}</span>
         </div>
     );
 }

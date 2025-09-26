@@ -1,0 +1,48 @@
+:root {
+    /* Theme Colors */
+    --theme-primary-color: #497FEB;
+    --theme-secondary-color: #30539B;
+    --theme-tertiary-color: #89B1F3;
+    --theme-quaternary-color: #E45D3D;
+    --theme-quinary-color: #EA9715;
+  
+    /* Text Colors */
+    --theme-text-primary-color: #000000;
+    --theme-text-secondary-color: #515151;
+    --theme-text-tertiary-color: #636363;
+    --theme-text-quaternary-color: #8D8D8D;
+    --theme-text-quinary-color: #9E9E9E;
+    --theme-text-senary-color: #9B9B9B;
+  
+    /* Background Colors */
+    --theme-primary-background: #ffffff;
+    --theme-secondary-background: #F6F6F6;
+    --theme-secondary-background-hover: #E5E7EB;
+
+    /* Border */
+    --theme-primary-border: #E5E7EB;
+    --border-radius-normal: 10px;
+  
+    /* Button Colors */
+    --theme-button-background-color: #497FEB;
+    --theme-button-hover-color: #30539B;
+    --theme-button-secondary-background-color: #F6F6F6;
+    --theme-button-secondary-hover-background-color: #E5E7EB;
+  
+    /* Typography */
+    --text-normal-size: 0.875rem; /*OG: 14px*/
+    --text-small-size: 0.75rem; /*OG: 12px*/
+    --text-smaller-size: 0.65rem; 
+    --text-smallest-size: 0.625rem; /* OG: 10px*/
+    --text-tiny-size: 0.525rem; /*OG: 8px*/
+    
+    /* Spacing System */
+    --padding-full: 1rem;
+    --padding-three-quarters: 0.75rem;
+    --padding-half: 0.5rem;
+    --padding-one-quarter: 0.4rem;
+  
+    /* Base Font Settings */
+    font-size: clamp(14px, 1.2vw, 18px);
+    font-weight: 600;
+  }

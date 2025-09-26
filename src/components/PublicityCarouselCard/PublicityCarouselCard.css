@@ -1,0 +1,62 @@
+/*BEGIN PUBLICITY CAROUSEL*/
+.publicity-carousel {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 15px;
+    padding-top: 0.555rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.publicity-carousel-img-container {
+    /* height: 165px; */
+    height: 220px;
+    /* height: 60%; */
+    width: 100%;
+    position: relative;
+}
+
+.publicity-carousel-img {
+    width: 90%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-fit: fill;
+    border-radius: 5px;
+    align-self: center;
+    max-height: 220px;
+}
+
+.publicity-carousel.half-width {
+    width: 49.5%;
+}
+
+.custom-carousel-container {
+    width: 100%;
+    height: 100%;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator {
+    margin-right: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.p-carousel .p-carousel-indicators {
+    padding: 0rem;
+    padding-top: 5px;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator {
+    margin-right: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+}
+
+/*END PUBLICITY CAROUSEL*/

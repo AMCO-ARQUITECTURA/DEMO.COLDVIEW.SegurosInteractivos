@@ -4,6 +4,20 @@
     overflow: hidden;
 }
 
+.card-header-title-container {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-header-title-and-icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.61rem;
+}
+
 .card-header-main-part {
     width: 100%;
     display: flex;

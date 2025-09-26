@@ -1,0 +1,22 @@
+.life-insurance-upselling-card {
+    gap: 0.5rem;
+}
+
+.life-insurance-upselling-card-badge {
+    background-color: var(--theme-quinary-color);
+    border-radius: var(--border-radius-normal);
+    color: #ffffff;
+    font-size: var(--text-tiny-size);
+    display: flex;
+    align-items: center;
+    margin-block: auto;
+    padding-block: 0.2rem;
+    padding-inline: 0.5rem;
+    font-weight: bolder;
+}
+
+.life-insurance-upselling-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+}

@@ -1,0 +1,87 @@
+.car-insurance-benefits-card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: .125rem;
+    column-gap: 1.125rem;
+    height: 65%;
+}
+
+.benefit-summary {
+    padding-block: 0.5rem;
+    border-bottom: 1px solid var(--theme-primary-border);
+}
+
+.benefit-summary.detailed {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.benefit-summary.compact {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.benefit-summary-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.benefit-summary-left-part {
+    display: flex;
+    flex-direction: row;
+    gap: 0.333rem;
+}
+
+.benefit-summary-icon {
+    background: var(--theme-primary-color);
+    padding: 0.1rem;
+    border-radius: 5px;
+    align-self: center;
+    width: 1.8rem;
+}
+
+.benefit-summary-left-part-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    align-self: center;
+}
+
+.benefit-summary-title {
+    font-size: var(--text-small-size);
+}
+
+.benefit-summary-subtitle {
+    font-size: var(--text-smallest-size);
+    color: var(--theme-text-senary-color);
+}
+
+.benefit-summary-discount-badge {
+    font-size: var(--text-tiny-size);
+    color: #6B7280;
+    padding-block: 0.225rem;
+    padding-inline: 0.333rem;
+    background-color: var(--theme-secondary-background);
+    align-self: center;
+    border-radius: 10px;
+}
+
+.car-insurance-benefits-card-footer {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-insurance-benefits-card-footer-divider {
+    margin-top: 0.333rem;
+    margin-bottom: 0.75rem;
+}
+
+.benefit-summary-description {
+    font-size: var(--text-small-size);
+}

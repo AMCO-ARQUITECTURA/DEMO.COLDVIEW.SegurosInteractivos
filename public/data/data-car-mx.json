@@ -1,0 +1,298 @@
+{
+    "generalData": {
+        "imageUrl": "/civic2014.png",
+        "carModel": "Honda Civic EXS 1.8 2014",
+        "licensePlate": "NPA 180",
+        "policyNumber": "512001122",
+        "plan": "CAR ESSENTIAL PLUS"
+    },
+    "policyStatus": {
+        "status": "Activa",
+        "sinceTo": "27/12/2024 - 27/12/2025",
+        "automaticRenewal": true
+    },
+    "coverageDetails": {
+        "main": [
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/law.png"
+                },
+                "title": "Responsabilidad Civil",
+                "coverageLimits": "100% del siniestro hasta $7500",
+                "description": ""
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/car-windscreen.png"
+                },
+                "title": "Rotura de cristales",
+                "coverageLimits": "100% del siniestro hasta $4000",
+                "description": ""
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/thief.png"
+                },
+                "title": "Robo Total",
+                "coverageLimits": "Hasta $3000",
+                "description": ""
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/earthquake.png"
+                },
+                "title": "Terremoto",
+                "coverageLimits": "Cobertura total sin franquicia",
+                "description": ""
+            }
+        ],
+        "all": [
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/law.png"
+                },
+                "title": "Responsabilidad Civil",
+                "coverageLimits": "100% del siniestro hasta $7500",
+                "description": ""
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/car-windscreen.png"
+                },
+                "title": "Rotura de cristales",
+                "coverageLimits": "100% del siniestro hasta $4000",
+                "description": ""
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/thief.png"
+                },
+                "title": "Robo Total",
+                "coverageLimits": "Hasta $3000",
+                "description": ""
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/earthquake.png"
+                },
+                "title": "Terremoto",
+                "coverageLimits": "Cobertura total sin franquicia",
+                "description": ""
+            }
+        ],
+        "exclusions": [
+
+        ]
+    },
+    "upselling": [
+        {
+            "icon": {
+                "type": "primeicon",
+                "primeicon": "pi-car"
+            },
+            "title": "Cobertura integral",
+            "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
+            "price": "+8.500",
+            "discount": "20% OFF",
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ]
+            }
+        },
+        {
+            "icon": {
+                "type": "primeicon",
+                "primeicon": "pi-car"
+            },
+            "title": "Cobertura integral",
+            "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
+            "price": "+8.500",
+            "discount": "20% OFF",
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ],
+                "trustIndicator": {
+                    "type": "testimonial",
+                    "text": "exampleTest"
+                }
+            }
+        },
+        {
+            "icon": {
+                "type": "primeicon",
+                "primeicon": "pi-car"
+            },
+            "title": "Cobertura integral",
+            "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
+            "price": "+8.500",
+            "discount": "20% OFF",
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "$8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ]
+            }
+        }
+    ],
+    "payments": [
+        {
+            "date": "15 Agosto, 2024",
+            "ammount": "$120,000",
+            "status": "Pendiente"
+        },
+        {
+            "date": "15 Septiembre, 2024",
+            "ammount": "$120,000",
+            "status": "Pendiente"
+        },
+        {
+            "date": "15 Octubre, 2024",
+            "ammount": "$120,000",
+            "status": "Pendiente"
+        }
+    ],
+    "claims": [
+        {
+            "id": "1",
+            "date": "6 Julio, 2025",
+            "type": "Siniestro",
+            "description": "Daño por colision",
+            "status": "En proceso",
+            "ammount": "$150,000"
+        },
+        {
+            "id": "2",
+            "date": "6 Julio, 2025",
+            "type": "Asistencia",
+            "description": "Daño por colision",
+            "status": "En proceso",
+            "ammount": "$150,000"
+        },
+        {
+            "id": "3",
+            "date": "6 Julio, 2025",
+            "type": "Siniestro",
+            "description": "Daño por colision",
+            "status": "En proceso",
+            "ammount": "$150,000"
+        }
+    ],
+    "crossSelling": [
+        {
+            "icon": {
+                "type": "primeicon",
+                "primeicon": "pi-car"
+            },
+            "title": "Seguro de hogar",
+            "subtitle": "Protege tu casa y tus cosas",
+            "description": "Incidencio - Robo - Responsabilidad civil",
+            "price": "desde $8,500/mes",
+            "discount": "COMBO -25%",
+            "popup": {}
+        }
+    ],
+    "benefits": [
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/car-service.png"
+            },
+            "title": "Lavado de auto",
+            "subtitle": "A domicilio",
+            "description": "Asistencia 24/7 en todo el pais",
+            "discount": "20% OFF"
+        },
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/car-service.png"
+            },
+            "title": "Lavado de auto",
+            "subtitle": "A domicilio",
+            "description": "Asistencia 24/7 en todo el pais",
+            "discount": "20% OFF"
+        },
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/car-service.png"
+            },
+            "title": "Lavado de auto",
+            "subtitle": "A domicilio",
+            "description": "Asistencia 24/7 en todo el pais",
+            "discount": "20% OFF"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+.life-insurance-general-data-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+}
+
+.life-insurance-general-data-badge {
+    background-color: #10B981;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: var(--text-tiny-size);
+    display: flex;
+    align-items: center;
+    margin-block: auto;
+    padding-block: 0.2rem;
+    padding-inline: 0.5rem;
+    font-weight: bolder;
+}
+
+.life-insurance-general-data-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--theme-primary-border);
+    padding-block: 0.43rem;
+}
+
+.life-insurance-general-data-item:last-child {
+    border-bottom: none;
+}
+
+.life-insurance-general-data-item-label {
+    font-size: var(--text-smallest-size);
+    color: var(--theme-text-tertiary-color);
+}
+
+.life-insurance-general-data-item-value {
+    font-size: var(--text-small-size);
+}

@@ -1,0 +1,449 @@
+{
+    "general": {
+        "products": [
+            {
+                "id": "car",
+                "name": "Seguro de Automotor",
+                "icon": "car",
+                "policyNumber": "512001122",
+                "plan": "CAR ESSENTIAL PLUS"
+            },
+            {
+                "id": "life",
+                "name": "Seguro de Vida",
+                "icon": "life",
+                "policyNumber": "512001123",
+                "plan": "ESSENTIAL HEALTH"
+            }
+        ],
+        "lastSinistersAndClaims": [
+            {
+                "id": "1",
+                "productId": "car",
+                "productName": "Seguro de Automotor",
+                "date": "6 Julio, 2025",
+                "type": "Sinister",
+                "description": "Daño por colision",
+                "status": "En proceso",
+                "ammount": "$150,000"
+            },
+            {
+                "id": "2",
+                "productId": "car",
+                "productName": "Seguro de Automotor",
+                "date": "6 Julio, 2025",
+                "type": "Sinister",
+                "description": "Daño por colision",
+                "status": "En proceso",
+                "ammount": "$150,000"
+            },
+            {
+                "id": "3",
+                "productId": "car",
+                "productName": "Seguro de Automotor",
+                "date": "6 Julio, 2025",
+                "type": "Sinister",
+                "description": "Daño por colision",
+                "status": "En proceso",
+                "ammount": "$150,000"
+            }
+        ],
+        "financialSummary": {
+            "totalPaidInYear": "$1,200,000",
+            "monthAverage": "$100,000",
+            "savedThisYear": "$200,000",
+            "nextPayments": [
+                {
+                    "date": "15 Agosto, 2024",
+                    "ammount": "$120,000",
+                    "productName": "Seguro de Automotor - 512991122"
+                },
+                {
+                    "date": "15 Agosto, 2024",
+                    "ammount": "$120,000",
+                    "productName": "Seguro de Automotor - 512991122"
+                },
+                {
+                    "date": "15 Agosto, 2024",
+                    "ammount": "$120,000",
+                    "productName": "Seguro de Automotor - 512991122"
+                }
+            ]
+        },
+        "notificationsAndAlerts": [
+            {
+                "title": "Accion requerida",
+                "message": "Documentos pendientes de firma",
+                "ammount": 1,
+                "badgeColor": "red"
+            },
+            {
+                "title": "Renovacion Proxima",
+                "message": "Polizas vencen en 60 dias",
+                "ammount": 1,
+                "badgeColor": "yellow"
+            },
+            {
+                "title": "Informacion desactualizada",
+                "message": "Actualizar dato personales",
+                "ammount": 1,
+                "badgeColor": "yellow"
+            },
+            {
+                "title": "Pagos al dia",
+                "message": "Historial de pagos completo",
+                "badgeColor": "green"
+            },
+            {
+                "title": "Todas las polizas activa",
+                "message": "Sin gaps de cobertura",
+                "badgeColor": "green"
+            }
+        ]
+    },
+    "car": {
+        "generalData": {
+            "imageUrl": "/civic2014.png",
+            "carModel": "Honda Civic EXS 1.8 2014",
+            "licensePlate": "NPA 180",
+            "policyNumber": "512001122",
+            "plan": "CAR ESSENTIAL PLUS"
+        },
+        "policyStatus": {
+            "status": "Activa",
+            "sinceTo": "27/12/2024 - 27/12/2025",
+            "AutomaticRenewal": true
+        },
+        "coverageDetails": {
+            "main": [
+                {
+                    "icon": "civic-responsability",
+                    "name": "Responsabilidad Civil",
+                    "description": "100% del siniestro hasta $7500"
+                },
+                {
+                    "icon": "windshield",
+                    "name": "Rotura de cristales",
+                    "description": "100% del siniestro hasta $4000"
+                },
+                {
+                    "icon": "thief",
+                    "name": "Robo Total",
+                    "description": "Hasta $3000"
+                },
+                {
+                    "icon": "earthquake",
+                    "name": "Terremoto",
+                    "description": "Cobertura total sin franquicia"
+                }
+            ],
+            "all": {
+                "coverings": [
+
+                ],
+                "exclusions": [
+
+                ]
+            }
+        },
+        "upselling": [
+            {
+                "icon": {
+                    "type": "primeicon",
+                    "primeicon": "pi-car"
+                },
+                "title": "Cobertura integral",
+                "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
+                "price": "+8.500",
+                "discount": "20% OFF",
+                "popup": {
+                    "discount": "15% OFF",
+                    "oldPrice": "$22.500",
+                    "price": "8.500",
+                    "monthlyPrice": "100",
+                    "title": "Cobertura Integral",
+                    "subtitle": "Protección completa",
+                    "benefitsTitle": "Que obtenes",
+                    "benefits": {
+                        "items" :[
+                            "Robo total y parcial",
+                            "Incendio y rayos", 
+                            "Daños por accidentes",
+                            "Asistencia 24/7"
+                        ],
+                        "title": "Que obtenes:"
+                    },
+                    "ctaButtons": [
+                        {
+                            "label": "Solicitar",
+                            "linkTo": "https://www.coldview.com",
+                            "type": "primary",
+                            "icon": "pi-heart"
+                        }
+                    ]
+                }
+            },
+            {
+                "icon": {
+                    "type": "primeicon",
+                    "primeicon": "pi-car"
+                },
+                "title": "Cobertura integral",
+                "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
+                "price": "+8.500",
+                "discount": "20% OFF",
+                "popup": {
+                    "discount": "15% OFF",
+                    "oldPrice": "$22.500",
+                    "price": "8.500",
+                    "monthlyPrice": "100",
+                    "title": "Cobertura Integral",
+                    "subtitle": "Protección completa",
+                    "benefitsTitle": "Que obtenes",
+                    "benefits": {
+                        "items" :[
+                            "Robo total y parcial",
+                            "Incendio y rayos", 
+                            "Daños por accidentes",
+                            "Asistencia 24/7"
+                        ],
+                        "title": "Que obtenes:"
+                    },
+                    "ctaButtons": [
+                        {
+                            "label": "Solicitar",
+                            "linkTo": "https://www.coldview.com",
+                            "type": "primary",
+                            "icon": "pi-heart"
+                        }
+                    ],
+                    "trustIndicator": {
+                        "type": "testimonial",
+                        "text": "exampleTest"
+                    }
+                }
+            },
+            {
+                "icon": {
+                    "type": "primeicon",
+                    "primeicon": "pi-car"
+                },
+                "title": "Cobertura integral",
+                "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
+                "price": "+8.500",
+                "discount": "20% OFF",
+                "popup": {
+                    "discount": "15% OFF",
+                    "oldPrice": "$22.500",
+                    "price": "$8.500",
+                    "monthlyPrice": "100",
+                    "title": "Cobertura Integral",
+                    "subtitle": "Protección completa",
+                    "benefitsTitle": "Que obtenes",
+                    "benefits": {
+                        "items" :[
+                            "Robo total y parcial",
+                            "Incendio y rayos", 
+                            "Daños por accidentes",
+                            "Asistencia 24/7"
+                        ],
+                        "title": "Que obtenes:"
+                    },
+                    "ctaButtons": [
+                        {
+                            "label": "Solicitar",
+                            "linkTo": "https://www.coldview.com",
+                            "type": "primary",
+                            "icon": "pi-heart"
+                        }
+                    ]
+                }
+            }
+        ],
+        "payments": [
+            {
+                "date": "15 Agosto, 2024",
+                "ammount": "$120,000",
+                "status": "Pendiente"
+            },
+            {
+                "date": "15 Septiembre, 2024",
+                "ammount": "$120,000",
+                "status": "Pendiente"
+            },
+            {
+                "date": "15 Octubre, 2024",
+                "ammount": "$120,000",
+                "status": "Pendiente"
+            }
+        ],
+        "claims": [
+            {
+                "id": "1",
+                "date": "6 Julio, 2025",
+                "type": "Siniestro",
+                "description": "Daño por colision",
+                "status": "En proceso",
+                "ammount": "$150,000"
+            },
+            {
+                "id": "2",
+                "date": "6 Julio, 2025",
+                "type": "Asistencia",
+                "description": "Daño por colision",
+                "status": "En proceso",
+                "ammount": "$150,000"
+            },
+            {
+                "id": "3",
+                "date": "6 Julio, 2025",
+                "type": "Siniestro",
+                "description": "Daño por colision",
+                "status": "En proceso",
+                "ammount": "$150,000"
+            }
+        ],
+        "crossSelling": [
+            {
+                "icon": {
+                    "type": "primeicon",
+                    "primeicon": "pi-car"
+                },
+                "title": "Seguro de hogar",
+                "subtitle": "Protege tu casa y tus cosas",
+                "description": "Incidencio - Robo - Responsabilidad civil",
+                "price": "desde $8,500/mes",
+                "discount": "COMBO -25%",
+                "popup": {
+
+                }
+            }
+        ],
+        "benefits": [
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/car-service.png"
+                },
+                "title": "Lavado de auto",
+                "subtitle": "A domicilio",
+                "description": "Asistencia 24/7 en todo el pais",
+                "discount":"20% OFF"
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/car-service.png"
+                },
+                "title": "Lavado de auto",
+                "subtitle": "A domicilio",
+                "description": "Asistencia 24/7 en todo el pais",
+                "discount":"20% OFF"
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/car-service.png"
+                },
+                "title": "Lavado de auto",
+                "subtitle": "A domicilio",
+                "description": "Asistencia 24/7 en todo el pais",
+                "discount":"20% OFF"
+            }
+        ]
+    },
+    "life": {
+        "generalData": {
+            "status": "ACTIVO",
+            "contractor": "Juan Perez",
+            "beneficiary": "Maria Gomez",
+            "policyNumber": "512001123",
+            "plan": "ESSENTIAL HEALTH",
+            "sinceTo": "27/12/2024 - 27/12/2025"
+        },
+        "mainCoverages": {
+            "totalCoverage": "$80.000.000",
+            "coverageType": "Fallecimiento e invalidez",
+            "modality": "Vida entera",
+            "additionals": "Doble indemnizacion por accidente"
+        },
+        "upselling": [
+            {
+                "icon": "life-upsell",
+                "title": "Enfermedades graves",
+                "description": "Enfermedades graves",
+                "price": "Desde $8200",
+                "discount": "15% OFF",
+                "popup": {
+
+                }
+            }
+        ],
+        "paymentInformation": {
+            "ammount": "$82,000",
+            "frequency": "Mensual",
+            "nextPaymentDate": "15 Agosto, 2024",
+            "paymentMethod": "Tarjeta de credito terminacion 1234"
+        },
+        "beneficiaries": [
+            {
+                "name": "Maria Gomez",
+                "relationship": "Esposa",
+                "percentage": "100%"
+            },
+            {
+                "name": "Carlos Perez",
+                "relationship": "Hijo",
+                "percentage": "0%"
+            }
+        ],
+        "additionalCoverage": {
+            "coverages": [
+                {
+                    "icon": "pill",
+                    "name": "Reembolso farmaceutico"
+                },
+                {
+                    "icon": "hospital",
+                    "name": "Asistencia medica"
+                },
+                {
+                    "icon": "warning",
+                    "name": "Enfermedades graves"
+                },
+                {
+                    "icon": "savings",
+                    "name": "Excencion de pago de primas por incapacidad"
+                },
+                {
+                    "icon": "money",
+                    "name": "Anticipo por enfermedad terminal"
+                }
+            ],
+            "exclusions": [
+
+            ]
+        },
+        "claims": [
+            {
+                "id": "1",
+                "date": "12 Junio, 2024",
+                "description": "Compra medicamentos",
+                "status": "En proceso",
+                "ammount": "$12,450"
+            }
+        ],
+        "crossSelling": [
+            {
+                "icon": "house-shield",
+                "title": "Seguro de hogar",
+                "subtitle": "Protege tu casa y tus cosas",
+                "description": "Incidencio - Robo - Responsabilidad civil",
+                "price": "$200,000",
+                "popup": {
+
+                }
+            }
+        ]
+    }
+}

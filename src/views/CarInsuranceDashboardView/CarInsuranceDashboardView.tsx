@@ -1,57 +1,96 @@
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import './CarInsuranceDashboardView.css';
-import CarDetailsCard from "./CarDetailsCard";
-import PolicyStatusCard from "./PolicyStatusCard";
-import CarInsuranceQuickActionsCard from "./CarInsuranceQuickActionsCard";
-import DocumentationDownloadCard from "./DocumentationDownloadCard";
+import CarDetailsCard from "./components/CarDetailsCard/CarDetailsCard";
+import PolicyStatusCard from "./components/PolicyStatusCard/PolicyStatusCard";
+import CarInsuranceQuickActionsCard from "./components/CarInsuranceQuickActionsCard/CarInsuranceQuickActionsCard";
+import DocumentationDownloadCard from "./components/DocumentationDownloadCard/DocumentationDownloadCard";
 import { useState } from "react";
-import CarCoveringsCard from "./CarCoveringsCard";
-import CarUpsellingCard from "./CarUpsellingCard";
-
+import CarUpsellingCard from "./components/CarUpsellingCard/CarUpsellingCard";
+import CarInsurancePaymentsCard from "./components/CarPaymentsCard/CarInsurancePaymentsCard";
+import CarInsuranceClaimsCard from "./components/CarInsuranceClaimsCard/CarInsuranceClaimsCard";
+import CarInsuranceCrossSellingCard from "./components/CarInsuranceCrossSellingCard/CarInsuranceCrossSellingCard";
+import CarInsuranceBenefitsCard from "./components/CarInsuranceBenefitsCard/CarInsuranceBenefitsCard";
+import PublicityCarouselCard from "@/components/PublicityCarouselCard/PublicityCarouselCard";
+import { sidebarSections } from "@/data/CommonData";
+import useVersionStore from "@/store/VersionStore";
+import { useQuery } from "@tanstack/react-query";
+import type { CarInsuranceDashboard } from "@/types/CarInsuranceDashboardTypes";
+import type { Benefit, Offer } from "@/types/CommonTypes";
+import CarInsuranceCoveragesCard from "./components/CarInsuranceCoveragesCard/CarInsuranceCoveragesCard";
 
 const CarInsuranceDashboardView = () => {
+    const { version, getVersionJson } = useVersionStore();
+    const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
 
-    const [sidebarOpen, setSidebarOpen] = useState<boolean>(true);
+    const { data: carData, isLoading, isError, error, refetch } = useQuery({
+        queryKey: ['carInsuranceDashboard', version],
+        queryFn: () => getVersionJson<CarInsuranceDashboard>('car'),
+        retry: 3,
+        retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000),
+        staleTime: 5 * 60 * 1000,
+        gcTime: 10 * 60 * 1000,
+        refetchOnWindowFocus: false,
+        refetchOnMount: true
+    });
 
-    const sidebarSections = [
-        {
-            sectionTitle: "Principal",
-            showTitle: false,
-            icons: [
-                { name: "Dashboard general", icon: "pi-home", route: "/" }
-            ]
-        },
-        {
-            sectionTitle: "Productos",
-            showTitle: true,
-            icons: [
-                { name: "Seguro automotor", icon: "pi-car", route: "/car-insurance-dashboard" },
-                { name: "Seguro de vida", icon: "pi-heart", route: "/life-insurance-dashboard" }
-            ]
-        }];
+    if (isLoading) {
+        return (
+            <div className="dashboard-view">
+                <div className="dashboard-loading">
+                    <div className="loading-spinner"></div>
+                    <p>Cargando dashboard...</p>
+                </div>
+            </div>
+        );
+    }
+
+    if (isError || !carData) {
+        return (
+            <div className="dashboard-view">
+                <div className="dashboard-error">
+                    <h3>Error al cargar los datos</h3>
+                    <p>
+                        {error instanceof Error
+                            ? error.message
+                            : 'No hay datos disponibles'
+                        }
+                    </p>
+                    <button
+                        className="retry-button"
+                        onClick={() => refetch()}
+                        disabled={isLoading}
+                    >
+                        {isLoading ? 'Cargando...' : 'Reintentar'}
+                    </button>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="dashboard-view">
-            <Sidebar sections={sidebarSections} open={sidebarOpen} setOpen={setSidebarOpen}/>
+            <Sidebar sections={sidebarSections} open={sidebarOpen} setOpen={setSidebarOpen} />
             <div className="dashboard-main-div">
-                <Breadcrumb title="Seguro automotor" toggleSidebar={() => setSidebarOpen(!sidebarOpen)}/>
+                <Breadcrumb title="Seguro automotor" toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
                 <div className="dashboard-content">
-                    <div id="dashboardRowOne" style={{ display: 'flex', gap: '10px', width: '100%' }}> 
-                        <CarDetailsCard />
-                        <PolicyStatusCard />
-                        <CarInsuranceQuickActionsCard />
-                        <DocumentationDownloadCard />
-                    </div>
-                    <div id="dashboardRowOne" style={{ display: 'flex', gap: '10px', width: '100%' }}> 
-                        <CarCoveringsCard />
-                        <CarUpsellingCard />
-                        {/* <CarDetailsCard /> */}
-                        {/* <CarDetailsCard /> */}
-                        {/* <SmallDashboardCard />
-                        <SmallDashboardCard />
-                        <SmallDashboardCard /> */}
-                    </div>
+                    {/* Row one */}
+                    <CarDetailsCard />
+                    <PolicyStatusCard />
+                    <CarInsuranceQuickActionsCard />
+                    <DocumentationDownloadCard />
+                    {/* Row two */}
+
+                    <CarInsuranceCoveragesCard coverageDetails={carData.coverageDetails}/>
+                    <CarUpsellingCard upsellingOffers={carData.upselling as Offer[]} />
+                    {/* Row three */}
+                    <CarInsurancePaymentsCard />
+                    <CarInsuranceClaimsCard />
+                    {/* Row Four */}
+
+                    <CarInsuranceCrossSellingCard offers={carData.crossSelling as Offer[]} />
+                    <CarInsuranceBenefitsCard benefits={carData.benefits as Benefit[]} />
+                    <PublicityCarouselCard />
                 </div>
             </div>
         </div>

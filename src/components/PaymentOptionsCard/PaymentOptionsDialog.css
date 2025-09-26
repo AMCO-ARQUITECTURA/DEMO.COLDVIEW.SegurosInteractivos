@@ -1,0 +1,114 @@
+.payment-options-dialog-content {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.payment-options-dialog-header {
+    width: 100%;
+}
+
+.payment-options-dialog-header-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.payment-options-dialog-header-subtitle {
+    margin: 0;
+    font-size: var(--text-normal-size);
+    color: var(--theme-text-tertiary-color)
+}
+
+.payment-options-card {
+    width: 33%;
+    height: auto;
+    padding: 1rem;
+    border: 1px solid var(--theme-primary-border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow: hidden;
+}
+
+.payment-options-card-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment-options-card-header-icon-container {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--theme-secondary-background);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme-primary-color);
+}
+
+.payment-options-card-header-icon {
+    font-size: 1.25rem;
+}
+
+.payment-options-card-header-imgicon {
+    width: 1.25rem;
+}
+
+.payment-options-card-header-title {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.payment-options-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-options-card-content-description {
+    font-size: var(--text-small-size);
+    padding: 0;
+    margin: 0;
+}
+
+.payment-options-card-content-img-container {   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.payment-options-card-content-img {
+    padding: 0.325rem;
+    border: 1px solid var(--theme-primary-border);
+}
+
+.payment-options-card-content-img.dotted {
+    border: 2.5px dotted lightgrey;
+}
+
+.payment-options-card-content-subtext {
+    font-size: var(--text-smallest-size);
+    text-align: center;
+}
+
+.payment-options-card-content-card-brands {
+    display: flex;
+    gap: 0.333rem;
+    margin-top: -0.9rem;
+}
+
+.payment-options-card-content-card-brand {
+    width: 3rem;
+}
+
+.payment-options-card-content-pay-button {
+    font-size: 0.8rem;
+}

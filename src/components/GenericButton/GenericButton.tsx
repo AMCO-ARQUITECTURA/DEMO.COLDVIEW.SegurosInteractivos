@@ -1,21 +1,23 @@
 import './GenericButton.css';
 type GenericButtonProps = {
     secondary?: boolean;
-    small?: boolean;
+    className?: string;
+    primeicon?: string;
     label: string;
     onClick: Function;
 }
 
-const GenericButton: React.FC<GenericButtonProps> = ({secondary, small, label, onClick}) => {
+const GenericButton: React.FC<GenericButtonProps> = ({secondary, className, primeicon, label, onClick}) => {
     let classname = "generic-button";
     if (secondary) {
         classname += " secondary";
     }
-    if (small) {
-        classname += " small";
+    if (className) {
+        classname += " " + className;
     }
     return (
         <button className={classname} onClick={() => onClick()}>
+            {primeicon && (<i className={'pi ' + primeicon + ' generic-button-icon'}/>)}
             {label}
         </button>
     );

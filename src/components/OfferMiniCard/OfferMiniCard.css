@@ -1,0 +1,110 @@
+.offer-mini-card {
+    width: 33%;
+    height: 120px;
+    background-color: var(--theme-secondary-background);
+    border: 1px solid var(--theme-primary-border);
+    border-radius: 5px;
+    padding-inline: 0.9rem;
+    padding-block: 0.41rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.offer-mini-card.row {
+    width: 100%;
+    height: auto;
+    border-left: 3px solid var(--theme-primary-color);
+    padding-inline: 0.5rem;
+    padding-block: 0.75rem;
+    flex-direction: row;
+    transition: border-left 0.5s ease, background-color 0.5s ease;
+}
+
+.offer-mini-card:hover {
+    background-color: var(--theme-button-secondary-hover-background-color);
+}
+
+.offer-mini-card.row:hover {
+    border-left: 5px solid var(--theme-quinary-color)
+}
+
+.offer-mini-card-title-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.offer-mini-card.row .offer-mini-card-title-container {
+    flex-direction: column;
+    width: auto;
+    gap: 0.255rem;
+    align-items: flex-start;
+}
+
+.offer-mini-card-icon {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--theme-quinary-color);
+    color: #ffffff;
+    font-size: 0.70rem; /*12px*/
+}
+
+.offer-mini-card-title {
+    font-size: 0.70rem; /*12px*/
+    font-weight: 600;
+}
+
+.offer-mini-card-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.offer-mini-card-subtitle {
+    font-size: var(--text-tiny-size);
+    color: var(--theme-text-secondary-color);
+    padding: 0;
+    margin: 0;
+}
+
+.offer-mini-card-description {
+    font-size: 0.45rem;
+    width: 100%;
+    color: var(--theme-text-tertiary-color);
+    font-weight: 600;
+    text-align: left;
+}
+
+.offer-mini-card-price-discount-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.055rem;
+    align-items: center;
+}
+
+.offer-mini-card.row .offer-mini-card-price-discount-container {
+    gap: 0.20rem;
+}
+
+.offer-mini-card-price {
+    font-size: var(--text-smallest-size);
+    font-weight: 600;
+}
+
+.offer-mini-card.row .offer-mini-card-price {
+    color: var(--theme-text-tertiary-color);
+}
+
+.offer-mini-card-discount-badge {
+    font-size: var(--text-smallest-size);
+    font-weight: 600;
+    padding-block: 2.5px;
+    padding-inline: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: var(--theme-quinary-color);
+}

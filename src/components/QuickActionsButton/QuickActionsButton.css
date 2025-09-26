@@ -1,5 +1,6 @@
 .quick-actions-button {
-    padding-inline: 7px;
+    padding-inline: 0.333rem;
+    padding-block: .955rem;
     height: 30px;
     border: 1px solid #E5E7EB;
     border-radius: 5px;
@@ -7,15 +8,18 @@
     color: var(--theme-text-secondary-color);
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.225rem;
     align-items: center;
     cursor: pointer;
+    font-size: var(--text-smallest-size);
 }
 
 .quick-actions-button.accent {
     background-color: var(--theme-quaternary-color);
-    border: none;
+    padding-block: 1rem;
+    border: 1px solid var(--theme-quaternary-color);
     color: #ffffff;
+    font-size: var(--text-small-size);
 }
 
 .quick-actions-button:hover {
@@ -24,24 +28,13 @@
     background-color: #e1806a;
 }
 
-.quick-actions-button-icon-container {
-    width: 30px;
+.quick-actions-button-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.quick-actions-button-icon {
-    font-size: var(--text-small-size);
-    color: #000000;
-    width: 15px;
+    width: 1rem;
 }
 
 .quick-actions-button-icon.accent {
-    color: #ffffff;
-} 
-
-.quick-actions-button-label {
-    font-size: var(--text-small-size);
-    font-weight: bold;
+    width: 1.3rem;
 }

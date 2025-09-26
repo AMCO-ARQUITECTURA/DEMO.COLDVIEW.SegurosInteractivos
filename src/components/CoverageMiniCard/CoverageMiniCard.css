@@ -1,23 +1,19 @@
 .coverage-mini-card {
     background-color: var(--theme-secondary-background);
-    border: 1px solid var(--theme-secondary-border);
+    border: 1px solid var(--theme-primary-border);
     border-radius: 10px;
-    padding-block: 10px;
-    padding-inline: 3px;
+    padding-block: 0.333rem;
+    padding-inline: .125rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.333rem;
     align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
-.coverage-mini-card-icon-container {
-    height: 25px;
-    width: 25px;
-    background-color: var(--theme-primary-color);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.coverage-mini-card:hover {
+    background-color: var(--theme-secondary-background-hover);
 }
 
 .coverage-mini-card-text-container {

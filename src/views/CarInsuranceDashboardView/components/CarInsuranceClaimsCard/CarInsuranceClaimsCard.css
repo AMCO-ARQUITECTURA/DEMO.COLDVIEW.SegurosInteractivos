@@ -1,0 +1,117 @@
+.car-insurance-claim-summary {
+    padding: 0.7rem;
+    background-color: var(--theme-secondary-background);
+    box-shadow: inset 0.333rem 0 0 0 #E5E7EB;
+    border-radius: 5px;
+    width: 100%;
+    font-size: var(--text-smallest-size);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0;
+    cursor: pointer;
+    transition: background-color 1s ease,
+        box-shadow 1s ease;
+}
+
+.car-insurance-claim-summary:hover {
+    background-color: var(--theme-secondary-background-hover);
+    box-shadow: inset 0.5rem 0 0 0 var(--theme-secondary-color);
+}
+
+.car-insurance-claim-summary-main-part {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.car-insurance-claim-summary-description {
+    color: var(--theme-text-secondary-color);
+    width: 65%;
+}
+
+.car-insurance-claim-summary-type {
+    width: 35%;
+}
+
+.car-insurance-claim-summary-date {
+    width: 15%;
+}
+
+.car-insurance-claim-summary-ammount {
+    width: 10%;
+}
+
+.car-insurance-claim-summary-badge {
+    width: 5rem;
+    align-self: flex-start;
+    border-radius: 10px;
+    background-color: #D1FAE5;
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.car-insurance-claim-summary-badge.pending {
+    background-color: #FEF3C7;
+}
+
+.car-insurance-claim-summary-badge-icon {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: #10B981;
+}
+
+.car-insurance-claim-summary-badge-icon.pending {
+    background-color: #F59E0B;
+}
+
+.car-insurance-claim-summary-badge-text {
+    font-size: var(--text-tiny-size);
+    color: #065F46;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.car-insurance-claim-summary-badge-text.pending {
+    color: #92400E;
+}
+
+.car-insurance-claims-card-footer {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-insurance-claims-card-footer-divider {
+    margin-top: 0.333rem;
+    margin-bottom: 0.75rem;
+}
+
+.car-insurance-claims-footer-button {
+    color: var(--theme-primary-color);
+    font-weight: 600;
+    font-size: var(--text-smallest-size);
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 1s ease;
+}
+
+.car-insurance-claims-footer-button:hover {
+    color: var(--theme-quinary-color);
+}
+
+.car-insurance-claims-footer-button-icon {
+    font-size: var(--text-small-size);
+}

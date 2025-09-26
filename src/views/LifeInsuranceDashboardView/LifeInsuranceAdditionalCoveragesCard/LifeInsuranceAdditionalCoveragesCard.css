@@ -1,0 +1,24 @@
+.life-insurance-additional-coverages-card {
+    /* gap: .25rem; */
+    padding-bottom: .45rem;
+}
+.life-insurance-additional-coverages-card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: .3rem;
+    /* column-gap: 2.5rem; */
+}
+
+.life-insurance-additional-coverage-icon {
+    font-size: 14px;
+    height: 14px;
+}
+
+.life-insurance-additional-coverage {
+    width: 7rem;
+    height: 3.5rem;
+}
+
+.life-insurance-additional-coverage.coverage-mini-card {
+    padding-block: 0.333rem;
+}
