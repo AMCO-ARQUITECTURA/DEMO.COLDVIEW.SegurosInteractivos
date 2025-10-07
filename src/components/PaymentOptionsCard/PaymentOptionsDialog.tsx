@@ -1,15 +1,15 @@
 import { createImgIcon, createPrimeIcon } from "@/utilities/ComponentUtilities";
-import type { Payment } from "@/views/CarInsuranceDashboardView/CarInsuranceDashboardViewTypes";
 import { Dialog } from "primereact/dialog";
 import { Divider } from "primereact/divider";
 import GenericButton from "../GenericButton/GenericButton";
 import PaymentOptionsCard from "./PaymentOptionsCard";
 import './PaymentOptionsDialog.css';
+import type { PolicyPayment } from "@/types/CommonTypes";
 
 type PaymentOptionsDialogProps = {
     visible: boolean;
     setVisible: (newValue: boolean) => void;
-    selectedPayment: Payment;
+    selectedPayment: PolicyPayment;
 }
 
 const PaymentOptionsDialog: React.FC<PaymentOptionsDialogProps> = ({ visible, setVisible, selectedPayment}) => {
@@ -22,7 +22,6 @@ const PaymentOptionsDialog: React.FC<PaymentOptionsDialogProps> = ({ visible, se
         )
     }
     const navigateToColdview = () => {
-        console.log('navigateToColdview');
         window.open('https://www.coldview.com', '_blank', 'noopener,noreferrer');
     }
 

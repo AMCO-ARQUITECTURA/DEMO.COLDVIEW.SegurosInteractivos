@@ -1,5 +1,5 @@
 .life-insurance-upselling-card {
-    gap: 0.5rem;
+    gap: var(--spacing-1-5);
 }
 
 .life-insurance-upselling-card-badge {
@@ -10,13 +10,13 @@
     display: flex;
     align-items: center;
     margin-block: auto;
-    padding-block: 0.2rem;
-    padding-inline: 0.5rem;
+    padding-block: var(--spacing-1);
+    padding-inline: var(--spacing-2);
     font-weight: bolder;
 }
 
 .life-insurance-upselling-card-content {
     display: flex;
     flex-direction: column;
-    gap: 2.5%;
+    gap: var(--spacing-1-5);
 }

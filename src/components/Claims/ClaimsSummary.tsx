@@ -8,10 +8,8 @@ type ClaimSummaryProps = {
 const ClaimSummary: React.FC<ClaimSummaryProps> = ({claim}) => {
     return (
         <div className="claim-summary">
-            <div className="claim-summary-main-part">
-                <span className="claim-summary-description">{claim.description}</span>
-                <span className="claim-summary-type">{claim.type}</span>    
-            </div>
+            <span className="claim-summary-description">{claim.description}</span>
+            <span className="claim-summary-type">{claim.type}</span>    
             <span className="claim-summary-date">{claim.date}</span>
             <span className="claim-summary-ammount">{claim.ammount}</span>
             <div className={`claim-summary-badge ${claim.status === 'pending' ? 'pending' : ''}`}>

@@ -6,18 +6,19 @@ import PolicyStatusCard from "./components/PolicyStatusCard/PolicyStatusCard";
 import CarInsuranceQuickActionsCard from "./components/CarInsuranceQuickActionsCard/CarInsuranceQuickActionsCard";
 import DocumentationDownloadCard from "./components/DocumentationDownloadCard/DocumentationDownloadCard";
 import { useState } from "react";
-import CarUpsellingCard from "./components/CarUpsellingCard/CarUpsellingCard";
 import CarInsurancePaymentsCard from "./components/CarPaymentsCard/CarInsurancePaymentsCard";
 import CarInsuranceClaimsCard from "./components/CarInsuranceClaimsCard/CarInsuranceClaimsCard";
 import CarInsuranceCrossSellingCard from "./components/CarInsuranceCrossSellingCard/CarInsuranceCrossSellingCard";
 import CarInsuranceBenefitsCard from "./components/CarInsuranceBenefitsCard/CarInsuranceBenefitsCard";
-import PublicityCarouselCard from "@/components/PublicityCarouselCard/PublicityCarouselCard";
 import { sidebarSections } from "@/data/CommonData";
 import useVersionStore from "@/store/VersionStore";
 import { useQuery } from "@tanstack/react-query";
 import type { CarInsuranceDashboard } from "@/types/CarInsuranceDashboardTypes";
 import type { Benefit, Offer } from "@/types/CommonTypes";
 import CarInsuranceCoveragesCard from "./components/CarInsuranceCoveragesCard/CarInsuranceCoveragesCard";
+import QInsightFAB from "@/components/QInsightFAB/QInsightFAB";
+import BlogCard from "@/components/BlogCard/BlogCard";
+import CarouselCard from "@/components/CarouselCard/CarouselCard";
 
 const CarInsuranceDashboardView = () => {
     const { version, getVersionJson } = useVersionStore();
@@ -68,6 +69,17 @@ const CarInsuranceDashboardView = () => {
         );
     }
 
+    const navigateToColdview = () => {
+        console.log('navigateToColdview');
+        window.open('https://www.coldview.com', '_blank', 'noopener,noreferrer');
+    }
+
+    const upsellingImages = [
+        { id: 1, url: '/ads/car_up_total.png', alt: 'Publicity 1', onClick: navigateToColdview},
+        { id: 2, url: '/ads/car_up_latam.png', alt: 'Publicity 2', onClick: navigateToColdview},
+        { id: 3, url: '/ads/car_up_driver.png', alt: 'Publicity 3', onClick: navigateToColdview},
+    ];
+
     return (
         <div className="dashboard-view">
             <Sidebar sections={sidebarSections} open={sidebarOpen} setOpen={setSidebarOpen} />
@@ -75,24 +87,28 @@ const CarInsuranceDashboardView = () => {
                 <Breadcrumb title="Seguro automotor" toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
                 <div className="dashboard-content">
                     {/* Row one */}
-                    <CarDetailsCard />
-                    <PolicyStatusCard />
+                    <CarDetailsCard details={carData.generalData}/>
+                    <PolicyStatusCard status={carData.policyStatus}/>
                     <CarInsuranceQuickActionsCard />
                     <DocumentationDownloadCard />
                     {/* Row two */}
-
                     <CarInsuranceCoveragesCard coverageDetails={carData.coverageDetails}/>
-                    <CarUpsellingCard upsellingOffers={carData.upselling as Offer[]} />
-                    {/* Row three */}
-                    <CarInsurancePaymentsCard />
-                    <CarInsuranceClaimsCard />
-                    {/* Row Four */}
-
+                    {/* <CarUpsellingCard upsellingOffers={carData.upselling as Offer[]} /> */}
                     <CarInsuranceCrossSellingCard offers={carData.crossSelling as Offer[]} />
+                    {/* Row three */}
+                    <CarInsurancePaymentsCard payments={carData.payments}/>
                     <CarInsuranceBenefitsCard benefits={carData.benefits as Benefit[]} />
-                    <PublicityCarouselCard />
+                    {/* Row Four */}
+                    <CarInsuranceClaimsCard claims={carData.claims}/>
+                    <CarouselCard images={upsellingImages} title={"Mejora tu cobertura!"} />
+
+                    <BlogCard title="Blog Destacado" imgPath="/ads/car_blog.png" onClick={() => navigateToColdview()} 
+                        descriptionBadge={"Seguridad al volante"} descriptionTitle={"Alcohol Cero, Responsabilidad 100%"} 
+                        descriptionText={"Infórmate en nuestro blog sobre el impacto real de conducir sin alcohol. Descubre datos, estadísticas y consejos para tomar decisiones más seguras al volante."} 
+                        descriptionCallToAction={"Ingresa y sumate al cambio"}/>
                 </div>
             </div>
+            <QInsightFAB/>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 .car-coverages-card {
-    padding-bottom: 10px;
+    padding-bottom: var(--spacing-2-5);
 }
 
 .car-coverages-card-footer {

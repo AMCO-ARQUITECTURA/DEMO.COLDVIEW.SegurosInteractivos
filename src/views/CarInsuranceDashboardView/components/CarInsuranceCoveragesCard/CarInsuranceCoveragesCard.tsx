@@ -15,7 +15,7 @@ const CarCoveringsCard: React.FC<CarCoveragesCardProps> = ({coverageDetails}) =>
     const {dialogVisible, dialogConfig, handleCoverageClick, handleViewAllCoverages, handleViewExclusions, setDialogVisible } = useCoverageDialog();
 
     return (
-        <div className="generic-dashboard-card space-between car-coverages-card small col-6">
+        <div className="generic-dashboard-card space-between car-coverages-card col-6">
             <CardHeader title="Coberturas" />
             <div className="generic-dashboard-card-content" style={{flexDirection: 'row', justifyContent: 'space-between'}}>
                 {coverageDetails.main.slice(0,4).map((coverage, index) => {

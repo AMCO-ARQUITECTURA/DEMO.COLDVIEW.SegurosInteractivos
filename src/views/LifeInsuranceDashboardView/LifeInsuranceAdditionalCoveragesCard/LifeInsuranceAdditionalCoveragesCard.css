@@ -1,6 +1,6 @@
 .life-insurance-additional-coverages-card {
     /* gap: .25rem; */
-    padding-bottom: .45rem;
+    padding-bottom: var(--spacing-2);
 }
 .life-insurance-additional-coverages-card-content {
     display: grid;
@@ -20,5 +20,5 @@
 }
 
 .life-insurance-additional-coverage.coverage-mini-card {
-    padding-block: 0.333rem;
+    padding-block: var(--spacing-1);
 }

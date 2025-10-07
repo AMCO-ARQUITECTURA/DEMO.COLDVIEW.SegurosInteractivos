@@ -17,10 +17,68 @@
         {
             "icon": "life-upsell",
             "title": "Enfermedades graves",
-            "description": "Enfermedades graves",
+            "subtitle": "Enfermedades graves",
             "price": "Desde $8200",
             "discount": "15% OFF",
-            "popup": {}
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "$8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ]
+            }
+        },
+        {
+            "icon": "life-upsell",
+            "title": "Enfermedades graves",
+            "subtitle": "Enfermedades graves",
+            "price": "Desde $8200",
+            "discount": "15% OFF",
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "$8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ]
+            }
         }
     ],
     "paymentInformation": {
@@ -90,6 +148,41 @@
             "description": "Compra medicamentos",
             "status": "En proceso",
             "ammount": "$12,450"
+        },
+        {
+            "id": "1",
+            "date": "12 Junio, 2024",
+            "description": "Compra medicamentos",
+            "status": "En proceso",
+            "ammount": "$12,450"
+        },
+        {
+            "id": "1",
+            "date": "12 Junio, 2024",
+            "description": "Compra medicamentos",
+            "status": "En proceso",
+            "ammount": "$12,450"
+        },
+        {
+            "id": "1",
+            "date": "12 Junio, 2024",
+            "description": "Compra medicamentos",
+            "status": "En proceso",
+            "ammount": "$12,450"
+        },
+        {
+            "id": "1",
+            "date": "12 Junio, 2024",
+            "description": "Compra medicamentos",
+            "status": "En proceso",
+            "ammount": "$12,450"
+        },
+        {
+            "id": "1",
+            "date": "12 Junio, 2024",
+            "description": "Compra medicamentos",
+            "status": "En proceso",
+            "ammount": "$12,450"
         }
     ],
     "crossSelling": [
@@ -98,8 +191,102 @@
             "title": "Seguro de hogar",
             "subtitle": "Protege tu casa y tus cosas",
             "description": "Incidencio - Robo - Responsabilidad civil",
-            "price": "$200,000",
-            "popup": {}
+            "price": "Desde $8.200",
+            "discount": "10% OFF",
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "$8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ]
+            }
+        },
+        {
+            "icon": "house-shield",
+            "title": "Seguro de hogar",
+            "subtitle": "Protege tu casa y tus cosas",
+            "description": "Incidencio - Robo - Responsabilidad civil",
+            "price": "Desde $8.200",
+            "discount": "10% OFF",
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "$8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ]
+            }
+        },
+        {
+            "icon": "house-shield",
+            "title": "Seguro de hogar",
+            "subtitle": "Protege tu casa y tus cosas",
+            "description": "Incidencio - Robo - Responsabilidad civil",
+            "price": "Desde $8.200",
+            "discount": "10% OFF",
+            "popup": {
+                "discount": "15% OFF",
+                "oldPrice": "$22.500",
+                "price": "$8.500",
+                "monthlyPrice": "100",
+                "title": "Cobertura Integral",
+                "subtitle": "Protección completa",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total y parcial",
+                        "Incendio y rayos",
+                        "Daños por accidentes",
+                        "Asistencia 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-heart"
+                    }
+                ]
+            }
         }
     ]
 }

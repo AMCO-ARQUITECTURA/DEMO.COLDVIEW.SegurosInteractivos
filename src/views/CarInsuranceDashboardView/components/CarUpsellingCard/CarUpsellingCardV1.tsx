@@ -20,7 +20,7 @@ const CarUpsellingCard: React.FC<CarUpsellingCardProps> = ({upsellingOffers}) =>
     }
 
     return (
-        <div className="generic-dashboard-card space-between  small col-6">
+        <div className="generic-dashboard-card small col-6" style={{gap: 'var(--spacing-2-5)'}}>
             <CardHeader title="Mejora tu cobertura! (Upselling)" subtitle="Ofertas especiales para ti"/>
             <div className="generic-dashboard-card-content" style={{display: "flex", flexDirection: 'row', gap: '2.5%'}}>
                 {

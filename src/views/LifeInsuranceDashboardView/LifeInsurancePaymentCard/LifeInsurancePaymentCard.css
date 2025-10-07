@@ -1,6 +1,5 @@
-* Main card content container */
 .life-insurance-payment-card-content {
-  padding: 1rem 0.75rem 0.5rem;
+  /* padding: var(--spacing-4) var(--spacing-3) var(--spacing-2); */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -9,13 +8,13 @@
 /* Main stat section - hero treatment */
 .life-insurance-main-stat {
   text-align: center;
-  margin-bottom: 1rem;
-  padding: 0.75rem 0;
+  margin-bottom: var(--spacing-2);
+  padding-block: var(--spacing-2);
   border-bottom: 2px solid var(--theme-primary-border);
 }
 
 .life-insurance-main-amount {
-  font-size: 1.25rem; /* ~20px */
+  font-size: var(--text-bigger-size);
   font-weight: 800;
   color: var(--theme-text-primary-color);
   margin-bottom: 0.25rem;
@@ -23,7 +22,7 @@
 }
 
 .life-insurance-main-frequency {
-  font-size: var(--text-tiny-size);
+  font-size: var(--text-smaller-size);
   color: var(--theme-text-secondary-color);
   font-weight: 500;
 }
@@ -41,15 +40,16 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  font-size: var(--text-tiny-size);
 }
 
 .life-insurance-detail-label {
+  font-size: var(--text-smallest-size);
   color: var(--theme-text-tertiary-color);
   font-weight: 500;
 }
 
 .life-insurance-detail-value {
+  font-size: var(--text-smaller-size);
   font-weight: 600;
   color: var(--theme-text-primary-color);
   text-align: right;
@@ -60,7 +60,7 @@
 /* Action button */
 .life-insurance-pay-button {
   margin-top: 0.75rem;
-  padding: 0.625rem;
+  padding: var(--spacing-2-5);
   background: linear-gradient(135deg, var(--theme-primary-color), #3A7BD5);
   color: #ffffff;
   border: none;

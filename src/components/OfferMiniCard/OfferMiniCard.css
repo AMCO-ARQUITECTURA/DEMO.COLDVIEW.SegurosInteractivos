@@ -4,8 +4,8 @@
     background-color: var(--theme-secondary-background);
     border: 1px solid var(--theme-primary-border);
     border-radius: 5px;
-    padding-inline: 0.9rem;
-    padding-block: 0.41rem;
+    padding-inline: var(--spacing-3-5);
+    padding-block: var(--spacing-1-5);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,8 +17,8 @@
     width: 100%;
     height: auto;
     border-left: 3px solid var(--theme-primary-color);
-    padding-inline: 0.5rem;
-    padding-block: 0.75rem;
+    padding-inline: var(--spacing-2);
+    padding-block: var(--spacing-3);
     flex-direction: row;
     transition: border-left 0.5s ease, background-color 0.5s ease;
 }
@@ -46,7 +46,7 @@
 }
 
 .offer-mini-card-icon {
-    padding: 5px;
+    padding: var(--spacing-1-5);
     border-radius: 50%;
     background-color: var(--theme-quinary-color);
     color: #ffffff;
@@ -79,6 +79,16 @@
     text-align: left;
 }
 
+.offer-mini-card-description-row {
+    font-size: 0.55rem;
+
+    color: var(--theme-text-tertiary-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .offer-mini-card-price-discount-container {
     display: flex;
     flex-direction: column;
@@ -102,8 +112,8 @@
 .offer-mini-card-discount-badge {
     font-size: var(--text-smallest-size);
     font-weight: 600;
-    padding-block: 2.5px;
-    padding-inline: 10px;
+    padding-block: var(--spacing-0-5);
+    padding-inline: var(--spacing-2-5);
     border-radius: 5px;
     color: #ffffff;
     background-color: var(--theme-quinary-color);

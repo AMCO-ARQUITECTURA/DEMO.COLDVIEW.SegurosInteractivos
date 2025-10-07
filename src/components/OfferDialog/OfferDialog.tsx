@@ -1,7 +1,8 @@
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
-import type { Offer } from "@/types/AppTypes";
+
 import './OfferDialog.css';
+import type { Offer } from "@/types/CommonTypes";
 
 type OfferDialogProps = {
     offer: Offer;

@@ -1,0 +1,159 @@
+.q-insight-fab-button {
+    position: fixed;
+    bottom: .5rem;
+    right: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: var(--spacing-1);
+    background: #2563eb;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.q-insight-fab-button:hover {
+    background: #1d4ed8;
+}
+
+.q-insight-fab-button:active {
+    transform: scale(0.90);
+}
+
+.q-insight-fab-button-icon {
+    height: 25px;
+}
+
+.qinsight-fab-popup {
+    position: absolute;
+    bottom: 3rem;
+    right: 3.2rem;
+    width: 20rem;
+    background: white;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    padding-inline: var(--spacing-3-5);
+    padding-block: var(--spacing-3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.3s ease-out;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.qinsight-fab-popup-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.qinsight-fab-popup-header-content{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.qinsight-fab-popup-header-icon {
+    width: 48px;
+    height: 48px;
+    background: #2563eb;
+    border-radius: 16px;
+    padding: var(--spacing-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qinsight-fab-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-0-5);
+}
+
+.qinsight-fab-header-text h3 {
+    margin: 0;
+    font-size: var(--text-normal-size);
+    font-weight: 600;
+}
+
+.qinsight-fab-header-text p {
+    margin: 0;
+    font-size: var(--text-small-size);
+    color: var(--theme-text-senary-color);
+}
+
+.qinsight-fab-header-close-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    transition: background-color 0.2s;
+}
+
+.qinsight-fab-header-close-button:hover {
+    background: #e5e7eb;
+}
+
+.qinsight-fab-header-close-button i {
+    font-size: var(--text-normal-size);
+}
+
+.qinsight-fab-popup-content-description {
+    margin: 0;
+    font-size: var(--text-small-size);
+    color: var(--theme-text-quaternary-color);
+}
+
+.qinsight-fab-popup-functions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--spacing-1-5);
+    column-gap: var(--spacing-2);
+}
+
+.qinsight-fab-popup-function {
+    padding-inline: var(--spacing-1-5);
+    padding-block: var(--spacing-1);
+    background: #F8FAFC;
+    border: 1px solid var(--theme-primary-border);
+    border-radius: 5px;
+    color: var(--theme-text-primary-color);
+
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    transition: background-color 0.2s;
+}
+
+.qinsight-fab-popup-function i {
+    flex-shrink: 0;
+    font-size: var(--text-normal-size);
+}
+
+.qinsight-fab-popup-function span {
+    font-size: var(--text-tiny-size);
+    font-weight: 600;
+}

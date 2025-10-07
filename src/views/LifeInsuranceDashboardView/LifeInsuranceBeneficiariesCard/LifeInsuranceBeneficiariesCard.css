@@ -13,8 +13,8 @@
     border: 1px solid var(--theme-primary-border);
     align-items: center;
     border-radius: 5px;
-    padding-inline: .5rem;
-    padding-block: 0.333rem;
+    padding-inline: var(--spacing-2);
+    padding-block: var(--spacing-1-5);
 }
 
 .beneficiary-summary-icon {
@@ -33,7 +33,7 @@
     background-color: #84ABF9;
     color: #ffffff;
     border-radius: 10px;
-    padding-block: .2rem;
+    padding-block: var(--spacing-1);
     width: 25%;
     margin-left: auto;
     text-align: center;

@@ -21,6 +21,7 @@ import LoginView from './views/LoginView/LoginView.tsx'
 import VersionMenuView from './views/VersionMenuView/VersionMenuView.tsx'
 import CarInsuranceDashboardView from './views/CarInsuranceDashboardView/CarInsuranceDashboardView.tsx'
 import LifeInsuranceDashboardView from './views/LifeInsuranceDashboardView/LifeInsuranceDashboardView.tsx';
+import GeneralDashboardView from './views/GeneralDashboardView/GeneralDashboardView.tsx';
 
 
 
@@ -39,25 +40,31 @@ const indexLoginRoute = createRoute({
   component: LoginView,
 })
 
-// const versionMenuRoute = createRoute({
-//   getParentRoute: () => rootRoute,
-//   path: '/version-menu',
-//   component: VersionMenuView,
-// })
+const versionMenuRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/version-menu',
+  component: VersionMenuView,
+})
 
-const mxCarInsuranceDashboardRoute = createRoute({
+const generalDashboardRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/general-dashboard',
+  component: GeneralDashboardView
+})
+
+const carInsuranceDashboardRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/car-insurance-dashboard',
   component: CarInsuranceDashboardView
 })
 
-const mxLifeInsuranceDashboardRoute = createRoute({
+const lifeInsuranceDashboardRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/life-insurance-dashboard',
   component: LifeInsuranceDashboardView
 })
 
-const routeTree = rootRoute.addChildren([indexLoginRoute, mxCarInsuranceDashboardRoute, mxLifeInsuranceDashboardRoute])
+const routeTree = rootRoute.addChildren([indexLoginRoute, generalDashboardRoute, carInsuranceDashboardRoute, lifeInsuranceDashboardRoute])
 
 const router = createRouter({
   routeTree,

@@ -2,6 +2,7 @@ import type { IconProps } from "@/components/Icon/IconTypes";
 
 type GeneralDashboardProduct = {
     id: string;
+    type: 'car' | 'life' | 'home' | 'health' | 'pension' | 'savings' | 'credit' | 'other' | null;
     name: string;
     icon: IconProps;
     policyNumber: string;
@@ -11,7 +12,7 @@ type GeneralDashboardProduct = {
 type GeneralDashboardClaim = {
     id: string;
     productId: string;
-    productNAme: string;
+    productName: string;
     date: string;
     type: string;
     description: string;
@@ -46,4 +47,5 @@ type GeneralDashboard = {
     notificationsAndAlerts: GeneralDashboardNotificationsAndAlerts[];
 }
 
-export { type GeneralDashboard }
+export { type GeneralDashboard, type GeneralDashboardProduct, type GeneralDashboardClaim, type GeneralDashboardPayment,
+    type GeneralDashboardFinancialSummary, type GeneralDashboardNotificationsAndAlerts };

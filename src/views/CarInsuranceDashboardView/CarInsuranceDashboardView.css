@@ -60,7 +60,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-block: 7px;
+    padding-block: var(--spacing-2);
     border-bottom: 1px solid #E5E7EB;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .policy-status-item-icon-container {
-    padding: 4px;
+    padding: var(--spacing-1);
     border-radius: 50%;
     background-color: var(--theme-primary-color);
     display: flex;

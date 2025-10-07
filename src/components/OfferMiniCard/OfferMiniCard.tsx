@@ -14,8 +14,9 @@ const OfferMiniCard: React.FC<OfferMiniCardProps> = ({offer, onClick, asRow}) =>
             <div className="offer-mini-card row" onClick={() => onClick()}>
                 <div className="offer-mini-card-title-container">
                     <span className="offer-mini-card-title">{offer.title}</span>
-                    <span className="offer-mini-card-subtitle">{offer.description}</span>
+                    <span className="offer-mini-card-subtitle">{offer.subtitle}</span>
                 </div>
+                {offer.description && (<span className="offer-mini-card-description-row">{offer.description}</span>)}
                 <div className="offer-mini-card-price-discount-container">
                     <span className="offer-mini-card-price">{offer.price}</span>
                     <div className='offer-mini-card-discount-badge'>

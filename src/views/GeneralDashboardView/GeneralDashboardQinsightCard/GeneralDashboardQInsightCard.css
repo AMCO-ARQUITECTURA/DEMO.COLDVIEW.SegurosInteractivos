@@ -1,0 +1,103 @@
+.general-dashboard-qinsight-card {
+    gap: var(--spacing-0);
+    padding-bottom: var(--spacing-2);
+}
+
+.general-dashboard-qinsight-card-content {
+    gap: var(--spacing-2);
+}
+
+.general-dashboard-qinsight-card-main {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-2-5);
+}
+
+.general-dashboard-qinsight-card-main-icon {
+    height: 2rem;
+    padding: var(--spacing-0-5);
+    background-color: var(--theme-primary-color);
+    border-radius: 5px;
+}
+
+.general-dashboard-qinsight-card-main-title-and-description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-0-5);
+}
+
+.general-dashboard-qinsight-card-main-title {
+    font-size: var(--text-small-size);
+}
+
+.general-dashboard-qinsight-card-main-description {
+    font-size: var(--text-smallest-size);
+    color: var(--theme-text-secondary-color);
+}
+
+.general-dashboard-qinsight-card-functions-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-4);
+    justify-content: space-between;
+}
+
+.general-dashboard-qinsight-card-function {
+    background: var(--theme-secondary-background);
+    border: 1px solid var(--theme-primary-border);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding-inline: var(--spacing-2-5);
+    padding-block: var(--spacing-1);
+}
+
+.general-dashboard-qinsight-card-function-icon {
+    font-size: var(--text-smallest-size);
+}
+
+.general-dashboard-qinsight-card-function-text {
+    font-size: var(--text-smallest-size);
+}
+
+.general-dashboard-qinsight-card-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-0-5);
+    justify-content: space-between;
+}
+
+.general-dashboard-qinsight-card-example {
+    padding-inline: var(--spacing-2-5);
+    padding-block: var(--spacing-1);
+    background: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    color: var(--theme-secondary-color);
+    font-size: var(--text-tiny-size);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+/* First two examples on first row */
+.general-dashboard-qinsight-card-example:nth-child(1),
+.general-dashboard-qinsight-card-example:nth-child(2) {
+    flex: 0 0 auto;
+}
+
+/* Third example centered on second row */
+.general-dashboard-qinsight-card-example:nth-child(3) {
+    flex: 0 0 auto;
+    margin: 0 20%;
+    width: fit-content;
+}
+
+.general-dashboard-qinsight-card-footer {
+    margin-left: auto;
+    margin-top: -0.333rem;
+}
+
+.general-dashboard-qinsight-card-footer-button {
+    font-size: var(--text-tiny-size);
+}

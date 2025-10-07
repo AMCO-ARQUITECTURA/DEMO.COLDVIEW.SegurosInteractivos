@@ -1,0 +1,61 @@
+.general-dashboard-notification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--spacing-2);
+    border-bottom: 1px solid var(--theme-primary-border);
+}
+
+.general-dashboard-notification:last-child {
+    border-bottom: none;
+}
+
+.general-dashboard-notification-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-2-5);
+}
+
+.general-dashboard-notification-badge {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+}
+
+.general-dashboard-notification-badge.red {
+    background-color: #FF5050;
+}
+
+.general-dashboard-notification-badge.yellow {
+    background-color: #F59E0B;
+}
+
+.general-dashboard-notification-badge.green {
+    background-color: #10B981;
+}
+
+.general-dashboard-notification-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-0-5);
+}
+
+.general-dashboard-notifications-card-item-title {
+    font-size: var(--text-small-size);
+    color: var(--theme-text-secondary-color);
+}
+
+.general-dashboard-notifications-card-item-message {
+    font-size: var(--text-smallest-size);
+    color: var(--theme-text-senary-color);
+}
+
+.general-dashboard-notification-ammount {
+    border-radius: 45%;
+    font-size: var(--text-small-size);
+    background-color: var(--theme-secondary-background);
+    padding-inline: var(--spacing-1-5);
+    padding-block: var(--spacing-1);
+}

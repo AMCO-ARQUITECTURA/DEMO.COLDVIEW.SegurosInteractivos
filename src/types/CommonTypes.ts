@@ -15,8 +15,14 @@ type CoverageExclusion = {
 type PolicyPayment = {
     id?: string;
     date: string;
-    ammoung: string;
+    ammount: string;
     status: string;
+}
+
+const emptyPayment: PolicyPayment = {
+    date: "",
+    ammount: "",
+    status: "pending"
 }
 
 type Claim = {
@@ -85,4 +91,5 @@ type Benefit = {
     discount: string;
 }
 
-export { type Coverage, type CoverageExclusion, type PolicyPayment, type Claim, type CallToAction, type PopupContent, type Offer, emptyOffer, type Benefit }
+export { type Coverage, type CoverageExclusion, type PolicyPayment, emptyPayment, 
+    type Claim, type CallToAction, type PopupContent, type Offer, emptyOffer, type Benefit }

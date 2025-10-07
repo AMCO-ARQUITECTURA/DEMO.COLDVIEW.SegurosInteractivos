@@ -1,0 +1,27 @@
+.general-dashboard-quick-actions-card {
+    gap: var(--spacing-2);
+}
+
+.general-dashboard-quick-actions-card-content {
+    flex-direction: row;
+    gap: var(--spacing-10);
+}
+
+.general-dashboard-quick-actions-card-section {
+    width: 50%;
+}
+
+.general-dashboard-quick-actions-card-section-title {
+    font-size: var(--text-smallest-size);
+}
+
+.general-dashboard-quick-actions-card-section-divider {
+    margin-top: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
+}
+
+.general-dashboard-quick-actions-card-section-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}

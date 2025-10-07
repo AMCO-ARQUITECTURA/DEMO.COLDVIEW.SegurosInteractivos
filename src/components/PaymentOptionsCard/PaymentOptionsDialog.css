@@ -24,7 +24,7 @@
 .payment-options-card {
     width: 33%;
     height: auto;
-    padding: 1rem;
+    padding: var(--spacing-4);
     border: 1px solid var(--theme-primary-border);
     border-radius: 10px;
     display: flex;
@@ -86,7 +86,7 @@
 }
 
 .payment-options-card-content-img {
-    padding: 0.325rem;
+    padding: var(--spacing-1-5);
     border: 1px solid var(--theme-primary-border);
 }
 

@@ -1,10 +1,9 @@
 import CardHeader from "@/components/CardHeader/CardHeader";
 import type { LifeInsuranceDashboardPaymentInformation } from "@/types/LifeInsuranceDashboardTypes";
-import LifeInsurancePaymentItem from "./LifeInsurancePaymentItem";
 import './LifeInsurancePaymentCard.css';
-import type { Payment } from "@/views/CarInsuranceDashboardView/CarInsuranceDashboardViewTypes";
 import { useState } from "react";
 import PaymentOptionsDialog from "@/components/PaymentOptionsCard/PaymentOptionsDialog";
+import type { PolicyPayment } from "@/types/CommonTypes";
 
 type LifeInsurancePaymentCardProps = {
     data: LifeInsuranceDashboardPaymentInformation;
@@ -14,7 +13,7 @@ const LifeInsurancePaymentCard: React.FC<LifeInsurancePaymentCardProps> = ({data
 
     const [paymentFormVisible, setPaymentFormVisible] = useState<boolean>(false);
 
-    const selectedPayment: Payment = {
+    const selectedPayment: PolicyPayment = {
         ammount: data.ammount,
         date: data.nextPaymentDate,
         status: "pending"

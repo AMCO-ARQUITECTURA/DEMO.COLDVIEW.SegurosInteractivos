@@ -2,15 +2,23 @@
     "products": [
         {
             "id": "car",
+            "type": "car",
             "name": "Seguro de Automotor",
-            "icon": "car",
+            "icon": {
+                "type": "img",
+                "img": "/icons/car.png"
+            },
             "policyNumber": "512001122",
             "plan": "CAR ESSENTIAL PLUS"
         },
         {
             "id": "life",
+            "type": "life",
             "name": "Seguro de Vida",
-            "icon": "life",
+            "icon": {
+                "type": "img",
+                "img": "/icons/hospital-building.png"
+            },
             "policyNumber": "512001123",
             "plan": "ESSENTIAL HEALTH"
         }
@@ -18,7 +26,7 @@
     "lastSinistersAndClaims": [
         {
             "id": "1",
-            "productId": "car",
+            "productId": "512001122",
             "productName": "Seguro de Automotor",
             "date": "6 Julio, 2025",
             "type": "Sinister",
@@ -28,7 +36,7 @@
         },
         {
             "id": "2",
-            "productId": "car",
+            "productId": "512001122",
             "productName": "Seguro de Automotor",
             "date": "6 Julio, 2025",
             "type": "Sinister",
@@ -38,7 +46,7 @@
         },
         {
             "id": "3",
-            "productId": "car",
+            "productId": "512001122",
             "productName": "Seguro de Automotor",
             "date": "6 Julio, 2025",
             "type": "Sinister",

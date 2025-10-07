@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
-import PublicityCarouselCard from "@/components/PublicityCarouselCard/PublicityCarouselCard";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { sidebarSections } from "@/data/CommonData";
 import { useState } from "react";
@@ -15,6 +14,8 @@ import LifeInsurancePaymentCard from "./LifeInsurancePaymentCard/LifeInsurancePa
 import LifeInsuranceBeneficiariesCard from "./LifeInsuranceBeneficiariesCard/LifeInsuranceBeneficiariesCard";
 import LifeInsuranceAdditionalCoveragesCard from "./LifeInsuranceAdditionalCoveragesCard/LifeInsuranceAdditionalCoveragesCard";
 import LifeInsuranceClaimsCard from "./LifeInsuranceClaimsCard/LifeInsuranceClaimsCard";
+import BlogCard from "@/components/BlogCard/BlogCard";
+import CarouselCard from "@/components/CarouselCard/CarouselCard";
 
 const LifeInsuranceDashboardView = () => {
 
@@ -66,6 +67,17 @@ const LifeInsuranceDashboardView = () => {
         );
     }
 
+    const navigateToColdview = () => {
+        console.log('navigateToColdview');
+        window.open('https://www.coldview.com', '_blank', 'noopener,noreferrer');
+    }
+
+    const crossSellingImages = [
+        { id: 1, url: '/ads/life_cross_dental.png', alt: 'Publicity 1', onClick: navigateToColdview},
+        { id: 2, url: '/ads/life_cross_home.png', alt: 'Publicity 2', onClick: navigateToColdview},
+        { id: 3, url: '/ads/life_cross_unemployment.png', alt: 'Publicity 3', onClick: navigateToColdview },
+    ];
+
     return (
         <div className="dashboard-view">
             <Sidebar sections={sidebarSections} open={sidebarOpen} setOpen={setSidebarOpen} />
@@ -83,7 +95,12 @@ const LifeInsuranceDashboardView = () => {
                     <LifeInsuranceAdditionalCoveragesCard coverageDetails={lifeData.coverageDetails} />
                     {/* ThirdRow */}
                     <LifeInsuranceClaimsCard claims={lifeData.claims} />
-                    {/* <PublicityCarouselCard /> */}
+                    {/* <LifeInsuranceCrossSellingCard offers={lifeData.crossSelling} /> */}
+                    <CarouselCard images={crossSellingImages} title={"Mejora tu cobertura"} />
+
+                    <BlogCard title="Blog Destacado" imgPath="/ads/life_blog.png" onClick={() => navigateToColdview()} 
+                        descriptionBadge={"Salud mental"} descriptionTitle={"El bienestar comienza en tu mente"} 
+                        descriptionText={"Únete a nuestro encuentro gratuito sobre salud mental. Comparte con especialistas, aprende sobre autocuidado y descubre cómo tu bienestar emocional influye en cada decisión que tomas, especialmente al volante."} />
                 </div>
             </div>
         </div>

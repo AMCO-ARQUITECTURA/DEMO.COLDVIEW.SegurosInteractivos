@@ -8,9 +8,9 @@ const Icon: React.FC<IconProps> = (props) => {
     if (props.type === "img") {
         iconElement = <img src={props.img} className={props.iconClassname}/>
     }
-    // if (props.type === "svg") {
-
-    // }
+    if (props.type === "svg") {
+        iconElement = props.svg;
+    }
 
     if (props.containerized === true) {
         return (

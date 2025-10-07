@@ -1,0 +1,133 @@
+.general-dashboard-contacts-card {
+    gap: var(--spacing-0-5);
+}
+
+.general-dashboard-contacts-card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--spacing-2-5);
+    column-gap: var(--spacing-4);
+    grid-auto-rows: min-content;
+}
+
+.general-dashboard-contact-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+    padding: var(--spacing-2);
+    border-radius: 10px;
+    border: 1px solid var(--theme-primary-border);
+    /* height: 4.35rem; */
+    transition: all 0.2s ease;
+}
+
+.general-dashboard-contact-summary:hover {
+    border: 1px solid var(--theme-primary-color);
+}
+
+.general-dashboard-contact-summary.accent {
+    background: #FEF2F2;
+    border: 1px solid #FCA5A5;
+}
+
+.general-dashboard-contact-summary-name-and-icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-1);
+    width: 100%;
+    overflow: hidden;
+}
+
+.general-dashboard-contact-summary-icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    background: var(--theme-secondary-background);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.35rem;
+    color: #5f6368;
+    object-fit: contain;
+    padding: var(--spacing-0-5);
+}
+
+.general-dashboard-contact-summary-title-and-description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-0-5);
+    min-width: 0;
+}
+
+.general-dashboard-contact-summary-title {
+    font-weight: 600;
+    font-size: var(--text-small-size);
+    color: var(--theme-text-secondary-color);
+}
+
+.general-dashboard-contact-summary-description {
+    font-size: var(--text-smallest-size);
+    color: #5f6368;
+    overflow: hidden;
+}
+
+.general-dashboard-contact-summary-actions {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    gap: var(--spacing-0-5);
+}
+
+.general-dashboard-contact-summary-action {
+    gap: var(--spacing-1);
+    padding-inline: var(--spacing-1);
+    padding-block: var(--spacing-0-5);
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    color: #5f6368;
+    font-size: var(--text-smallest-size);
+    white-space: nowrap;
+    
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.general-dashboard-contact-summary-action.clickable {
+    cursor: pointer;
+}
+
+.general-dashboard-contact-summary-action.whatsapp {
+    background: #F0FDF4;
+    border: 1px solid #BBF7D0;
+    color: #166534;
+}
+
+.general-dashboard-contact-summary-action.whatsapp:hover {
+    background: #cce4d3;
+    border: 1px solid #7dce99;
+    color: #166534;
+}
+
+.general-dashboard-contact-summary-action:hover {
+    background: #f8f9fa;
+    border-color: #5f6368;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.general-dashboard-contact-summary-action.accent {
+    background: #FECACA;
+    border: 1px solid #F87171;
+}
+
+.general-dashboard-contact-summary-action.accent:hover {
+    background: #e39595;
+    border: 1px solid #de4343;
+}
+
+.general-dashboard-contact-summary-action-icon {
+    font-size: var(--text-small-size);
+}

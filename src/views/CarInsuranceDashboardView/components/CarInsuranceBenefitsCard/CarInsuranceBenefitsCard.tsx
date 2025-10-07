@@ -15,7 +15,7 @@ const CarInsuranceBenefitsCard: React.FC<CarInsuranceBenefitsCardProps> = ({ ben
     const [benefitsDetailsDialogVisible, setBenefitsDetailsDialogVisible] = useState<boolean>(false);
     //TODO: DIalogo que muestre todos los beneficios con un poco mas de informacion.
     return (
-        <div className="generic-dashboard-card col-6 space-between small" >
+        <div className="generic-dashboard-card col-6 space-between" >
             <CardHeader title="Beneficios" />
             <div className="generic-dashboard-card-content car-insurance-benefits-card-content">
                 {

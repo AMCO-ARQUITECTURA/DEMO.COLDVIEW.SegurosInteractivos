@@ -1,15 +1,17 @@
 import CardHeader from "@/components/CardHeader/CardHeader";
-import FileDownloadButton from "@/components/FileDownloadButton/FileDownloadButton";
+import QuickActionsButton from "@/components/QuickActionsButton/QuickActionsButton";
+import { pdfSvg } from "@/data/CommonSvg";
 
 const DocumentationDownloadCard = () => {
+    
     return (
-        <div className="generic-dashboard-card small-spacing small col-4" style={{ gap: "5px"}}>
+        <div className="generic-dashboard-card normal-spacing small col-4" style={{ gap: 'var(--spacing-1)'}}>
             <CardHeader title="Documentacion" />
-            <div className="generic-dashboard-card-content" style={{gap: '4px'}}>
-                <FileDownloadButton label="Descargar poliza" type="pdf" size="2.3MB"/>
-                <FileDownloadButton label="Condiciones generales" type="pdf" size="2.3MB"/>
-                <FileDownloadButton label="Tarjeta de circulacion" type="pdf" size="2.3MB"/>
-                <FileDownloadButton label="Certificado licencia Mercosur" type="pdf" size="2.3MB"/>
+            <div className="generic-dashboard-card-content" style={{gap: 'var(--spacing-0-5)'}}>
+                <QuickActionsButton label="Descargar poliza" icon={{type: 'svg', svg: pdfSvg}} additionalInfo="2.3MB"/>
+                <QuickActionsButton label="Condiciones generales" icon={{type: 'svg', svg: pdfSvg}} additionalInfo="5.5MB"/>
+                <QuickActionsButton label="Tarjeta de circulacion" icon={{type: 'svg', svg: pdfSvg}} additionalInfo="0.7MB"/>
+                <QuickActionsButton label="Certificado licencia Mercosur" icon={{type: 'svg', svg: pdfSvg}} additionalInfo="0.8MB"/>
             </div>
         </div>
     )

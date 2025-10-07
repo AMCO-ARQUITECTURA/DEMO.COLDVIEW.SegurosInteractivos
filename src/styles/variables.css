@@ -1,48 +1,67 @@
+/* OG: at 16px root */
 :root {
-    /* Theme Colors */
-    --theme-primary-color: #497FEB;
-    --theme-secondary-color: #30539B;
-    --theme-tertiary-color: #89B1F3;
-    --theme-quaternary-color: #E45D3D;
-    --theme-quinary-color: #EA9715;
-  
-    /* Text Colors */
-    --theme-text-primary-color: #000000;
-    --theme-text-secondary-color: #515151;
-    --theme-text-tertiary-color: #636363;
-    --theme-text-quaternary-color: #8D8D8D;
-    --theme-text-quinary-color: #9E9E9E;
-    --theme-text-senary-color: #9B9B9B;
-  
-    /* Background Colors */
-    --theme-primary-background: #ffffff;
-    --theme-secondary-background: #F6F6F6;
-    --theme-secondary-background-hover: #E5E7EB;
+  /* Theme Colors */
+  --theme-primary-color: #497FEB;
+  --theme-secondary-color: #30539B;
+  --theme-tertiary-color: #89B1F3;
+  --theme-quaternary-color: #E45D3D;
+  --theme-quinary-color: #EA9715;
 
-    /* Border */
-    --theme-primary-border: #E5E7EB;
-    --border-radius-normal: 10px;
+  /* Text Colors */
+  --theme-text-primary-color: #000000;
+  --theme-text-secondary-color: #515151;
+  --theme-text-tertiary-color: #636363;
+  --theme-text-quaternary-color: #8D8D8D;
+  --theme-text-quinary-color: #9E9E9E;
+  --theme-text-senary-color: #9B9B9B;
+
+  /* Background Colors */
+  --theme-primary-background: #ffffff;
+  --theme-secondary-background: #F6F6F6;
+  --theme-secondary-background-hover: #E5E7EB;
+
+  /* Border */
+  --theme-primary-border: #E5E7EB;
+  --border-radius-normal: 10px;
+
+  /* Button Colors */
+  --theme-button-background-color: #497FEB;
+  --theme-button-hover-color: #30539B;
+  --theme-button-secondary-background-color: #F6F6F6;
+  --theme-button-secondary-hover-background-color: #E5E7EB;
+
+  /* Typography */
+  --text-bigger-size: 1.125rem;/*OG: 18px*/
+  --text-big-size: 1rem;/*OG: 16px*/
+  --text-normal-size: 0.875rem;/*OG: 14px*/
+  --text-small-size: 0.75rem;/*OG: 12px*/
+  --text-smaller-size: 0.65rem;
+  --text-smallest-size: 0.625rem;/* OG: 10px*/
+  --text-tiny-size: 0.525rem;/*OG: 8px*/
   
-    /* Button Colors */
-    --theme-button-background-color: #497FEB;
-    --theme-button-hover-color: #30539B;
-    --theme-button-secondary-background-color: #F6F6F6;
-    --theme-button-secondary-hover-background-color: #E5E7EB;
-  
-    /* Typography */
-    --text-normal-size: 0.875rem; /*OG: 14px*/
-    --text-small-size: 0.75rem; /*OG: 12px*/
-    --text-smaller-size: 0.65rem; 
-    --text-smallest-size: 0.625rem; /* OG: 10px*/
-    --text-tiny-size: 0.525rem; /*OG: 8px*/
-    
-    /* Spacing System */
-    --padding-full: 1rem;
-    --padding-three-quarters: 0.75rem;
-    --padding-half: 0.5rem;
-    --padding-one-quarter: 0.4rem;
-  
-    /* Base Font Settings */
-    font-size: clamp(14px, 1.2vw, 18px);
-    font-weight: 600;
-  }
+  /* Spacing System */
+  --spacing-0: 0;              /* 0px */
+  --spacing-0-5: 0.125rem;     /* 2px */
+  --spacing-1: 0.25rem;        /* 4px */
+  --spacing-1-5: 0.375rem;     /* 6px */
+  --spacing-2: 0.5rem;         /* 8px */
+  --spacing-2-5: 0.625rem;     /* 10px */
+  --spacing-3: 0.75rem;        /* 12px */
+  --spacing-3-5: 0.875rem;     /* 14px */
+  --spacing-4: 1rem;           /* 16px */
+  --spacing-4-5: 1.125rem;     /* 18px */
+  --spacing-5: 1.25rem;        /* 20px */
+  --spacing-5-5: 1.375rem;     /* 22px */
+  --spacing-6: 1.5rem;         /* 24px */
+  --spacing-8: 2rem;           /* 32px */
+  --spacing-10: 2.5rem;        /* 40px */
+  --spacing-12: 3rem;          /* 48px */
+  --spacing-16: 4rem;          /* 64px */
+  --spacing-20: 5rem;          /* 80px */
+  --spacing-24: 6rem;          /* 96px */
+
+  /* Base Font Settings */
+  font-size: clamp(14px, 1.2vw, 18px); /*OG 16px*/
+  /* font-size: 16px; */
+  font-weight: 600;
+}

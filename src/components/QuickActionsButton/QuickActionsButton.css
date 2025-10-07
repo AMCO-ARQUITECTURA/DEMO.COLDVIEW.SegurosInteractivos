@@ -1,31 +1,48 @@
 .quick-actions-button {
-    padding-inline: 0.333rem;
-    padding-block: .955rem;
+    padding-inline: var(--spacing-1-5);
+    padding-block: var(--spacing-4);
     height: 30px;
     border: 1px solid #E5E7EB;
     border-radius: 5px;
     background-color: #ffffff;
     color: var(--theme-text-secondary-color);
-    display: flex;
-    flex-direction: row;
-    gap: 0.225rem;
-    align-items: center;
     cursor: pointer;
     font-size: var(--text-smallest-size);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    transition: all 0.3s ease;
+}
+
+.quick-actions-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    color: var(--theme-primary-color);
 }
 
 .quick-actions-button.accent {
     background-color: var(--theme-quaternary-color);
-    padding-block: 1rem;
+    padding-block: var(--spacing-4);
     border: 1px solid var(--theme-quaternary-color);
     color: #ffffff;
     font-size: var(--text-small-size);
 }
 
-.quick-actions-button:hover {
+.quick-actions-button.accent:hover {
+    transform: translateY(-2px);
     color: var(--theme-primary-color);
-    border: 1px solid #e1806a;
-    background-color: #e1806a;
+    background: #ff5252;
+    box-shadow: 0 8px 16px rgba(255, 107, 107, 0.4);
+}
+
+.quick-actions-button-main {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-1);
+    align-items: center;
 }
 
 .quick-actions-button-icon {
@@ -37,4 +54,8 @@
 
 .quick-actions-button-icon.accent {
     width: 1.3rem;
+}
+
+.quick-actions-button-additional-info {
+    color: var(--theme-text-senary-color);
 }

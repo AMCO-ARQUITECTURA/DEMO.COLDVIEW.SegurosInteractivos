@@ -3,7 +3,7 @@ const sidebarSections = [
         sectionTitle: "Principal",
         showTitle: false,
         icons: [
-            { name: "Dashboard general", icon: "pi-home", route: "/" }
+            { name: "Dashboard general", icon: "pi-home", route: "/general-dashboard" }
         ]
     },
     {

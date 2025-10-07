@@ -14,9 +14,9 @@ const LifeInsuranceClaimsCard: React.FC<LifeInsuranceClaimsCardProps> = ({claims
     const [claimsDialogVisible, setClaimsDialogVisible] = useState<boolean>(false);
     
     return (
-        <div className="generic-dashboard-card  normal col-6 life-insurance-claims-card">
+        <div className="generic-dashboard-card space-between normal col-6">
             <CardHeader title="Seguimiento solicitudes" />
-            <div className="generic-dashboard-card-content life-insurance-claims-card-content" style={{ }}>
+            <div className="generic-dashboard-card-content life-insurance-claims-card-content">
                 {
                     claims.slice(0, 4).map((claim) => {
                         return (

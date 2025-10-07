@@ -1,11 +1,7 @@
-.life-insurance-claims-card {
-    gap: 0.625rem;
-}
-
 .life-insurance-claims-card-content {
     flex-direction: column;
-    justify-content: space-between;
     height: 80%;
+    gap: var(--spacing-1);
 }
 
 .life-insurance-claims-card-footer {
