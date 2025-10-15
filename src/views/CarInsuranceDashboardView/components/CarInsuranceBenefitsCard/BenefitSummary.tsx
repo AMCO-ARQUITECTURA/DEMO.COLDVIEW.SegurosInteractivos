@@ -1,4 +1,4 @@
-import type { Benefit } from "@/types/AppTypes";
+import type { Benefit } from "@/types/CommonTypes";
 import { createIcon } from "@/utilities/ComponentUtilities";
 
 type BenefitSummary = {

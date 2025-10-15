@@ -3,6 +3,7 @@ import OfferDialog from "@/components/OfferDialog/OfferDialog";
 import OfferMiniCard from "@/components/OfferMiniCard/OfferMiniCard";
 import { emptyOffer, type Offer } from "@/types/CommonTypes";
 import { useState } from "react";
+import './CarInsuranceCrossSellingCard.css';
 
 type CarInsuranceCrossSellingCardProps = {
     offers: Offer[];
@@ -21,9 +22,9 @@ const CarInsuranceCrossSellingCard: React.FC<CarInsuranceCrossSellingCardProps> 
     }
 
     return (
-        <div className="generic-dashboard-card small col-6" style={{gap: '0.755rem'}}>
+        <div className="generic-dashboard-card col-6 car-insurance-crossselling-card">
             <CardHeader title="Oportunidades"/>
-            <div className="generic-dashboard-card-content" style={{display: "flex", flexDirection: 'row', gap: '2.5%'}}>
+            <div className="generic-dashboard-card-content car-insurance-crossselling-card-content">
                 {
                     offers.slice(0, 3).map((offer) => {
                         return (

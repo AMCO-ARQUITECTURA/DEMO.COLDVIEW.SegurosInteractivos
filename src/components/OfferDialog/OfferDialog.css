@@ -214,3 +214,13 @@
         transform: scale(1.1);
     }
 }
+
+@media (max-width: 768px) {
+    .offer-dialog {
+        width: 100%;
+    }
+
+    .offer-dialog-price-section {
+        margin-inline: auto;
+    }
+}

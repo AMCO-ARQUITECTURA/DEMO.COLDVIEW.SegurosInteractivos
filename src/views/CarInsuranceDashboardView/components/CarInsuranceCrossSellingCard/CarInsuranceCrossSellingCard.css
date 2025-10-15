@@ -1,0 +1,12 @@
+.car-insurance-crossselling-card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5%;
+}
+
+@media (max-width: 768px) {
+    .car-insurance-crossselling-card-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

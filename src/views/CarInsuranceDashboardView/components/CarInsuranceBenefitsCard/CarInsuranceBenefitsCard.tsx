@@ -32,7 +32,7 @@ const CarInsuranceBenefitsCard: React.FC<CarInsuranceBenefitsCardProps> = ({ ben
             <Dialog onHide={() => setBenefitsDetailsDialogVisible(false)} header="Listado de beneficios" visible={benefitsDetailsDialogVisible} style={{width: '25rem', maxHeight: '55%'}}> 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: "0.5rem" }}>
                     {
-                        benefits.slice(0, 4).map((benefit) => {
+                        benefits.map((benefit) => {
                             return (
                                 <BenefitSummary benefit={benefit} />
                             )

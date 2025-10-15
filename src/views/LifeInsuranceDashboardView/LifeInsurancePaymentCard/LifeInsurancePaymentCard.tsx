@@ -14,18 +14,18 @@ const LifeInsurancePaymentCard: React.FC<LifeInsurancePaymentCardProps> = ({data
     const [paymentFormVisible, setPaymentFormVisible] = useState<boolean>(false);
 
     const selectedPayment: PolicyPayment = {
-        ammount: data.ammount,
+        amount: data.amount,
         date: data.nextPaymentDate,
         status: "pending"
     }
 
         
     return (
-        <div className="generic-dashboard-card small small-spacing col-2">
-            <CardHeader title="Datos generales"/>
+        <div className="generic-dashboard-card small-spacing col-2 life-insurance-payment-card">
+            <CardHeader title="Prima"/>
             <div className="generic-dashboard-card-content life-insurance-payment-card-content">
                 <div className="life-insurance-main-stat">
-                    <div className="life-insurance-main-amount">{data.ammount}</div>
+                    <div className="life-insurance-main-amount">{data.amount}</div>
                     <div className="life-insurance-main-frequency">Prima {data.frequency.toLowerCase()}</div>
                 </div>
                 <div className="life-insurance-details-grid">

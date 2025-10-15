@@ -15,7 +15,7 @@ const GeneralDashboardClaimsCard: React.FC<GeneralDashboardClaimsCardProps> = ({
     const [claimsDialogVisible, setClaimsDialogVisible] = useState<boolean>(false);
 
     return (
-        <div className="generic-dashboard-card  normal col-6 general-dashboard-claims-card">
+        <div className="generic-dashboard-card  col-6 general-dashboard-claims-card">
             <CardHeader title="Seguimiento solicitudes" />
             <div className="general-dashboard-claims-card-content" >
                 {

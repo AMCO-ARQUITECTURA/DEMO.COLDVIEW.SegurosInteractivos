@@ -80,13 +80,11 @@
     width: fit-content;
 }
 
-/* First two examples on first row */
 .general-dashboard-qinsight-card-example:nth-child(1),
 .general-dashboard-qinsight-card-example:nth-child(2) {
     flex: 0 0 auto;
 }
 
-/* Third example centered on second row */
 .general-dashboard-qinsight-card-example:nth-child(3) {
     flex: 0 0 auto;
     margin: 0 20%;
@@ -100,4 +98,10 @@
 
 .general-dashboard-qinsight-card-footer-button {
     font-size: var(--text-tiny-size);
+}
+
+@media (max-width: 768px) {
+    .general-dashboard-qinsight-card-example:nth-child(3) {
+        margin: 0;
+    }
 }

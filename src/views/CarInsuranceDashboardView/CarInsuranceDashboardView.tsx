@@ -7,7 +7,6 @@ import CarInsuranceQuickActionsCard from "./components/CarInsuranceQuickActionsC
 import DocumentationDownloadCard from "./components/DocumentationDownloadCard/DocumentationDownloadCard";
 import { useState } from "react";
 import CarInsurancePaymentsCard from "./components/CarPaymentsCard/CarInsurancePaymentsCard";
-import CarInsuranceClaimsCard from "./components/CarInsuranceClaimsCard/CarInsuranceClaimsCard";
 import CarInsuranceCrossSellingCard from "./components/CarInsuranceCrossSellingCard/CarInsuranceCrossSellingCard";
 import CarInsuranceBenefitsCard from "./components/CarInsuranceBenefitsCard/CarInsuranceBenefitsCard";
 import { sidebarSections } from "@/data/CommonData";
@@ -15,10 +14,12 @@ import useVersionStore from "@/store/VersionStore";
 import { useQuery } from "@tanstack/react-query";
 import type { CarInsuranceDashboard } from "@/types/CarInsuranceDashboardTypes";
 import type { Benefit, Offer } from "@/types/CommonTypes";
-import CarInsuranceCoveragesCard from "./components/CarInsuranceCoveragesCard/CarInsuranceCoveragesCard";
 import QInsightFAB from "@/components/QInsightFAB/QInsightFAB";
 import BlogCard from "@/components/BlogCard/BlogCard";
 import CarouselCard from "@/components/CarouselCard/CarouselCard";
+import QInsightChatPopup from "@/components/QInsightChatPopup/QInsightChatPopup";
+import CoveragesCard from "@/components/Coverages/CoveragesCard";
+import ClaimsCard from "@/components/Claims/ClaimsCard";
 
 const CarInsuranceDashboardView = () => {
     const { version, getVersionJson } = useVersionStore();
@@ -90,16 +91,15 @@ const CarInsuranceDashboardView = () => {
                     <CarDetailsCard details={carData.generalData}/>
                     <PolicyStatusCard status={carData.policyStatus}/>
                     <CarInsuranceQuickActionsCard />
-                    <DocumentationDownloadCard />
+                    <DocumentationDownloadCard files={carData.documentation}/>
                     {/* Row two */}
-                    <CarInsuranceCoveragesCard coverageDetails={carData.coverageDetails}/>
-                    {/* <CarUpsellingCard upsellingOffers={carData.upselling as Offer[]} /> */}
+                    <CoveragesCard coverages={carData.coverageDetails.coverages} exclusions={carData.coverageDetails.exclusions} />
                     <CarInsuranceCrossSellingCard offers={carData.crossSelling as Offer[]} />
                     {/* Row three */}
                     <CarInsurancePaymentsCard payments={carData.payments}/>
                     <CarInsuranceBenefitsCard benefits={carData.benefits as Benefit[]} />
                     {/* Row Four */}
-                    <CarInsuranceClaimsCard claims={carData.claims}/>
+                    <ClaimsCard claims={carData.claims}/>
                     <CarouselCard images={upsellingImages} title={"Mejora tu cobertura!"} />
 
                     <BlogCard title="Blog Destacado" imgPath="/ads/car_blog.png" onClick={() => navigateToColdview()} 
@@ -109,6 +109,7 @@ const CarInsuranceDashboardView = () => {
                 </div>
             </div>
             <QInsightFAB/>
+            <QInsightChatPopup/>
         </div>
     );
 };

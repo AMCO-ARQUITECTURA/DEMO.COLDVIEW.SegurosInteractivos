@@ -34,7 +34,7 @@ const GeneralDashboardFinancialResumeCard: React.FC<GeneralDashboardFinancialRes
                                     <span className="general-dashboard-financial-resume-next-payments-list-item-date">{payment.date}</span>
                                     <span className="general-dashboard-financial-resume-next-payments-list-item-name">{payment.productName}</span>
                                 </div>
-                                <span className="general-dashboard-financial-resume-next-payments-list-item-ammount">{payment.ammount}</span>
+                                <span className="general-dashboard-financial-resume-next-payments-list-item-amount">{payment.amount}</span>
                             </div>
                         ))}
                     </div>

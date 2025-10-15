@@ -26,8 +26,7 @@ const CoverageSummary: React.FC<CoverageSummaryProps> = ({ coverage, isHighlight
     return (
         <div ref={cardRef} className={`coverage-badge-item ${showHighlight ? 'coverage-badge-item-highlighted' : ''}`} >
             <div className="coverage-badge-header">
-                <Icon {...coverage.icon} iconClassname="coverage-badge-icon" containerized containerClassname="coverage-badge-icon-container"
-                />
+                <Icon {...coverage.icon} iconClassname="coverage-badge-icon"/>
                 <div className="coverage-badge-title">{coverage.title}</div>
             </div>
             <div className="coverage-badge-limits">{coverage.coverageLimits}</div>

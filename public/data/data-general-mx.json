@@ -32,7 +32,7 @@
             "type": "Sinister",
             "description": "Daño por colision",
             "status": "En proceso",
-            "ammount": "$150,000"
+            "amount": "$150,000"
         },
         {
             "id": "2",
@@ -42,7 +42,7 @@
             "type": "Sinister",
             "description": "Daño por colision",
             "status": "En proceso",
-            "ammount": "$150,000"
+            "amount": "$150,000"
         },
         {
             "id": "3",
@@ -52,7 +52,7 @@
             "type": "Sinister",
             "description": "Daño por colision",
             "status": "En proceso",
-            "ammount": "$150,000"
+            "amount": "$150,000"
         }
     ],
     "financialSummary": {
@@ -62,17 +62,17 @@
         "nextPayments": [
             {
                 "date": "15 Agosto, 2024",
-                "ammount": "$120,000",
+                "amount": "$120,000",
                 "productName": "Seguro de Automotor - 512991122"
             },
             {
                 "date": "15 Agosto, 2024",
-                "ammount": "$120,000",
+                "amount": "$120,000",
                 "productName": "Seguro de Automotor - 512991122"
             },
             {
                 "date": "15 Agosto, 2024",
-                "ammount": "$120,000",
+                "amount": "$120,000",
                 "productName": "Seguro de Automotor - 512991122"
             }
         ]
@@ -81,19 +81,19 @@
         {
             "title": "Accion requerida",
             "message": "Documentos pendientes de firma",
-            "ammount": 1,
+            "amount": 1,
             "badgeColor": "red"
         },
         {
             "title": "Renovacion Proxima",
             "message": "Polizas vencen en 60 dias",
-            "ammount": 1,
+            "amount": 1,
             "badgeColor": "yellow"
         },
         {
             "title": "Informacion desactualizada",
             "message": "Actualizar dato personales",
-            "ammount": 1,
+            "amount": 1,
             "badgeColor": "yellow"
         },
         {

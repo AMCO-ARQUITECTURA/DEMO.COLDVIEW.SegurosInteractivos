@@ -25,8 +25,6 @@ const CoverageDetailsDialog: React.FC<CoverageDetailsProps> = ({ visible, setVis
         }
     }, [visible, initialActiveTab]);
 
-    console.log(highlightedCoverageIndex);
-
     return (
         <Dialog visible={visible} onHide={() => setVisible(false)} header="Detalles de cobertura" className="coverage-details-dialog">
             <Accordion activeIndex={activeIndex}>

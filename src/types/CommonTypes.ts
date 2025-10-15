@@ -3,7 +3,9 @@ import type { IconProps } from "@/components/Icon/IconTypes";
 type Coverage = {
     icon: IconProps;
     title: string;
+    shortTitle?: string;
     coverageLimits?: string;
+    shortLimits?: string;
     description: string;
 }
 
@@ -15,13 +17,13 @@ type CoverageExclusion = {
 type PolicyPayment = {
     id?: string;
     date: string;
-    ammount: string;
+    amount: string;
     status: string;
 }
 
 const emptyPayment: PolicyPayment = {
     date: "",
-    ammount: "",
+    amount: "",
     status: "pending"
 }
 
@@ -31,7 +33,15 @@ type Claim = {
     type: string;
     description: string;
     status: 'pending' | 'completed' | 'rejected';
-    ammount: string;
+    amount: string;
+}
+
+const emptyClaim: Claim = {
+    date: "",
+    type: "",
+    description: "",
+    status: 'pending',
+    amount: ""
 }
 
 type CallToAction = {
@@ -91,5 +101,11 @@ type Benefit = {
     discount: string;
 }
 
+type DownloadFile = {
+    title: string;
+    url: string;
+    size: string;
+}
+
 export { type Coverage, type CoverageExclusion, type PolicyPayment, emptyPayment, 
-    type Claim, type CallToAction, type PopupContent, type Offer, emptyOffer, type Benefit }
+    type Claim, emptyClaim, type CallToAction, type PopupContent, type Offer, emptyOffer, type Benefit, type DownloadFile}

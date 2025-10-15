@@ -1,4 +1,6 @@
 .coverage-mini-card {
+    width: 7.632rem;
+    min-height: 5.495rem;
     background-color: var(--theme-secondary-background);
     border: 1px solid var(--theme-primary-border);
     border-radius: 10px;
@@ -34,4 +36,15 @@
     color: var(--theme-text-secondary-color);
     font-weight: 600;
     text-align: center;
+}
+
+.coverage-mini-card-icon {
+    height: 2rem;
+    width: 2rem;
+    padding: var(--spacing-0-5);
+    background-color: var(--theme-primary-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

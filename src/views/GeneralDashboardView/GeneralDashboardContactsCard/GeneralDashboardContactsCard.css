@@ -131,3 +131,21 @@
 .general-dashboard-contact-summary-action-icon {
     font-size: var(--text-small-size);
 }
+
+
+@media (max-width: 768px) {
+    .general-dashboard-contacts-card-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .general-dashboard-contact-summary { 
+        flex-direction: row;
+    }
+    .general-dashboard-contact-summary-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 35%;
+    }
+    .general-dashboard-contact-summary-action {
+        margin: auto;
+    }
+}

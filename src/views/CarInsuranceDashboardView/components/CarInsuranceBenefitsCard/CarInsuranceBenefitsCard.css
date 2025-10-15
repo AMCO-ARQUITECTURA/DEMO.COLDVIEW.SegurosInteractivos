@@ -86,3 +86,12 @@
 .benefit-summary-description {
     font-size: var(--text-small-size);
 }
+
+@media (max-width: 768px) {
+    .car-insurance-benefits-card-content {
+        column-gap: var(--spacing-1);
+    }
+    .benefit-summary-discount-badge {
+        width: 20%;
+    }
+}

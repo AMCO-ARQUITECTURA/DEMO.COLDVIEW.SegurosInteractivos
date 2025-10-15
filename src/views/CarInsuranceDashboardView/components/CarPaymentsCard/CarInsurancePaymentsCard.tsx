@@ -24,7 +24,7 @@ const CarInsurancePaymentsCard: React.FC<CarInsurancePaymentsCardProps> = ({paym
             <CardHeader title="Facturacion" />
             <div className="generic-dashboard-card-content" style={{ display: "flex", gap: '5px' }}>
                 {
-                    payments.slice(0, 7).map((payment) => {
+                    payments.slice(0, 4).map((payment) => {
                         return (
                             <PaymentSummary payment={payment} onPayClick={() => openPaymentForm(payment)}/>
                         )

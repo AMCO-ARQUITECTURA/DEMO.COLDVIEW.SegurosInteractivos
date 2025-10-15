@@ -52,7 +52,7 @@
     color: var(--theme-text-senary-color);
 }
 
-.general-dashboard-notification-ammount {
+.general-dashboard-notification-amount {
     border-radius: 45%;
     font-size: var(--text-small-size);
     background-color: var(--theme-secondary-background);

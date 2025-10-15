@@ -19,7 +19,7 @@ const defaultFilters: DataTableFilterMeta = {
     description: {value: null, matchMode: FilterMatchMode.CONTAINS},
     // type: {value: null, matchMode: FilterMatchMode.CONTAINS},
     date: {value: null, matchMode: FilterMatchMode.STARTS_WITH},
-    ammount: {value: null, matchMode: FilterMatchMode.CONTAINS},
+    amount: {value: null, matchMode: FilterMatchMode.CONTAINS},
     status: {value: null, matchMode: FilterMatchMode.EQUALS}
   };
 
@@ -63,7 +63,7 @@ const GeneralDashboardClaimsDialog: React.FC<GeneralDashboardClaimsDialogProps> 
                 <Column field="description" filter showFilterMatchModes={false} filterField="description" header="Descripcion"/>
                 {/* <Column field="type" filter showFilterMatchModes={false} filterType="type" header="Tipo"/> */}
                 <Column field="date" filter showFilterMatchModes={false} header="Fecha" />
-                <Column field="ammount" filter showFilterMatchModes={false} header="Monto"/>
+                <Column field="amount" filter showFilterMatchModes={false} header="Monto"/>
                 <Column field="status" header="Estado" filter filterElement={statusRowFilterTemplate} filterField="status" showFilterMatchModes={false} body={statusBodyTemplate} />
             </DataTable>
         </Dialog>

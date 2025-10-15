@@ -1,0 +1,180 @@
+.qinsight-chat-popup {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    height: 60%;
+    width: 30%;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid var(--theme-primary-border);
+    padding-inline: var(--spacing-3-5);
+    padding-block: var(--spacing-3);
+    box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.qinsight-chat-popup.hidden {
+    display: none;
+}
+
+.qinsight-chat-popup-header {
+    /* height: 10%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: var(--spacing-2);
+    align-items: center;
+    border-bottom: 1px solid var(--theme-primary-border);
+}
+
+.qinsight-chat-popup-header-left span {
+    font-size: var(--text-big-size);
+    font-weight: 600;
+}
+
+.qinsight-chat-popup-header-left {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-2);
+    align-items: center;
+}
+
+.qinsight-chat-popup-icon {
+    height: 2rem;
+}
+
+.qinsight-chat-popup-messages-container {
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: var(--spacing-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push messages to bottom */
+    gap: var(--spacing-2);
+    scroll-behavior: smooth;
+}
+
+.qinsight-chat-popup-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid var(--theme-primary-border);
+    padding-left: var(--spacing-2-5);
+    padding-right: var(--spacing-1-5);
+    padding-block: var(--spacing-1);
+}
+
+.qinsight-chat-popup-footer-input {
+    border: none;
+    resize: none;
+    max-height: 95px;
+    overflow-y: auto;
+    font-size: var(--text-small-size);
+    flex-grow: 1;
+    align-items: flex-end;
+}
+
+.qinsight-chat-popup-footer-input:focus {
+    outline: none;
+}
+
+.qinsight-chat-popup-footer-input.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.qinsight-chat-popup-footer-button-container {
+    flex-shrink: 0;
+    display: flex;
+}
+
+.qinsight-chat-popup-footer-input-button {
+    padding: var(--spacing-1-5) !important;
+    border-radius: 50%;
+    border: 0;
+    background-color: var(--theme-button-background-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.qinsight-chat-popup-footer-input-button:hover {
+    background-color: var(--theme-button-hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 0px 20px rgba(102, 126, 234, 0.4);
+}
+
+.qinsight-chat-popup-messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: var(--spacing-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    scroll-behavior: smooth;
+}
+
+/* Base message container */
+.message {
+    max-width: 80%;
+    padding: var(--spacing-2);
+    border-radius: 15px;
+    word-wrap: break-word;
+    line-height: 1.4;
+    font-size: var(--text-small-size);
+    animation: fadeInUp 0.2s ease-out;
+}
+
+/* User messages (right side, colored bubble) */
+.message.user {
+    align-self: flex-end;
+    background-color: var(--theme-button-background-color);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+/* Assistant messages (left side, neutral bubble) */
+.message.assistant {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+    border-bottom-left-radius: 4px;
+}
+
+/* Optional sender label (small and subtle) */
+.message strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+/* Scrollbar style */
+.qinsight-chat-popup-messages-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.qinsight-chat-popup-messages-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+/* Smooth fade animation for messages */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

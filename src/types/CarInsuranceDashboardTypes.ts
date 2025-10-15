@@ -1,5 +1,5 @@
 
-import type { Benefit, Claim, Coverage, CoverageExclusion, Offer, PolicyPayment } from "./CommonTypes";
+import type { Benefit, Claim, Coverage, CoverageExclusion, DownloadFile, Offer, PolicyPayment } from "./CommonTypes";
 
 type CarInsuranceGeneralData = {
     imageUrl: string;
@@ -16,8 +16,7 @@ type CarInsurancePolicyStatus = {
 }
 
 type CarInsuranceCoverageDetails = {
-    main: Coverage[];
-    all: Coverage[];
+    coverages: Coverage[];
     exclusions: CoverageExclusion[];
 }
 
@@ -30,6 +29,7 @@ type CarInsuranceDashboard = {
     claims: Claim[];
     crossSelling: Offer[];
     benefits: Benefit[];
+    documentation: DownloadFile[];
 }
 
 

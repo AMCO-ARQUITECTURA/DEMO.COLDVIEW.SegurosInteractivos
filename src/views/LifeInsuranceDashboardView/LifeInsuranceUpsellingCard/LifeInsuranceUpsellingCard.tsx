@@ -23,7 +23,7 @@ const LifeInsuranceUpsellingCard: React.FC<LifeInsuranceUpsellingProps> = ({ ups
     const headerBadge = <div className="life-insurance-upselling-card-badge">Recomendado</div>
 
     return (
-        <div className="generic-dashboard-card small life-insurance-upselling-card col-4">
+        <div className="generic-dashboard-card life-insurance-upselling-card col-4">
             <CardHeader title="Mejora tu cobertura!" subtitle="Ofertas especiales para ti" badge={headerBadge}/>
             <div className="generic-dashboard-card-content life-insurance-upselling-card-content">
                 {

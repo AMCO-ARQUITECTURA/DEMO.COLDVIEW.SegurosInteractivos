@@ -1,13 +1,20 @@
 import { useState } from 'react';
 import './QInsightFAB.css';
 import Icon from '../Icon/Icon';
+import { useChatStore } from '@/store/useChatStore';
 
 const QInsightFAB: React.FC = () => {
     const [popupVisible, setPopupVisible] = useState(true);
+    const { fabVisible, setChatVisible, setFabVisible} = useChatStore();
+
+    const openChat = () => {
+        setFabVisible(false);
+        setChatVisible(true)
+    }
 
     return (
         <>
-            {popupVisible && (
+            {fabVisible && popupVisible && (
                 <div className="qinsight-fab-popup">
                     <div className="qinsight-fab-popup-header">
                         <div className="qinsight-fab-popup-header-content">
@@ -45,7 +52,7 @@ const QInsightFAB: React.FC = () => {
                 </div>)
             }
 
-            <button className="q-insight-fab-button">
+            <button className={`q-insight-fab-button ${fabVisible === false ? "hidden" : ""}`} onClick={openChat}>
                 <Icon type="img" img="/icons/robot.png" iconClassname='q-insight-fab-button-icon' />
             </button>
         </>

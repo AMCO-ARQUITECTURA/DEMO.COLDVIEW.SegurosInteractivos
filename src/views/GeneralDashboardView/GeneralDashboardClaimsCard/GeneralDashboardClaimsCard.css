@@ -72,7 +72,7 @@
     justify-content: space-between;
 }
 
-.general-dashboard-claim-summary-ammount {
+.general-dashboard-claim-summary-amount {
     text-align: right;
     font-size: var(--text-normal-size);
 }
@@ -106,7 +106,7 @@
 }
 
 .general-dashboard-claim-summary-badge-text {
-    font-size: var(--text-tiny-size);
+    font-size: round(0.5rem, 1px);
     color: #065F46;
     font-weight: 600;
     margin: 0;
@@ -147,4 +147,10 @@
 
 .general-dashboard-claims-footer-button-icon {
     font-size: var(--text-small-size);
+}
+
+@media (max-width: 768px) {
+    .general-dashboard-claims-card-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

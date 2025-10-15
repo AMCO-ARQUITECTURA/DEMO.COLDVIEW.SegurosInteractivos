@@ -191,22 +191,15 @@
     margin-bottom: 0.5rem;
 }
 
-.coverage-badge-icon-container {
+.coverage-badge-icon {
     width: 1.75rem;
     height: 1.75rem;
+    padding: var(--spacing-1);
     background: var(--theme-primary-color);
     border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.coverage-badge-icon {
     color: #ffffff !important;
-    font-size: 0.8125rem;
-    width: 0.8125rem;
-    height: 0.8125rem;
+    font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
 .coverage-badge-title {
@@ -259,17 +252,6 @@
 
     .coverage-badge-header {
         gap: 0.5rem;
-    }
-
-    .coverage-badge-icon-container {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    .coverage-badge-icon {
-        font-size: 0.75rem;
-        width: 0.75rem;
-        height: 0.75rem;
     }
 
     .coverage-badge-title {

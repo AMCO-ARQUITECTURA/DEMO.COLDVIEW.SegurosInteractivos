@@ -9,7 +9,7 @@
 }
 
 .sidebar.open {
-    width: 200px;
+    width: 12rem;
 }
 
 .sidebar-header {
@@ -59,29 +59,11 @@
     width: 40px;
 }
 
-/* .sidebar-company-text {
-    font-size: 16px;
-    font-weight: 600;
-    color: #2c529b;
-    opacity: 0;
-    transform: translateY(-4px);
-    max-width: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: opacity 0.25s ease, transform 0.25s ease, max-width 0.25s ease;
-}
-
-.sidebar-company-text.open {
-    opacity: 1;
-    transform: translateY(0);
-    max-width: 200px;
-} */
-
 .sidebar-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding-inline: var(--spacing-1);
+    /* padding-inline: var(--spacing-1); */
     padding-block: var(--spacing-2-5);
     overflow: hidden;
 }
@@ -129,7 +111,8 @@
     align-items: center;
     color: #fff;
     text-decoration: none;
-    padding: var(--spacing-2-5);
+    padding-inline: var(--spacing-3);
+    padding-block: var(--spacing-2-5);
     border-radius: 10px;
     transition: all 0.3s ease;
     white-space: nowrap;
@@ -255,3 +238,25 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 40;
+      transform: translateX(-100%);
+      width: 200px; /* Full width when open on mobile */
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .sidebar.open {
+      transform: translateX(0);
+      width: 200px;
+    }
+  
+    /* Disable hover behavior on mobile */
+    .sidebar:hover {
+      width: 200px;
+    }
+  }

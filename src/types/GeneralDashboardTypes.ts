@@ -17,12 +17,12 @@ type GeneralDashboardClaim = {
     type: string;
     description: string;
     status: string;
-    ammount: string;
+    amount: string;
 }
 
 type GeneralDashboardPayment = {
     date: string;
-    ammount: string;
+    amount: string;
     productName: string;
 }
 
@@ -36,7 +36,7 @@ type GeneralDashboardFinancialSummary = {
 type GeneralDashboardNotificationsAndAlerts = {
     title: string;
     message: string;
-    ammount: number;
+    amount: number;
     badgeColor: string;
 }
 

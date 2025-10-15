@@ -1,5 +1,6 @@
 
-import type { Claim, Coverage, CoverageExclusion, Offer } from "./CommonTypes";
+import type { IconProps } from "@/components/Icon/IconTypes";
+import type { Claim, Coverage, CoverageExclusion, DownloadFile, Offer } from "./CommonTypes";
 
 type LifeInsuranceDashboardGeneralData = {
     status: string;
@@ -18,7 +19,7 @@ type LifeInsuranceDashboardMainCoverages = {
 }
 
 type LifeInsuranceDashboardPaymentInformation = {
-    ammount: string;
+    amount: string;
     frequency: string;
     nextPaymentDate: string;
     paymentMethod: string;
@@ -26,9 +27,9 @@ type LifeInsuranceDashboardPaymentInformation = {
 
 type LifeInsuranceDashboardBeneficiary = {
     name: string;
-    relationship: string;
-    percentage: string;
-    sex: 'woman' | 'man' | 'x';
+    // relationship: string;
+    percentage?: string;
+    icon?: IconProps;
 }
 
 type LifeInsuranceDashboard = {
@@ -43,6 +44,7 @@ type LifeInsuranceDashboard = {
     },
     claims: Claim[],
     crossSelling: Offer[];
+    policyFile: DownloadFile;
 }
 
 export { type LifeInsuranceDashboardGeneralData, type LifeInsuranceDashboardMainCoverages, type LifeInsuranceDashboardPaymentInformation, 

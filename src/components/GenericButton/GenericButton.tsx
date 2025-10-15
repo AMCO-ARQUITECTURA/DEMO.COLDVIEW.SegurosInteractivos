@@ -1,4 +1,5 @@
 import './GenericButton.css';
+
 type GenericButtonProps = {
     secondary?: boolean;
     className?: string;
@@ -18,7 +19,7 @@ const GenericButton: React.FC<GenericButtonProps> = ({secondary, className, prim
     return (
         <button className={classname} onClick={() => onClick()}>
             {primeicon && (<i className={'pi ' + primeicon + ' generic-button-icon'}/>)}
-            {label}
+            <span className='generic-button-label'>{label}</span>
         </button>
     );
 }

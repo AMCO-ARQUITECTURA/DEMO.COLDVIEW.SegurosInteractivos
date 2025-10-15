@@ -17,7 +17,7 @@ const PaymentOptionsDialog: React.FC<PaymentOptionsDialogProps> = ({ visible, se
         return (
             <div className="payment-options-dialog-header">
                 <p className="payment-options-dialog-header-title">Opciones de pago</p>
-                <p className="payment-options-dialog-header-subtitle">Pago de {selectedPayment.ammount} - {selectedPayment.date}</p>
+                <p className="payment-options-dialog-header-subtitle">Pago de {selectedPayment.amount} - {selectedPayment.date}</p>
             </div>
         )
     }

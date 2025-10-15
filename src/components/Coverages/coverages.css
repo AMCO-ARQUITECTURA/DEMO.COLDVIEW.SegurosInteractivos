@@ -1,0 +1,27 @@
+.coverages-card {
+    padding-bottom: var(--spacing-2-5);
+}
+
+.coverages-card-content {
+    flex-direction: row;
+    gap: var(--spacing-6);
+}
+
+.coverages-card-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .coverages-card-coverage-card {
+        width: 40%;
+    }
+
+    .coverages-card-content {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: var(--spacing-2);
+    }
+}

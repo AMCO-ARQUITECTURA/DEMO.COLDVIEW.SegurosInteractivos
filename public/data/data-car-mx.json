@@ -1,266 +1,380 @@
 {
     "generalData": {
-        "imageUrl": "/civic2014.png",
-        "carModel": "Honda Civic EXS 1.8 2014",
-        "licensePlate": "NPA 180",
-        "policyNumber": "512001122",
+        "imageUrl": "/renaultSandero.png",
+        "carModel": "Renault Sandero Stepway 1.6 Con. L/11",
+        "licensePlate": "KKK444",
+        "policyNumber": "200040215232",
         "plan": "CAR ESSENTIAL PLUS"
     },
     "policyStatus": {
         "status": "Activa",
-        "sinceTo": "27/12/2024 - 27/12/2025",
+        "sinceTo": "14/12/2025 - 14/12/2026",
         "automaticRenewal": true
     },
     "coverageDetails": {
-        "main": [
+        "coverages": [
             {
                 "icon": {
                     "type": "img",
                     "img": "/icons/law.png"
                 },
-                "title": "Responsabilidad Civil",
-                "coverageLimits": "100% del siniestro hasta $7500",
-                "description": ""
+                "title": "Responsabilidad Civil Obligatoria",
+                "coverageLimits": "Hasta $17.500.000 por evento",
+                "description": "Cubre los daños personales y materiales a terceros causados por el vehículo asegurado o su carga, conforme al artículo 68 de la Ley 24.449. Incluye muerte, lesiones e incapacidad de personas transportadas o no."
             },
             {
                 "icon": {
                     "type": "img",
-                    "img": "/icons/car-windscreen.png"
+                    "img": "/icons/alert.png"
                 },
-                "title": "Rotura de cristales",
-                "coverageLimits": "100% del siniestro hasta $4000",
-                "description": ""
+                "title": "Muerte o incapacidad total y permanente por persona",
+                "shortTitle": "Muerte o incapacidad por persona",
+                "coverageLimits": "Hasta $1.750.000",
+                "description": "Indemnización por fallecimiento o invalidez permanente total del tercero involucrado en un accidente de tránsito cubierto por la póliza obligatoria."
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/hospital-building.png"
+                },
+                "title": "Gastos sanatoriales y de sepelio",
+                "coverageLimits": "Hasta $80.000 (sanatoriales) y $45.000 (sepelio)",
+                "shortLimits": "Hasta $80.000",
+                "description": "Reembolsa los gastos médicos y funerarios de las personas lesionadas o fallecidas en un accidente cubierto, pagaderos directamente a los damnificados o sus herederos."
             },
             {
                 "icon": {
                     "type": "img",
                     "img": "/icons/thief.png"
                 },
-                "title": "Robo Total",
-                "coverageLimits": "Hasta $3000",
-                "description": ""
+                "title": "Daños, incendio, robo o hurto total",
+                "coverageLimits": "Hasta la suma asegurada de $1.165.500",
+                "description": "Indemniza la pérdida total del vehículo por colisión, incendio, robo o hurto. Incluye cobertura por siniestro total concurrente y daños derivados de estos eventos."
             },
             {
                 "icon": {
                     "type": "img",
                     "img": "/icons/earthquake.png"
                 },
-                "title": "Terremoto",
-                "coverageLimits": "Cobertura total sin franquicia",
-                "description": ""
-            }
-        ],
-        "all": [
-            {
-                "icon": {
-                    "type": "img",
-                    "img": "/icons/law.png"
-                },
-                "title": "Responsabilidad Civil",
-                "coverageLimits": "100% del siniestro hasta $7500",
-                "description": ""
+                "title": "Daños por granizo, terremoto e inundación",
+                "coverageLimits": "Sin límite hasta la suma asegurada",
+                "description": "Cubre daños parciales producidos por fenómenos naturales como granizo, terremoto o inundación. Sin franquicia y aplicable dentro del territorio nacional."
             },
             {
                 "icon": {
                     "type": "img",
                     "img": "/icons/car-windscreen.png"
                 },
-                "title": "Rotura de cristales",
-                "coverageLimits": "100% del siniestro hasta $4000",
-                "description": ""
+                "title": "Rotura de cristales, lunetas y cerraduras",
+                "coverageLimits": "Hasta el límite de la suma asegurada",
+                "description": "Cubre rotura de lunetas, parabrisas, cristales laterales y cerraduras del vehículo a causa de robo, vandalismo o accidentes. Incluye cristales de techo sin franquicia."
             },
             {
                 "icon": {
                     "type": "img",
-                    "img": "/icons/thief.png"
+                    "img": "/icons/tow-truck-2.png"
                 },
-                "title": "Robo Total",
-                "coverageLimits": "Hasta $3000",
-                "description": ""
+                "title": "Servicio de remolque y asistencia",
+                "coverageLimits": "Hasta 500 km por servicio (máx. 2 por año)",
+                "description": "Brinda asistencia mecánica de emergencia y remolque al taller más cercano, incluyendo reintegros para países limítrofes (Chile, Uruguay, Paraguay y Brasil)."
             },
             {
                 "icon": {
                     "type": "img",
-                    "img": "/icons/earthquake.png"
+                    "img": "/icons/south-america.png"
                 },
-                "title": "Terremoto",
-                "coverageLimits": "Cobertura total sin franquicia",
-                "description": ""
+                "title": "Extensión de coberturas a países limítrofes",
+                "coverageLimits": "Hasta la suma asegurada en Mercosur y Sudamérica",
+                "description": "Extiende las coberturas de robo, hurto, incendio, daños y responsabilidad civil a Brasil, Paraguay, Uruguay, Bolivia y Chile, bajo las mismas condiciones locales."
             }
         ],
         "exclusions": [
-
+            {
+                "name": "Dolo o culpa grave del asegurado",
+                "description": "No se cubren daños causados intencionalmente ni por negligencia grave del asegurado o conductor."
+            },
+            {
+                "name": "Falta de titularidad del vehículo",
+                "description": "La cobertura no es efectiva si el vehículo no está registrado a nombre del asegurado o carece de conformidad expresa del titular."
+            },
+            {
+                "name": "Agravación del riesgo y omisión de aviso",
+                "description": "Si el asegurado cambia de domicilio o guarda habitual a zona de mayor riesgo sin notificar, se suspende la cobertura de casco."
+            },
+            {
+                "name": "Uso indebido o no declarado",
+                "description": "No cubre si el vehículo se usa como taxi, remis, o en condiciones distintas al uso particular declarado en la póliza."
+            },
+            {
+                "name": "Falta de cumplimiento de obligaciones legales",
+                "description": "El asegurado pierde la cobertura si omite denunciar el siniestro en plazo, presenta pruebas falsas o no facilita la verificación de daños."
+            }
         ]
     },
-    "upselling": [
-        {
-            "icon": {
-                "type": "primeicon",
-                "primeicon": "pi-car"
-            },
-            "title": "Cobertura integral",
-            "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
-            "price": "+8.500",
-            "discount": "20% OFF",
-            "popup": {
-                "discount": "15% OFF",
-                "oldPrice": "$22.500",
-                "price": "8.500",
-                "monthlyPrice": "100",
-                "title": "Cobertura Integral",
-                "subtitle": "Protección completa",
-                "benefitsTitle": "Que obtenes",
-                "benefits": {
-                    "items": [
-                        "Robo total y parcial",
-                        "Incendio y rayos",
-                        "Daños por accidentes",
-                        "Asistencia 24/7"
-                    ],
-                    "title": "Que obtenes:"
-                },
-                "ctaButtons": [
-                    {
-                        "label": "Solicitar",
-                        "linkTo": "https://www.coldview.com",
-                        "type": "primary",
-                        "icon": "pi-heart"
-                    }
-                ]
-            }
-        },
-        {
-            "icon": {
-                "type": "primeicon",
-                "primeicon": "pi-car"
-            },
-            "title": "Cobertura integral",
-            "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
-            "price": "+8.500",
-            "discount": "20% OFF",
-            "popup": {
-                "discount": "15% OFF",
-                "oldPrice": "$22.500",
-                "price": "8.500",
-                "monthlyPrice": "100",
-                "title": "Cobertura Integral",
-                "subtitle": "Protección completa",
-                "benefitsTitle": "Que obtenes",
-                "benefits": {
-                    "items": [
-                        "Robo total y parcial",
-                        "Incendio y rayos",
-                        "Daños por accidentes",
-                        "Asistencia 24/7"
-                    ],
-                    "title": "Que obtenes:"
-                },
-                "ctaButtons": [
-                    {
-                        "label": "Solicitar",
-                        "linkTo": "https://www.coldview.com",
-                        "type": "primary",
-                        "icon": "pi-heart"
-                    }
-                ],
-                "trustIndicator": {
-                    "type": "testimonial",
-                    "text": "exampleTest"
-                }
-            }
-        },
-        {
-            "icon": {
-                "type": "primeicon",
-                "primeicon": "pi-car"
-            },
-            "title": "Cobertura integral",
-            "subtitle": "Cobertura integral para tu automovil! Incluye granizo, incendio y rotura de cristales.",
-            "price": "+8.500",
-            "discount": "20% OFF",
-            "popup": {
-                "discount": "15% OFF",
-                "oldPrice": "$22.500",
-                "price": "$8.500",
-                "monthlyPrice": "100",
-                "title": "Cobertura Integral",
-                "subtitle": "Protección completa",
-                "benefitsTitle": "Que obtenes",
-                "benefits": {
-                    "items": [
-                        "Robo total y parcial",
-                        "Incendio y rayos",
-                        "Daños por accidentes",
-                        "Asistencia 24/7"
-                    ],
-                    "title": "Que obtenes:"
-                },
-                "ctaButtons": [
-                    {
-                        "label": "Solicitar",
-                        "linkTo": "https://www.coldview.com",
-                        "type": "primary",
-                        "icon": "pi-heart"
-                    }
-                ]
-            }
-        }
-    ],
+    "upselling": [],
     "payments": [
         {
-            "date": "15 Agosto, 2024",
-            "ammount": "$120,000",
-            "status": "Pendiente"
+            "date": "15 Noviembre, 2025",
+            "amount": "$36.984,24",
+            "status": "pending"
         },
         {
-            "date": "15 Septiembre, 2024",
-            "ammount": "$120,000",
-            "status": "Pendiente"
+            "date": "15 Octubre, 2025",
+            "amount": "$36.984,24",
+            "status": "completed"
         },
         {
-            "date": "15 Octubre, 2024",
-            "ammount": "$120,000",
-            "status": "Pendiente"
+            "date": "15 Septiembre, 2025",
+            "amount": "$36.984,24",
+            "status": "completed"
+        },
+        {
+            "date": "15 Agosto, 2025",
+            "amount": "$36.984,24",
+            "status": "completed"
         }
     ],
     "claims": [
         {
-            "id": "1",
-            "date": "6 Julio, 2025",
+            "id": "15",
+            "date": "10 Octubre, 2025",
             "type": "Siniestro",
-            "description": "Daño por colision",
-            "status": "En proceso",
-            "ammount": "$150,000"
+            "description": "Robo parcial de accesorios",
+            "status": "Rechazado",
+            "amount": "$28,400"
         },
         {
-            "id": "2",
-            "date": "6 Julio, 2025",
+            "id": "14",
+            "date": "2 Septiembre, 2025",
             "type": "Asistencia",
-            "description": "Daño por colision",
+            "description": "Asistencia médica en ruta",
+            "status": "Completado",
+            "amount": "$5,600"
+        },
+        {
+            "id": "13",
+            "date": "21 Agosto, 2025",
+            "type": "Siniestro",
+            "description": "Daños por incendio en motor",
             "status": "En proceso",
-            "ammount": "$150,000"
+            "amount": "$320,000"
+        },
+        {
+            "id": "12",
+            "date": "8 Julio, 2025",
+            "type": "Asistencia",
+            "description": "Batería descargada",
+            "status": "Completado",
+            "amount": "$2,800"
+        },
+        {
+            "id": "11",
+            "date": "6 Julio, 2025",
+            "type": "Siniestro",
+            "description": "Daño frontal por colisión",
+            "status": "Completado",
+            "amount": "$180,000"
+        },
+        {
+            "id": "10",
+            "date": "17 Junio, 2025",
+            "type": "Siniestro",
+            "description": "Daño por volcadura",
+            "status": "En proceso",
+            "amount": "$275,000"
+        },
+        {
+            "id": "9",
+            "date": "4 Junio, 2025",
+            "type": "Asistencia",
+            "description": "Apertura de vehículo por olvido de llaves",
+            "status": "Completado",
+            "amount": "$3,100"
+        },
+        {
+            "id": "8",
+            "date": "29 Mayo, 2025",
+            "type": "Siniestro",
+            "description": "Daños por granizo",
+            "status": "Rechazado",
+            "amount": "$35,600"
+        },
+        {
+            "id": "7",
+            "date": "14 Mayo, 2025",
+            "type": "Asistencia",
+            "description": "Envío de combustible",
+            "status": "Completado",
+            "amount": "$1,200"
+        },
+        {
+            "id": "6",
+            "date": "2 Mayo, 2025",
+            "type": "Siniestro",
+            "description": "Robo total del vehículo",
+            "status": "En proceso",
+            "amount": "$450,000"
+        },
+        {
+            "id": "5",
+            "date": "20 Abril, 2025",
+            "type": "Siniestro",
+            "description": "Daño por colisión múltiple",
+            "status": "En proceso",
+            "amount": "$210,000"
+        },
+        {
+            "id": "4",
+            "date": "9 Abril, 2025",
+            "type": "Asistencia",
+            "description": "Cambio de neumático en ruta",
+            "status": "Completado",
+            "amount": "$2,500"
         },
         {
             "id": "3",
-            "date": "6 Julio, 2025",
+            "date": "27 Marzo, 2025",
             "type": "Siniestro",
-            "description": "Daño por colision",
+            "description": "Daño por impacto lateral",
+            "status": "Rechazado",
+            "amount": "$135,000"
+        },
+        {
+            "id": "2",
+            "date": "15 Febrero, 2025",
+            "type": "Asistencia",
+            "description": "Remolque por avería mecánica",
+            "status": "Completado",
+            "amount": "$4,800"
+        },
+        {
+            "id": "1",
+            "date": "3 Enero, 2025",
+            "type": "Siniestro",
+            "description": "Daño por colisión en autopista",
             "status": "En proceso",
-            "ammount": "$150,000"
+            "amount": "$82,300"
         }
     ],
     "crossSelling": [
         {
             "icon": {
                 "type": "primeicon",
-                "primeicon": "pi-car"
+                "primeicon": "pi-home"
             },
-            "title": "Seguro de hogar",
-            "subtitle": "Protege tu casa y tus cosas",
-            "description": "Incidencio - Robo - Responsabilidad civil",
-            "price": "desde $8,500/mes",
-            "discount": "COMBO -25%",
-            "popup": {}
+            "title": "Seguro de Hogar",
+            "subtitle": "Protege tu casa y tus pertenencias",
+            "description": "Incendio - Robo - Responsabilidad civil - Daños por agua",
+            "price": "desde $9,200/mes",
+            "discount": "COMBO -30%",
+            "popup": {
+                "discount": "30% OFF",
+                "oldPrice": "$13.150",
+                "price": "9.200",
+                "monthlyPrice": "9.200",
+                "title": "Seguro de Hogar Completo",
+                "subtitle": "Tu hogar siempre protegido",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Cobertura por incendio y explosión",
+                        "Protección contra robo y vandalismo",
+                        "Responsabilidad civil familiar",
+                        "Daños por agua y filtraciones",
+                        "Asistencia del hogar 24/7",
+                        "Reposición de electrodomésticos"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar ahora",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "secondary",
+                        "icon": "pi pi-check"
+                    }
+                ]
+            }
+        },
+        {
+            "icon": {
+                "type": "primeicon",
+                "primeicon": "pi-briefcase"
+            },
+            "title": "Seguro de Comercio",
+            "subtitle": "Protección integral para tu negocio",
+            "description": "Incendio - Robo - Cristales - Responsabilidad civil - Equipos",
+            "price": "desde $12,500/mes",
+            "discount": "PYME -25%",
+            "popup": {
+                "discount": "25% OFF",
+                "oldPrice": "$16.665",
+                "price": "12.500",
+                "monthlyPrice": "12.500",
+                "title": "Seguro de Comercio Premium",
+                "subtitle": "Tu negocio siempre protegido",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Cobertura de mercadería y stock",
+                        "Protección de equipos y maquinaria",
+                        "Rotura de cristales y vidrieras",
+                        "Responsabilidad civil del comercio",
+                        "Incendio del local y contenido",
+                        "Pérdida de alquiler por siniestro",
+                        "Asistencia legal 24/7"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar ahora",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "secondary",
+                        "icon": "pi pi-check"
+                    }
+                ]
+            }
+        },
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/motorcycle.png"
+            },
+            "title": "Seguro de Moto",
+            "subtitle": "Protege tu moto con cobertura completa",
+            "description": "Responsabilidad civil - Robo - Daños totales - Accesorios",
+            "price": "desde $3,800/mes",
+            "discount": "2DA MOTO -40%",
+            "popup": {
+                "discount": "40% OFF",
+                "oldPrice": "$6.335",
+                "price": "3.800",
+                "monthlyPrice": "3.800",
+                "title": "Seguro de Moto Integral",
+                "subtitle": "Circulá con total tranquilidad",
+                "benefitsTitle": "Que obtenes",
+                "benefits": {
+                    "items": [
+                        "Robo total de la moto",
+                        "Daños totales por accidente",
+                        "Responsabilidad civil hacia terceros",
+                        "Cobertura de casco y accesorios",
+                        "Asistencia mecánica en ruta",
+                        "Grúa y traslado sin límite",
+                        "Moto de reemplazo por reparación"
+                    ],
+                    "title": "Que obtenes:"
+                },
+                "ctaButtons": [
+                    {
+                        "label": "Solicitar ahora",
+                        "linkTo": "https://www.coldview.com",
+                        "type": "primary",
+                        "icon": "pi-check"
+                    }
+                ]
+            }
         }
     ],
     "benefits": [
@@ -270,29 +384,91 @@
                 "img": "/icons/car-service.png"
             },
             "title": "Lavado de auto",
-            "subtitle": "A domicilio",
-            "description": "Asistencia 24/7 en todo el pais",
+            "subtitle": "En autoservicio afiliado",
+            "description": "Descuento exclusivo por tener tu póliza activa.",
             "discount": "20% OFF"
         },
         {
             "icon": {
                 "type": "img",
-                "img": "/icons/car-service.png"
+                "img": "/icons/gas-pump.png"
             },
-            "title": "Lavado de auto",
-            "subtitle": "A domicilio",
-            "description": "Asistencia 24/7 en todo el pais",
+            "title": "Combustible",
+            "subtitle": "Gasolineras participantes",
+            "description": "Recibe un descuento especial en tu combustible.",
+            "discount": "10% OFF"
+        },
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/shopping-cart.png"
+            },
+            "title": "Compras en tienda",
+            "subtitle": "Tiendas afiliadas",
+            "description": "Aprovecha descuentos exclusivos en tus compras.",
+            "discount": "15% OFF"
+        },
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/restaurant.png"
+            },
+            "title": "Restaurantes",
+            "subtitle": "Locales seleccionados",
+            "description": "Descuentos especiales al pagar con tu tarjeta vinculada a la póliza.",
+            "discount": "10% OFF"
+        },
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/mechanic.png"
+            },
+            "title": "Servicio de taller",
+            "subtitle": "Mantenimiento y revisiones",
+            "description": "Beneficio exclusivo por tener la póliza activa.",
             "discount": "20% OFF"
         },
         {
             "icon": {
                 "type": "img",
-                "img": "/icons/car-service.png"
+                "img": "/icons/convenience-store.png"
             },
-            "title": "Lavado de auto",
-            "subtitle": "A domicilio",
-            "description": "Asistencia 24/7 en todo el pais",
-            "discount": "20% OFF"
+            "title": "Tiendas de conveniencia",
+            "subtitle": "Productos seleccionados",
+            "description": "Descuento por compras usando tu póliza como referencia.",
+            "discount": "10% OFF"
+        },
+        {
+            "icon": {
+                "type": "img",
+                "img": "/icons/coffee-shop.png"
+            },
+            "title": "Cafeterías y snacks",
+            "subtitle": "Locales afiliados",
+            "description": "Disfruta promociones especiales por ser cliente.",
+            "discount": "15% OFF"
+        }
+    ],
+    "documentation": [
+        {
+            "title": "Poliza",
+            "url": "/carPolicy.pdf",
+            "size": "0.3MB"
+        },
+        {
+            "title": "Condiciones generales",
+            "url": "/carPolicy.pdf",
+            "size": "1MB"
+        },
+        {
+            "title": "Tarjeta de circulacion",
+            "url": "/carPolicy.pdf",
+            "size": "0.1MB"
+        },
+        {
+            "title": "Certificado licencia Mercosur",
+            "url": "/carPolicy.pdf",
+            "size": "0.1MB"
         }
     ]
 }

@@ -18,7 +18,7 @@ const GeneralDashboardClaimSummary: React.FC<GeneralDashboardClaimSummaryProps> 
                 </div>
             </div>
             <div className="general-dashboard-claim-summary-price-and-status">
-                <span className="general-dashboard-claim-summary-ammount">{claim.ammount}</span>
+                <span className="general-dashboard-claim-summary-amount">{claim.amount}</span>
                 <div className={`general-dashboard-claim-summary-badge ${claim.status === 'pending' ? 'pending' : ''}`}>
                     <div className={`general-dashboard-claim-summary-badge-icon ${claim.status === 'pending' ? 'pending' : ''}`}></div>
                     <p className={`general-dashboard-claim-summary-badge-text ${claim.status === 'pending' ? 'pending' : ''}`}>{claim.status === 'pending' ? "En proceso" : "Completado"}</p>

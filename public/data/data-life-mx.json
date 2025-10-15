@@ -1,104 +1,121 @@
 {
     "generalData": {
         "status": "ACTIVO",
-        "contractor": "Juan Perez",
-        "beneficiary": "Maria Gomez",
-        "policyNumber": "512001123",
+        "contractor": "Juan Pablo Gomez",
+        "beneficiary": "Juan Pablo Gomez",
+        "policyNumber": "232100503444",
         "plan": "ESSENTIAL HEALTH",
-        "sinceTo": "27/12/2024 - 27/12/2025"
+        "sinceTo": "23/08/2024 - 23/08/2025"
     },
     "mainCoverages": {
-        "totalCoverage": "$80.000.000",
-        "coverageType": "Fallecimiento e invalidez",
-        "modality": "Vida entera",
+        "totalCoverage": "$15.500.000",
+        "coverageType": "Muerte, invalidez total o parcial por accidente",
         "additionals": "Doble indemnizacion por accidente"
     },
     "upselling": [
         {
-            "icon": "life-upsell",
-            "title": "Enfermedades graves",
-            "subtitle": "Enfermedades graves",
-            "price": "Desde $8200",
-            "discount": "15% OFF",
+            "icon": {
+                "type": "primeicon",
+                "primeicon": "pi-heart-fill"
+            },
+            "title": "Seguro Oncológico",
+            "subtitle": "Protección especializada contra el cáncer",
+            "price": "+$4,800/mes",
+            "discount": "20% OFF",
             "popup": {
-                "discount": "15% OFF",
-                "oldPrice": "$22.500",
-                "price": "$8.500",
-                "monthlyPrice": "100",
-                "title": "Cobertura Integral",
-                "subtitle": "Protección completa",
+                "discount": "20% OFF",
+                "oldPrice": "$6.000",
+                "price": "4.800",
+                "monthlyPrice": "4.800",
+                "title": "Seguro Oncológico Integral",
+                "subtitle": "Cobertura completa contra el cáncer",
                 "benefitsTitle": "Que obtenes",
                 "benefits": {
                     "items": [
-                        "Robo total y parcial",
-                        "Incendio y rayos",
-                        "Daños por accidentes",
-                        "Asistencia 24/7"
+                        "Cobertura de tratamientos oncológicos al 100%",
+                        "Quimioterapia, radioterapia e inmunoterapia",
+                        "Medicamentos oncológicos de última generación",
+                        "Cirugías oncológicas sin límite",
+                        "Segunda opinión médica internacional",
+                        "Suma adicional de $2.000.000 al diagnóstico",
+                        "Acompañamiento psico-oncológico",
+                        "Cobertura desde el primer día"
                     ],
                     "title": "Que obtenes:"
                 },
                 "ctaButtons": [
                     {
-                        "label": "Solicitar",
+                        "label": "Solicitar ahora",
                         "linkTo": "https://www.coldview.com",
-                        "type": "primary",
-                        "icon": "pi-heart"
+                        "type": "secondary",
+                        "icon": "pi pi-check"
                     }
                 ]
             }
         },
         {
-            "icon": "life-upsell",
-            "title": "Enfermedades graves",
-            "subtitle": "Enfermedades graves",
-            "price": "Desde $8200",
-            "discount": "15% OFF",
+            "icon": {
+                "type": "primeicon",
+                "primeicon": "pi-mobile"
+            },
+            "title": "Telemedicina Premium",
+            "subtitle": "Consultas médicas online 24/7",
+            "price": "+$1,900/mes",
+            "discount": "25% OFF",
             "popup": {
-                "discount": "15% OFF",
-                "oldPrice": "$22.500",
-                "price": "$8.500",
-                "monthlyPrice": "100",
-                "title": "Cobertura Integral",
-                "subtitle": "Protección completa",
+                "discount": "25% OFF",
+                "oldPrice": "$2.535",
+                "price": "1.900",
+                "monthlyPrice": "1.900",
+                "title": "Telemedicina Premium",
+                "subtitle": "Atención médica desde cualquier lugar",
                 "benefitsTitle": "Que obtenes",
                 "benefits": {
                     "items": [
-                        "Robo total y parcial",
-                        "Incendio y rayos",
-                        "Daños por accidentes",
-                        "Asistencia 24/7"
+                        "Consultas médicas por video 24/7",
+                        "Acceso a más de 30 especialidades",
+                        "Recetas digitales válidas en todo el país",
+                        "Chat médico para consultas rápidas",
+                        "Seguimiento de tratamientos online",
+                        "Gestión de estudios y análisis digitales",
+                        "App móvil con historial médico",
+                        "Sin límite de consultas mensuales"
                     ],
                     "title": "Que obtenes:"
                 },
                 "ctaButtons": [
                     {
-                        "label": "Solicitar",
+                        "label": "Solicitar ahora",
                         "linkTo": "https://www.coldview.com",
-                        "type": "primary",
-                        "icon": "pi-heart"
+                        "type": "secondary",
+                        "icon": "pi pi-check"
                     }
                 ]
             }
         }
     ],
     "paymentInformation": {
-        "ammount": "$82,000",
+        "amount": "$39.177,54",
         "frequency": "Mensual",
-        "nextPaymentDate": "15 Agosto, 2024",
+        "nextPaymentDate": "06 Septiembre, 2025",
         "paymentMethod": "Debito automatico"
     },
     "beneficiaries": [
         {
-            "name": "Maria Gomez",
-            "relationship": "Esposa",
-            "percentage": "80%",
-            "sex": "woman"
+            "name": "Agua Y Saneamientos Argentinos S.A.",
+            "percentage": "50%",
+            "icon": {
+                "type": "img",
+                "img": "/icons/office-building.png"
+            }
         },
         {
-            "name": "Carlos Perez",
-            "relationship": "Hijo",
-            "percentage": "20%",
-            "sex": "man"
+            "name": "Edesur",
+            "percentage": "50%",
+            "icon": {
+                "type": "img",
+                "img": "/icons/office-building.png"
+            }
         }
     ],
     "coverageDetails": {
@@ -106,83 +123,135 @@
             {
                 "icon": {
                     "type": "img",
-                    "img": "/icons/pills-bottle-2.png"
+                    "img": "/icons/alert.png"
                 },
-                "title": "Reembolso farmaceutico"
+                "title": "Muerte por accidente",
+                "coverageLimits": "Hasta $15.500.000",
+                "description": "El asegurador paga la suma asegurada si el accidente causa la muerte. Si hubo pagos previos por invalidez, se descuentan. El fallecimiento debe ser consecuencia directa del accidente cubierto."
+            },
+            {
+                "icon": {
+                    "type": "img",
+                    "img": "/icons/disabled.png"
+                },
+                "title": "Invalidez permanente total o parcial por accidente",
+                "shortTitle": "Invalidez por accidente",
+                "coverageLimits": "Hasta $15.500.000 según grado de invalidez",
+                "shortLimits": "Hasta $15.500.000",
+                "description": "Indemniza un porcentaje de la suma asegurada según la pérdida funcional permanente provocada por el accidente. Si alcanza el 80%, se considera invalidez total."
             },
             {
                 "icon": {
                     "type": "img",
                     "img": "/icons/hospital-building.png"
                 },
-                "title": "Asistencia medica"
-            },
-            {
-                "icon": {
-                    "type": "primeicon",
-                    "primeicon": "pi-exclamation-triangle"
-                },
-                "title": "Enfermedades graves"
-            },
-            {
-                "icon": {
-                    "type": "img",
-                    "img": "/icons/piggy-bank.png"
-                },
-                "title": "Excencion de pago por incapacidad"
-            },
-            {
-                "icon": {
-                    "type": "primeicon",
-                    "primeicon": "pi-dollar"
-                },
-                "title": "Anticipo por enfermedad terminal"
+                "title": "Asistencia médica y farmacéutica",
+                "coverageLimits": "Hasta $930.000 (exceso de $1.000 por evento)",
+                "shortLimits": "Hasta $930.000",
+                "description": "Reembolsa los gastos médicos y farmacéuticos necesarios por accidentes cubiertos, prescritos por un facultativo. No cubre viajes, prótesis dentales ni tratamientos termales."
             }
         ],
-        "exclusions": []
+        "exclusions": [
+            {
+                "name": "Enfermedades y tratamientos médicos",
+                "description": "No cubre enfermedades de cualquier tipo, tratamientos quirúrgicos o psiquiátricos, ni lesiones por rayos X o radiación, salvo si son consecuencia directa de un accidente cubierto."
+            },
+            {
+                "name": "Accidentes causados por dolo, culpa grave o empresa criminal",
+                "description": "Excluye accidentes provocados intencionalmente o por negligencia grave del asegurado o beneficiarios, salvo actos de humanidad o para evitar un siniestro."
+            },
+            {
+                "name": "Estado mental, ebriedad o drogas",
+                "description": "No cubre accidentes ocurridos por enajenación mental, ebriedad o bajo influencia de drogas, salvo si derivan de un accidente cubierto."
+            },
+            {
+                "name": "Actividades o deportes riesgosos",
+                "description": "Excluye accidentes durante carreras, acrobacias, excursiones a zonas inexploradas o deportes no enumerados en la póliza."
+            },
+            {
+                "name": "Navegación aérea no regular y motocicletas",
+                "description": "No cubre accidentes en vuelos no comerciales ni por uso de motocicletas u otros vehículos similares."
+            },
+            {
+                "name": "Fenómenos bélicos o catástrofes",
+                "description": "Excluye siniestros causados por guerra, rebelión, motín, terrorismo, huelga, lock-out, terremotos, inundaciones u otros fenómenos catastróficos."
+            },
+            {
+                "name": "Edad no asegurable",
+                "description": "No cubre personas menores de 14 años o mayores de 70 años (según cláusula particular)."
+            }
+        ]
     },
     "claims": [
         {
-            "id": "1",
-            "date": "12 Junio, 2024",
-            "description": "Compra medicamentos",
-            "status": "En proceso",
-            "ammount": "$12,450"
+            "id": "10",
+            "date": "15 Julio, 2025",
+            "description": "Medicamentos post-accidente laboral",
+            "status": "pending",
+            "amount": "$2.850"
+        },
+        {
+            "id": "9",
+            "date": "28 Junio, 2025",
+            "description": "Analgésicos fractura de brazo",
+            "status": "completed",
+            "amount": "$1.450"
+        },
+        {
+            "id": "8",
+            "date": "18 Junio, 2025",
+            "description": "Antibióticos herida por caída",
+            "status": "rejected",
+            "amount": "$890"
+        },
+        {
+            "id": "7",
+            "date": "05 Mayo, 2025",
+            "description": "Medicación esguince tobillo",
+            "status": "completed",
+            "amount": "$650"
+        },
+        {
+            "id": "6",
+            "date": "22 Abril, 2025",
+            "description": "Compra medicamentos accidente tránsito",
+            "status": "reected",
+            "amount": "$4.200"
+        },
+        {
+            "id": "5",
+            "date": "10 Marzo, 2025",
+            "description": "Tratamiento quemaduras accidente doméstico",
+            "status": "completed",
+            "amount": "$3.800"
+        },
+        {
+            "id": "4",
+            "date": "28 Febrero, 2025",
+            "description": "Medicamentos luxación hombro",
+            "status": "completed",
+            "amount": "$1.950"
+        },
+        {
+            "id": "3",
+            "date": "14 Febrero, 2025",
+            "description": "Analgésicos fractura costilla",
+            "status": "completed",
+            "amount": "$2.100"
+        },
+        {
+            "id": "2",
+            "date": "30 Enero, 2025",
+            "description": "Medicación post-cirugía accidente",
+            "status": "completed",
+            "amount": "$5.400"
         },
         {
             "id": "1",
-            "date": "12 Junio, 2024",
-            "description": "Compra medicamentos",
-            "status": "En proceso",
-            "ammount": "$12,450"
-        },
-        {
-            "id": "1",
-            "date": "12 Junio, 2024",
-            "description": "Compra medicamentos",
-            "status": "En proceso",
-            "ammount": "$12,450"
-        },
-        {
-            "id": "1",
-            "date": "12 Junio, 2024",
-            "description": "Compra medicamentos",
-            "status": "En proceso",
-            "ammount": "$12,450"
-        },
-        {
-            "id": "1",
-            "date": "12 Junio, 2024",
-            "description": "Compra medicamentos",
-            "status": "En proceso",
-            "ammount": "$12,450"
-        },
-        {
-            "id": "1",
-            "date": "12 Junio, 2024",
-            "description": "Compra medicamentos",
-            "status": "En proceso",
-            "ammount": "$12,450"
+            "date": "12 Enero, 2025",
+            "description": "Compra medicamentos contusión múltiple",
+            "status": "completed",
+            "amount": "$3.250"
         }
     ],
     "crossSelling": [
@@ -288,5 +357,10 @@
                 ]
             }
         }
-    ]
+    ],
+    "policyFile": {
+        "title": "Poliza",
+        "url": "/lifePolicy.pdf",
+        "size": "0.5MB"
+    }
 }

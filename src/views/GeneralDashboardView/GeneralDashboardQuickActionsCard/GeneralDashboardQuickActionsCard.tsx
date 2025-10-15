@@ -6,7 +6,7 @@ import { pdfSvg } from "@/data/CommonSvg";
 
 const GeneralDashboardQuickActionsCard = () => {
     return (
-        <div className="generic-dashboard-card  normal col-6 general-dashboard-quick-actions-card">
+        <div className="generic-dashboard-card col-6 general-dashboard-quick-actions-card">
             <CardHeader title="Acciones rápidas" />
             <div className="generic-dashboard-card-content general-dashboard-quick-actions-card-content">
                 <div className="general-dashboard-quick-actions-card-section">

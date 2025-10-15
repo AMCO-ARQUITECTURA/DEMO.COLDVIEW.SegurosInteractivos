@@ -8,14 +8,15 @@ import { useQuery } from "@tanstack/react-query";
 import LifeInsuranceDashboardGeneralDataCard from "./LifeInsuranceGeneralDataCard/LifeInsuranceGeneralDataCard";
 import type { LifeInsuranceDashboard } from "@/types/LifeInsuranceDashboardTypes";
 import LifeInsuranceQuickActionsCard from "./LifeInsuranceQuickActionsCard/LifeInsuranceQuickActionsCard";
-import LifeInsurancePrimaryCoveragesCard from "./LifeInsurancePrimaryCoveragesCard/LifeInsurancePrimaryCoveragesCard";
 import LifeInsuranceUpsellingCard from "./LifeInsuranceUpsellingCard/LifeInsuranceUpsellingCard";
 import LifeInsurancePaymentCard from "./LifeInsurancePaymentCard/LifeInsurancePaymentCard";
 import LifeInsuranceBeneficiariesCard from "./LifeInsuranceBeneficiariesCard/LifeInsuranceBeneficiariesCard";
-import LifeInsuranceAdditionalCoveragesCard from "./LifeInsuranceAdditionalCoveragesCard/LifeInsuranceAdditionalCoveragesCard";
-import LifeInsuranceClaimsCard from "./LifeInsuranceClaimsCard/LifeInsuranceClaimsCard";
 import BlogCard from "@/components/BlogCard/BlogCard";
 import CarouselCard from "@/components/CarouselCard/CarouselCard";
+import QInsightFAB from "@/components/QInsightFAB/QInsightFAB";
+import CoveragesCard from "@/components/Coverages/CoveragesCard";
+import ClaimsCard from "@/components/Claims/ClaimsCard";
+import QInsightChatPopup from "@/components/QInsightChatPopup/QInsightChatPopup";
 
 const LifeInsuranceDashboardView = () => {
 
@@ -86,16 +87,14 @@ const LifeInsuranceDashboardView = () => {
                 <div className="dashboard-content" >
                     {/* First row */}
                     <LifeInsuranceDashboardGeneralDataCard data={lifeData.generalData} />
-                    <LifeInsuranceQuickActionsCard />
-                    <LifeInsurancePrimaryCoveragesCard mainCoverages={lifeData.mainCoverages} />
+                    <LifeInsuranceQuickActionsCard policyFile={lifeData.policyFile}/>
+                    <LifeInsuranceBeneficiariesCard beneficiaries={lifeData.beneficiaries} />
                     {/* SecondRow */}
                     <LifeInsuranceUpsellingCard upsellingOffers={lifeData.upselling} />
                     <LifeInsurancePaymentCard data={lifeData.paymentInformation} />
-                    <LifeInsuranceBeneficiariesCard beneficiaries={lifeData.beneficiaries} />
-                    <LifeInsuranceAdditionalCoveragesCard coverageDetails={lifeData.coverageDetails} />
+                    <CoveragesCard coverages={lifeData.coverageDetails.coverages} exclusions={lifeData.coverageDetails.exclusions}/>
                     {/* ThirdRow */}
-                    <LifeInsuranceClaimsCard claims={lifeData.claims} />
-                    {/* <LifeInsuranceCrossSellingCard offers={lifeData.crossSelling} /> */}
+                    <ClaimsCard claims={lifeData.claims}/>
                     <CarouselCard images={crossSellingImages} title={"Mejora tu cobertura"} />
 
                     <BlogCard title="Blog Destacado" imgPath="/ads/life_blog.png" onClick={() => navigateToColdview()} 
@@ -103,6 +102,8 @@ const LifeInsuranceDashboardView = () => {
                         descriptionText={"Únete a nuestro encuentro gratuito sobre salud mental. Comparte con especialistas, aprende sobre autocuidado y descubre cómo tu bienestar emocional influye en cada decisión que tomas, especialmente al volante."} />
                 </div>
             </div>
+            <QInsightFAB/>
+            <QInsightChatPopup/>
         </div>
     );
 }

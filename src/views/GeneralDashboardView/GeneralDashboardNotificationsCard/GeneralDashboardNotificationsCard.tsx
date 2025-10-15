@@ -21,7 +21,7 @@ const GeneralDashboardNotificationsCard: React.FC<GeneralDashboardNotificationsC
                                     <span className="general-dashboard-notifications-card-item-message">{notification.message}</span>
                                 </div>
                             </div>
-                            {notification.ammount && (<span className="general-dashboard-notification-ammount">{notification.ammount}</span>)}
+                            {notification.amount && (<span className="general-dashboard-notification-amount">{notification.amount}</span>)}
                         </div>
                     ))
                 }

@@ -64,7 +64,7 @@ export default function Sidebar({ sections, open, setOpen }: SidebarProps) {
         { open && (
             <div className="sidebar-footer-content">
                 <div className="sidebar-footer-contact"> 
-                    <span className="sidebar-footer-contact-name">Maria Gonzales (agente)</span>
+                    <span className="sidebar-footer-contact-name">Maria Gonzales(agente)</span>
                     <div className="sidebar-footer-contact-option-list">
                         <div className="sidebar-footer-contact-option">
                             <i className="pi pi-phone" style={{fontSize: '0.8rem'}}/>

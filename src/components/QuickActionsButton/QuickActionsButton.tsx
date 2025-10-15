@@ -7,15 +7,16 @@ type QuickActionsButton = {
     icon: IconProps;
     accent?: boolean;
     additionalInfo?: string
+    onClick?: Function;
 }
 
-const QuickActionsButton: React.FC<QuickActionsButton> = ({label, icon, accent, additionalInfo}) => {
+const QuickActionsButton: React.FC<QuickActionsButton> = ({label, icon, accent, additionalInfo, onClick}) => {
     const iconWithClass: IconProps = {
         ...icon,
         iconClassname: `${icon.iconClassname || ''} quick-actions-button-icon ${accent ? 'accent' : ''}`.trim()
     };
     return (
-        <div className={`quick-actions-button ${accent ? "accent" : ""}`}>
+        <div className={`quick-actions-button ${accent ? "accent" : ""}`} onClick={() => onClick && onClick()}>
             <div className='quick-actions-button-main'>
                 {createIcon(iconWithClass)}
                 <span>{label}</span>

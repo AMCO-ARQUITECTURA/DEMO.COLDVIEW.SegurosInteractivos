@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/Breadcrumb/Breadcrumb";
-import PublicityCarouselCard from "@/components/PublicityCarouselCard/PublicityCarouselCard";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import { sidebarSections } from "@/data/CommonData";
 import { useState } from "react";
@@ -68,7 +67,7 @@ const GeneralDashboardView = () => {
         <div className="dashboard-view">
             <Sidebar sections={sidebarSections} open={sidebarOpen} setOpen={setSidebarOpen} />
             <div className="dashboard-main-div">
-                <Breadcrumb title="Seguro de vida" toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+                <Breadcrumb title="Dashboard General" toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
                 <div className="dashboard-content" >
                     {/* First row */}
                     <GeneralDashboardProductsList products={data.products}/>
@@ -81,8 +80,6 @@ const GeneralDashboardView = () => {
                     {/* FourthRow */}
                     <GeneralDashboardFinancialResumeCard data={data.financialSummary} />
                     <GeneralDashboardNotificationsCard notifications={data.notificationsAndAlerts} />
-                    {/* lastrow */}
-                    <PublicityCarouselCard />
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
 }
 
 .life-insurance-beneficiaries-card-content {
-    gap: 1rem;
+    gap: var(--spacing-2);
     height: 100%;
 }
 
