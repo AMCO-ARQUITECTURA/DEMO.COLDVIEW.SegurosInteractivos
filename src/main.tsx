@@ -7,7 +7,6 @@ import {
   createRoute,
   createRouter,
 } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import './styles/common.css'
@@ -18,18 +17,20 @@ import 'primeicons/primeicons.css';
 import reportWebVitals from './reportWebVitals.ts'
 
 import LoginView from './views/LoginView/LoginView.tsx'
-import VersionMenuView from './views/VersionMenuView/VersionMenuView.tsx'
 import CarInsuranceDashboardView from './views/CarInsuranceDashboardView/CarInsuranceDashboardView.tsx'
 import LifeInsuranceDashboardView from './views/LifeInsuranceDashboardView/LifeInsuranceDashboardView.tsx';
 import GeneralDashboardView from './views/GeneralDashboardView/GeneralDashboardView.tsx';
+import { addLocale, locale } from 'primereact/api';
 
-
+addLocale('es', {matchAll: 'Coincidir con todos', matchAny: 'Coincidir con alguno', startsWith: 'Comienza con', contains: 'Contiene', notContains: 'No contiene', endsWith: 'Termina con',
+  equals: 'Es igual a', notEquals: 'No es igual a', noFilter: 'Sin filtro', lt: 'Menor que', lte: 'Menor o igual que', gt: 'Mayor que', gte: 'Mayor o igual que', dateIs: 'Fecha es', dateIsNot: 'Fecha no es',
+  dateBefore: 'Fecha anterior', dateAfter: 'Fecha posterior', accept: 'Aceptar', apply: "Aplicar", clear: "Limpiar"});
+locale('es');
 
 const rootRoute = createRootRoute({
   component: () => (
     <>
       <Outlet />
-      {/* <TanStackRouterDevtools /> */}
     </>
   ),
 })
@@ -38,12 +39,6 @@ const indexLoginRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
   component: LoginView,
-})
-
-const versionMenuRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/version-menu',
-  component: VersionMenuView,
 })
 
 const generalDashboardRoute = createRoute({
@@ -86,7 +81,7 @@ const queryClient = new QueryClient({
     queries: {
       retry: 2,
       refetchOnWindowFocus: false,
-      staleTime: 5 * 60 * 1000, // 5 minutes
+      staleTime: 5 * 60 * 1000,
     },
   },
 });

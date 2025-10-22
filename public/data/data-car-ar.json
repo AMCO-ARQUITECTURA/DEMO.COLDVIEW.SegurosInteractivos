@@ -461,8 +461,13 @@
             "size": "1MB"
         },
         {
+            "title": "Tarjeta de circulacion",
+            "url": "/carPolicy.pdf",
+            "size": "0.1MB"
+        },
+        {
             "title": "Certificado licencia Mercosur",
-            "url": "/Certificado_mercosur.pdf",
+            "url": "/carPolicy.pdf",
             "size": "0.1MB"
         }
     ]

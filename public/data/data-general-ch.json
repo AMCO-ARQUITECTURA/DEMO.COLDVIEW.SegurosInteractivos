@@ -3,7 +3,7 @@
         {
             "id": "car",
             "type": "car",
-            "name": "Seguro Automotor",
+            "name": "testch",
             "icon": {
                 "type": "img",
                 "img": "/icons/car.png"
@@ -120,8 +120,7 @@
                     "primeicon": "pi-file-pdf"
                 },
                 "title": "Poliza automotor - 200040215232",
-                "size": "2.3MB",
-                "url": "/carPolicy.pdf"
+                "size": "2.3MB"
             },
             {
                 "icon": {
@@ -129,17 +128,15 @@
                     "primeicon": "pi-file-pdf"
                 },
                 "title": "Poliza vida - 232100503444",
-                "size": "1.5MB",
-                "url": "/lifePolicy.pdf"
+                "size": "1.5MB"
             },
             {
                 "icon": {
                     "type": "primeicon",
                     "primeicon": "pi-id-card"
                 },
-                "title": "Certificado Mercosur - 200040215232",
-                "size": "0.1MB",
-                "url": "/Certificado_mercosur.pdf"
+                "title": "Tarjeta de circulacion - 200040215232",
+                "size": "0.7MB"
             }
         ]    
     },

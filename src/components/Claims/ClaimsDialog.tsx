@@ -25,28 +25,26 @@ const defaultFilters: DataTableFilterMeta = {
 
 const ClaimsDialog: React.FC<ClaimsDialogProps> = ({ claims, visible, setVisible, showType }) => {
 
-    const [filters, setFilters] = useState(defaultFilters);
-
-    const clearFilter = () => {
-        setFilters(defaultFilters);
-    };
+    const [filters] = useState(defaultFilters);
 
     const statusItemTemplate = (option: string) => {
+        const statusLabel = option === "pending" ? "En Proceso" : option === "rejected" ? "Rechazado" : "Completado"
         return (
-                <div className={`claim-summary-badge ${option === 'pending' ? 'pending' : ''}`} style={{ margin: 'auto'}}>
-                    <div className={`claim-summary-badge-icon ${option === 'pending' ? 'pending' : ''}`}></div>
-                    <p className={`claim-summary-badge-text ${option === 'pending' ? 'pending' : ''}`} style={{display: 'inline'}}>{option === 'pending' ? "En proceso" : "Completado"}</p>
+                <div className={`claim-summary-badge ${option}`} style={{ margin: 'auto'}}>
+                    <div className={`claim-summary-badge-icon ${option}`}></div>
+                    <p className={`claim-summary-badge-text ${option}`} style={{display: 'inline'}}>{statusLabel}</p>
                 </div>
 
         );
     };
 
     const statusBodyTemplate = (claim: Claim) => {
+        const statusLabel = claim.status === "pending" ? "En Proceso" : claim.status === "rejected" ? "Rechazado" : "Completado"
         return (
             // <div className='claim-summary-badge-container'>
-                <div className={`claim-summary-badge ${claim.status === 'pending' ? 'pending' : ''}`}>
-                    <div className={`claim-summary-badge-icon ${claim.status === 'pending' ? 'pending' : ''}`}></div>
-                    <p className={`claim-summary-badge-text ${claim.status === 'pending' ? 'pending' : ''}`} style={{display: 'inline'}}>{claim.status === 'pending' ? "En proceso" : "Completado"}</p>
+                <div className={`claim-summary-badge ${claim.status}`}>
+                    <div className={`claim-summary-badge-icon ${claim.status}`}></div>
+                    <p className={`claim-summary-badge-text ${claim.status}`} style={{display: 'inline'}}>{statusLabel}</p>
                 </div>
             // </div>
 
@@ -54,7 +52,7 @@ const ClaimsDialog: React.FC<ClaimsDialogProps> = ({ claims, visible, setVisible
     };
 
     const statusRowFilterTemplate = (options: ColumnFilterElementTemplateOptions) => {
-        return <MultiSelect value={options.value} options={['pending', "completed"]} itemTemplate={statusItemTemplate}
+        return <MultiSelect value={options.value} options={['pending', "completed", "rejected"]} itemTemplate={statusItemTemplate}
             onChange={(e: MultiSelectChangeEvent) => options.filterCallback(e.value)} placeholder="Estado" className="p-column-filter" selectedItemTemplate={statusItemTemplate} />;
     };
 

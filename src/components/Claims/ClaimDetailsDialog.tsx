@@ -5,6 +5,7 @@ import { InputTextarea } from "primereact/inputtextarea";
 import { Tag } from "primereact/tag";
 import type { Claim } from "@/types/CommonTypes";
 import { Divider } from "primereact/divider";
+import './Claims.css';
 
 interface ClaimDetailsDialogProps {
     visible: boolean;
@@ -58,6 +59,10 @@ export default function ClaimDetailsDialog({ visible, setVisible, claim }: Claim
                         <label>ID</label>
                         <span>{claim.id ?? "-"}</span>
                     </div>
+                    {claim.productId && claim.productName && (<div className="claim-details-field">
+                        <label>Producto</label>
+                        <span>{claim.productName + "-" + claim.productId}</span>
+                    </div>)}
                     <div className="claim-details-field">
                         <label>Fecha</label>
                         <span>{claim.date}</span>
@@ -79,11 +84,6 @@ export default function ClaimDetailsDialog({ visible, setVisible, claim }: Claim
                 <Divider/>
                 <div className="claim-details-comments">
                     <label>Comentarios</label>
-                    <InputTextarea value={newComment} onChange={(e) => setNewComment((e.target as HTMLTextAreaElement).value)}
-                        rows={2} autoResize placeholder="Agregar comentario" className="claim-details-comment-textarea"
-                    />
-                    <Button label="Agregar comentario" onClick={addComment} disabled={!newComment.trim()} className="claim-details-comment-add-button" />
-
                     <div className="claim-details-comment-list">
                         {comments.length === 0 ? (
                             <div className="claim-details-no-comments">No hay comentarios aun.</div>
@@ -96,6 +96,15 @@ export default function ClaimDetailsDialog({ visible, setVisible, claim }: Claim
                             ))
                         )}
                     </div>
+                    <div className="claim-details-comments-input-container">
+                        <InputTextarea value={newComment} onChange={(e) => setNewComment((e.target as HTMLTextAreaElement).value)}
+                            rows={1} autoResize placeholder="Agregar comentario" className="claim-details-comment-textarea"
+                        />
+                        <div>
+                            <Button icon="pi pi-arrow-right" onClick={addComment} disabled={!newComment.trim()} className="claim-details-comment-add-button" />
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </Dialog>

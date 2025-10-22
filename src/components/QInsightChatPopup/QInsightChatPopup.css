@@ -91,6 +91,7 @@
 .qinsight-chat-popup-footer-button-container {
     flex-shrink: 0;
     display: flex;
+    align-self: flex-end;
 }
 
 .qinsight-chat-popup-footer-input-button {

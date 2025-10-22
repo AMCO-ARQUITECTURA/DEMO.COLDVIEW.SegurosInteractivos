@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useChatStore } from "../../store/useChatStore";
+import { useChatStore } from "../../store/ChatStore";
 import { Button } from "primereact/button";
 import './QInsightChatPopup.css';
 import Icon from "../Icon/Icon";
@@ -21,22 +21,19 @@ const QInsightChatPopup = () => {
 
     useEffect(() => {
         if (textareaRef.current) {
-            // Reset height to calculate scroll height correctly
             textareaRef.current.style.height = 'auto';
 
-            // Set max height to prevent excessive resizing
-            const maxHeight = 160; // Equivalent to max-h-40 (10rem * 16px/rem)
+            const maxHeight = 160;
             let newHeight = textareaRef.current.scrollHeight;
-
+            if (newHeight == 0 ) {
+                newHeight=25;
+            }
             if (newHeight > maxHeight) {
                 newHeight = maxHeight;
-                // Add overflow-y-auto class if it reaches max height
                 textareaRef.current.classList.add('overflow-y-auto');
             } else {
-                // Remove overflow-y-auto class otherwise
                 textareaRef.current.classList.remove('overflow-y-auto');
             }
-
             textareaRef.current.style.height = `${newHeight}px`;
         }
     }, [input]);

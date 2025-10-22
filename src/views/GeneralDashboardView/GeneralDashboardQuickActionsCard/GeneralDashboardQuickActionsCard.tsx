@@ -2,9 +2,15 @@ import CardHeader from "@/components/CardHeader/CardHeader";
 import QuickActionsButton from "@/components/QuickActionsButton/QuickActionsButton";
 import { Divider } from "primereact/divider";
 import './GeneralDashboardQuickActionsCard.css';
-import { pdfSvg } from "@/data/CommonSvg";
+import type { DownloadFile } from "@/types/CommonTypes";
+import { downloadFile } from "@/utilities/Utilities";
 
-const GeneralDashboardQuickActionsCard = () => {
+type GeneralDashboardQuickActionsCardProps = {
+    downloads: DownloadFile[]
+}
+
+const GeneralDashboardQuickActionsCard:React.FC<GeneralDashboardQuickActionsCardProps> = ({downloads}) => {
+
     return (
         <div className="generic-dashboard-card col-6 general-dashboard-quick-actions-card">
             <CardHeader title="Acciones rápidas" />
@@ -21,9 +27,13 @@ const GeneralDashboardQuickActionsCard = () => {
                     <span className="general-dashboard-quick-actions-card-section-title">Descarga de documentos</span>
                     <Divider className="general-dashboard-quick-actions-card-section-divider"/>
                     <div className="general-dashboard-quick-actions-card-section-buttons">
-                        <QuickActionsButton label="Poliza automotor - 512001122" icon={{type: 'svg', svg: pdfSvg}} additionalInfo="2.3MB"/>
-                        <QuickActionsButton label="Poliza Vida - 512001123" icon={{type: 'svg', svg: pdfSvg}}  additionalInfo="1.5MB"/>
-                        <QuickActionsButton label="Tarjeta de circulacion -512001122" icon={{type: 'primeicon', primeicon: "pi-id-card"}} additionalInfo="0.7MB"/>
+                        {
+                            downloads.slice(0,4).map((download) => {
+                                return (
+                                    <QuickActionsButton label={download.title} icon={download.icon!} additionalInfo={download.size} onClick={() => downloadFile(download)}/>
+                                )
+                            })
+                        }
                     </div>
                     
                 </div>

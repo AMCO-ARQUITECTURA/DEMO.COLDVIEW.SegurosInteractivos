@@ -2,8 +2,10 @@ import CardHeader from "@/components/CardHeader/CardHeader";
 import GenericButton from "@/components/GenericButton/GenericButton";
 import Icon from "@/components/Icon/Icon";
 import './GeneralDashboardQInsightCard.css';
+import { useChatStore } from "@/store/ChatStore";
 
 const GeneralDashboardQInsightCard = () => {
+    const {setChatVisible} = useChatStore();
     return (
         <div className="generic-dashboard-card space-between col-6 general-dashboard-qinsight-card">
             <CardHeader title="QInsight - Asistente virtual" />
@@ -35,7 +37,7 @@ const GeneralDashboardQInsightCard = () => {
                     <span className="general-dashboard-qinsight-card-example">"Quienes son los beneficiarios de mi seguro de vida?"</span>
                 </div>
                 <div className="general-dashboard-qinsight-card-footer">
-                    <GenericButton primeicon="pi-comment" label={"Iniciar conversacion"} onClick={() => console.log("true!")} className="general-dashboard-qinsight-card-footer-button"/>
+                    <GenericButton primeicon="pi-comment" label={"Iniciar conversacion"} onClick={() => setChatVisible(true)} className="general-dashboard-qinsight-card-footer-button"/>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import type { Component, CSSProperties, ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import './CardHeader.css';
 type CardHeaderProps = {
     title: string;

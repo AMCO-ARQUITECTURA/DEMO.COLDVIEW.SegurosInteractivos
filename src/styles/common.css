@@ -214,3 +214,10 @@ code {
         transform: translateY(0);
     }
 }
+
+
+.ellipsis {
+    white-space: nowrap;       
+    overflow: hidden;          
+    text-overflow: ellipsis;   
+  }

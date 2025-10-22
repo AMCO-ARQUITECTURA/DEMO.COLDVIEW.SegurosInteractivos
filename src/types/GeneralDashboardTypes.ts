@@ -1,4 +1,5 @@
 import type { IconProps } from "@/components/Icon/IconTypes";
+import type { Claim, DownloadFile } from "./CommonTypes";
 
 type GeneralDashboardProduct = {
     id: string;
@@ -40,9 +41,14 @@ type GeneralDashboardNotificationsAndAlerts = {
     badgeColor: string;
 }
 
+type GeneralDashboardQuickActions = {
+    downloads: DownloadFile[];
+}
+
 type GeneralDashboard = {
     products: GeneralDashboardProduct[];
-    lastSinistersAndClaims: GeneralDashboardClaim[];
+    lastSinistersAndClaims: Claim[];
+    quickActions: GeneralDashboardQuickActions;
     financialSummary: GeneralDashboardFinancialSummary;
     notificationsAndAlerts: GeneralDashboardNotificationsAndAlerts[];
 }

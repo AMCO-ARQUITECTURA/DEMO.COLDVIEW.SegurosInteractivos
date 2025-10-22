@@ -71,7 +71,6 @@ const CarInsuranceDashboardView = () => {
     }
 
     const navigateToColdview = () => {
-        console.log('navigateToColdview');
         window.open('https://www.coldview.com', '_blank', 'noopener,noreferrer');
     }
 

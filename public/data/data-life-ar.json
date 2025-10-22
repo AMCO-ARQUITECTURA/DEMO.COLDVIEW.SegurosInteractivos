@@ -3,7 +3,7 @@
         "status": "ACTIVO",
         "contractor": "Juan Pablo Gomez",
         "beneficiary": "Juan Pablo Gomez",
-        "policyNumber": "232100503444",
+        "policyNumber": "testArg",
         "plan": "ESSENTIAL HEALTH",
         "sinceTo": "23/08/2025 - 23/08/2026"
     },

@@ -29,6 +29,8 @@ const emptyPayment: PolicyPayment = {
 
 type Claim = {
     id?: string;
+    productId?: string; //Solo para almacenar en el caso del dashboard general y poder mostrar de donde viene el claim
+    productName?: string; //Solo para almacenar en el caso del dashboard general y poder mostrar de donde viene el claim
     date: string;
     type: string;
     description: string;
@@ -102,6 +104,7 @@ type Benefit = {
 }
 
 type DownloadFile = {
+    icon?: IconProps;
     title: string;
     url: string;
     size: string;

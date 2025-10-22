@@ -8,7 +8,7 @@ type GeneralDashboardFinancialResumeCardProps = {
 
 const GeneralDashboardFinancialResumeCard: React.FC<GeneralDashboardFinancialResumeCardProps> = ({ data }) => {
     return (
-        <div className="generic-dashboard-card space-between col-6">
+        <div className="generic-dashboard-card col-6">
             <CardHeader title="Resumen financiero" />
             <div className="generic-dashboard-card-content general-dashboard-financial-resume-card-content">
                 <div className="general-dashboard-financial-resume-summary">

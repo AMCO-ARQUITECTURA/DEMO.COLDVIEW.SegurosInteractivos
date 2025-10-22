@@ -9,9 +9,10 @@ import ClaimDetailsDialog from "@/components/Claims/ClaimDetailsDialog";
 
 type ClaimsCardProps = {
     claims: Claim[];
+    asGeneral?: boolean;
 }
 
-const ClaimsCard: React.FC<ClaimsCardProps> = ({claims}) => {
+const ClaimsCard: React.FC<ClaimsCardProps> = ({claims, asGeneral}) => {
     const [claimsDialogVisible, setClaimsDialogVisible] = useState<boolean>(false);
     const [claimDetailsDialogVisible, setClaimDetailsDialogVisible] = useState<boolean>(false);
     const [selectedClaim, setSelectedClaim] = useState(emptyClaim);
@@ -20,15 +21,15 @@ const ClaimsCard: React.FC<ClaimsCardProps> = ({claims}) => {
         setSelectedClaim(claim);
         setClaimDetailsDialogVisible(true);
     }
-    
+
     return (
         <div className="generic-dashboard-card space-between col-6">
             <CardHeader title="Seguimiento solicitudes" />
-            <div className="generic-dashboard-card-content claims-card-content">
+            <div className={`generic-dashboard-card-content claims-card-content ${asGeneral ? "as-general" : ""}`}>
                 {
                     claims.slice(0, 4).map((claim) => {
                         return (
-                            <ClaimSummary claim={claim} openClaimDetails={() => openClaimDetails(claim)}/>
+                            <ClaimSummary claim={claim} openClaimDetails={() => openClaimDetails(claim)} asGeneral={asGeneral}/>
                         )
                     })
                 }

@@ -28,7 +28,7 @@ interface ChatStore {
 /**
  * Zustand store to manage chat conversation with an LLM inside a dashboard popup.
  */
-export const useChatStore = create<ChatStore>((set, get) => ({
+export const useChatStore = create<ChatStore>((set) => ({
   fabVisible: true,
   setFabVisible: (newValue: boolean) => {
     set(() => ({

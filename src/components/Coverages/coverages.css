@@ -4,7 +4,8 @@
 
 .coverages-card-content {
     flex-direction: row;
-    gap: var(--spacing-6);
+    gap: var(--spacing-3);
+    flex-wrap: wrap;
 }
 
 .coverages-card-footer {

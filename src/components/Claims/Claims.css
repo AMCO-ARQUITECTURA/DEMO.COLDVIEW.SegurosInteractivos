@@ -1,7 +1,4 @@
-.claims-dialog {
-    width: 90%;
-}
-
+/* Claims Summary */
 .claim-summary {
     padding: var(--spacing-3);
     background-color: var(--theme-secondary-background);
@@ -28,7 +25,6 @@
 .claim-summary-description {
     color: var(--theme-text-secondary-color);
     width: 25%;
-    overflow: hidden;
 }
 
 .claim-summary-type {
@@ -59,10 +55,15 @@
     flex-direction: row;
     align-items: center;
     gap: var(--spacing-0-5);
+    align-self: end;
 }
 
 .claim-summary-badge.pending {
     background-color: #FEF3C7;
+}
+
+.claim-summary-badge.rejected {
+    background-color: #f6bdbd;
 }
 
 .claim-summary-badge-icon {
@@ -76,6 +77,10 @@
     background-color: #F59E0B;
 }
 
+.claim-summary-badge-icon.rejected {
+    background-color: #FF5050;
+}
+
 .claim-summary-badge-text {
     font-size: var(--text-tiny-size);
     color: #065F46;
@@ -84,8 +89,91 @@
     padding: 0;
 }
 
+.claim-summary-badge-text.general {
+    font-size: round(0.5rem, 1px);
+    display: inline;
+}
+
 .claim-summary-badge-text.pending {
     color: #92400E;
+}
+
+.claim-summary-badge-text.rejected {
+    color: #dc2121;
+}
+
+.general-claim-summary {
+    padding-block: var(--spacing-3);
+    padding-inline: var(--spacing-4);
+    background-color: var(--theme-secondary-background);
+    box-shadow: inset 0.333rem 0 0 0 #E5E7EB;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    font-size: var(--text-smallest-size);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color 1s ease,
+        box-shadow 1s ease;
+}
+
+.general-claim-summary:hover {
+    background-color: var(--theme-secondary-background-hover);
+    box-shadow: inset 0.5rem 0 0 0 var(--theme-secondary-color);
+}
+
+.general-claim-summary-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.general-claim-summary-details-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-0-5);
+}
+
+.general-claim-summary-policy-name {
+    font-size: var(--text-small-size);
+}
+
+.general-claim-summary-policy-number {
+    font-size: var(--text-smallest-size);
+    color: var(--theme-text-quaternary-color);
+}
+
+.general-claim-summary-description {
+    font-size: var(--text-smallest-size);
+    color: var(--theme-text-tertiary-color);
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.general-claim-summary-date {
+    font-size: var(--text-tiny-size);
+    color: var(--theme-text-quinary-color);
+}
+
+.general-claim-summary-price-and-status {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.general-claim-summary-amount {
+    text-align: right;
+    font-size: var(--text-normal-size);
+}
+/* Claims Summary */
+
+/* Claims table */
+.claims-dialog {
+    width: 90%;
 }
 
 .claims-table {
@@ -119,9 +207,10 @@
     border: 0;
     width: 2rem;
 }
+/* Claims Table */
 
+/* Claims details dialog */
 .claim-details-dialog {
-    /* padding: 1rem; */
     width: 50%; 
 }
 
@@ -214,14 +303,27 @@
     padding: 0.5rem 0;
 }
 
+.claim-details-comments-input-container {
+    display: flex;
+    flex-direction: row;
+}
+/* Claims details dialog */
+
 .claims-card-content {
     flex-direction: column;
-    height: 80%;
+    /* height: 80%; */
     gap: var(--spacing-2-5);
 }
 
+.claims-card-content.as-general {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+    grid-auto-rows: min-content;
+}
+
 .claims-card-footer {
-    height: 10%;
+    /* height: 10%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,7 +361,6 @@
 
     .claim-summary-badge {
         width: auto;
-        align-self: center;
     }
 
     .claim-summary-description {
@@ -290,11 +391,16 @@
         display: none;
     }
 
-    .claims-card-footer {
-        margin-bottom: var(--spacing-2);
-    }
     .claims-card-footer-divider {
         margin-top: var(--spacing-1);
         margin-bottom: var(--spacing-2-5);
+    }
+
+    .claims-card-content.as-general {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .claim-details-dialog {
+        width: 100%;
     }
 }

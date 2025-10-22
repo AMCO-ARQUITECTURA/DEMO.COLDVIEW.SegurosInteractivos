@@ -1,15 +1,15 @@
 import { create } from 'zustand';
 
 interface VersionState {
-  version: 'mx' | 'ar';
-  setVersion: (value: 'mx' | 'ar') => void;
+  version: 'mx' | 'ar' | 'ch';
+  setVersion: (value: 'mx' | 'ar' | 'ch') => void;
   getVersionJson: <T = any>(type: 'general' | 'car' | 'life') => Promise<T>;
 }
 
 // Zustand Store
 const useVersionStore = create<VersionState>((set, get) => ({
   version: 'mx',
-  setVersion: (version: 'mx' | 'ar') => {
+  setVersion: (version: 'mx' | 'ar' | 'ch') => {
     set({ version });
   },
   getVersionJson: async <T = any>(type: 'general' | 'car' | 'life'): Promise<T> => {
@@ -22,11 +22,9 @@ const useVersionStore = create<VersionState>((set, get) => ({
       if (!response.ok) {
         throw new Error(`Failed to fetch JSON: ${response.status} ${response.statusText}`);
       }
-      console.log(response);
       const data = await response.json();
       return data as T;
     } catch (error) {
-      console.log("wtf2");
       console.error(`Error fetching JSON from ${filePath}:`, error);
       throw error;
     }

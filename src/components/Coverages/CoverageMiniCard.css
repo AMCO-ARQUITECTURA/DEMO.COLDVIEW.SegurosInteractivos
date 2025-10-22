@@ -1,11 +1,11 @@
 .coverage-mini-card {
-    width: 7.632rem;
+    width: 8.15rem;
     min-height: 5.495rem;
     background-color: var(--theme-secondary-background);
     border: 1px solid var(--theme-primary-border);
     border-radius: 10px;
     padding-block: var(--spacing-1-5);
-    padding-inline: var(--spacing-0-5);
+    padding-inline: var(--spacing-1);
     display: flex;
     flex-direction: column;
     gap: 0.333rem;

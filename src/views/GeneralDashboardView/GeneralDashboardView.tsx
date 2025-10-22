@@ -6,12 +6,13 @@ import useVersionStore from "@/store/VersionStore";
 import { useQuery } from "@tanstack/react-query";
 import type { GeneralDashboard } from "@/types/GeneralDashboardTypes";
 import GeneralDashboardProductsList from "./GeneralDashboardProductList/GeneralDashboardProductsList";
-import GeneralDashboardClaimsCard from "./GeneralDashboardClaimsCard/GeneralDashboardClaimsCard";
 import GeneralDashboardQuickActionsCard from "./GeneralDashboardQuickActionsCard/GeneralDashboardQuickActionsCard";
 import GeneralDashboardContactsCard from "./GeneralDashboardContactsCard/GeneralDashboardContactsCard";
 import GeneralDashboardQInsightCard from "./GeneralDashboardQinsightCard/GeneralDashboardQInsightCard";
 import GeneralDashboardFinancialResumeCard from "./GeneralDashboardFinancialResumeCard/GeneralDashboardFinancialResumeCard";
 import GeneralDashboardNotificationsCard from "./GeneralDashboardNotificationsCard/GeneralDashboardNotificationsCard";
+import ClaimsCard from "@/components/Claims/ClaimsCard";
+import QInsightChatPopup from "@/components/QInsightChatPopup/QInsightChatPopup";
 
 const GeneralDashboardView = () => {
 
@@ -72,8 +73,8 @@ const GeneralDashboardView = () => {
                     {/* First row */}
                     <GeneralDashboardProductsList products={data.products}/>
                     {/* SecondRow */}
-                    <GeneralDashboardClaimsCard claims={data.lastSinistersAndClaims}/>
-                    <GeneralDashboardQuickActionsCard />
+                    <ClaimsCard claims={data.lastSinistersAndClaims} asGeneral/>
+                    <GeneralDashboardQuickActionsCard downloads={data.quickActions.downloads} />
                     {/* ThirdRow */}
                     <GeneralDashboardContactsCard />
                     <GeneralDashboardQInsightCard />
@@ -82,6 +83,7 @@ const GeneralDashboardView = () => {
                     <GeneralDashboardNotificationsCard notifications={data.notificationsAndAlerts} />
                 </div>
             </div>
+            <QInsightChatPopup />
         </div>
     );
 }

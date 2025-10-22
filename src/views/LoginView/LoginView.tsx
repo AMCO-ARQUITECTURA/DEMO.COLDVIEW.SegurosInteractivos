@@ -4,6 +4,7 @@ import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { Message } from "primereact/message";
 import { linkOptions, useNavigate } from "@tanstack/react-router";
+import LoginSettingsFAB from "./LoginSettingsFAB";
 
 const LoginView = () => {
     const [username, setUsername] = useState("");
@@ -37,8 +38,6 @@ const LoginView = () => {
         }, 1000);
     }
 
-
-
     return (
         <div className="login-view">
             <div className="login-form" >
@@ -65,6 +64,7 @@ const LoginView = () => {
                         className="login-form-button" onClick={handleLogin} disabled={loginInCourse} />
                 </form>
             </div>
+            <LoginSettingsFAB />
         </div>
     );
 }

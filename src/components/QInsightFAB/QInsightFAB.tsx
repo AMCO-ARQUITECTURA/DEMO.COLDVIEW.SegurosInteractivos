@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './QInsightFAB.css';
 import Icon from '../Icon/Icon';
-import { useChatStore } from '@/store/useChatStore';
+import { useChatStore } from '@/store/ChatStore';
 
 const QInsightFAB: React.FC = () => {
     const [popupVisible, setPopupVisible] = useState(true);
